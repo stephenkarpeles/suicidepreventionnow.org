@@ -1,0 +1,35 @@
+@import "variables.css";
+@import "breakpoints.css";
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-stack-regular);
+
+  &.mega-menu-is-open {
+    overflow: hidden;
+
+    @media (--small-breakpoint-down) {
+      overflow: visible;
+    }
+  }
+}
+
+img,
+video,
+iframe {
+  max-width: 100%;
+  display: block;
+}

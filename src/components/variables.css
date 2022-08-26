@@ -1,0 +1,40 @@
+:root {
+  /* Colors */
+  --color-1: #4B7D91;
+  --color-2: #567C8F;
+  --color-3: #112930;
+  --color-4: #17292F;
+  --color-5: #75C0E3;
+
+  --border-color-1: rgba(86, 124, 143, .6);
+
+  /* Fonts */
+  --font-stack-light: 'Benton Sans Lt', Helvetica, Arial, sans-serif;
+  --font-stack-regular: 'Benton Sans Reg', Helvetica, Arial, sans-serif;
+  --font-stack-medium: 'Benton Sans Med', Helvetica, Arial, sans-serif;
+  --font-stack-bold: 'Benton Sans Bd', Helvetica, Arial, sans-serif;
+  --font-stack-book: 'Benton Sans Bk', Helvetica, Arial, sans-serif;
+  --font-serif: 'lexia', Georgia, sans-serif;
+
+  /* Typography */
+  --font-size-h1: 96px;
+  --font-size-h2: 60px;
+  --font-size-h3: 40px;
+  --font-size-h4: 22px;
+
+  --line-height-h1: 110px;
+  --line-height-h2: 72px;
+  --line-height-h3: 56px;
+  --line-height-h4: 36px;
+
+  /* Layout */
+  --mega-menu-width: 480px;
+  --container-width: 92%;
+  --container-max-width: 1280px;
+
+  --small-container-width: 92%;
+  --small-container-max-width: 1000px;
+
+  --x-small-container-width: 92%;
+  --x-small-container-max-width: 800px;
+}
