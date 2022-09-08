@@ -16,11 +16,7 @@
 --gradient-rainbow: linear-gradient(90deg, rgba(255, 187, 27, 1) 0%, rgba(71, 170, 66, 1) 40%, rgba(0, 102, 164, 1) 60%, rgba(115, 79, 177, 1) 100%);
 
   /* Fonts */
-  --font-stack-light: 'Benton Sans Lt', Helvetica, Arial, sans-serif;
-  --font-stack-regular: 'Benton Sans Reg', Helvetica, Arial, sans-serif;
-  --font-stack-medium: 'Benton Sans Med', Helvetica, Arial, sans-serif;
-  --font-stack-bold: 'Benton Sans Bd', Helvetica, Arial, sans-serif;
-  --font-stack-book: 'Benton Sans Bk', Helvetica, Arial, sans-serif;
+  --font-stack-regular: 'Merriweather Sans', Helvetica, Arial, sans-serif;
   --font-serif: 'lexia', Georgia, sans-serif;
 
   /* Typography */
