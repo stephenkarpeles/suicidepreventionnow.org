@@ -1,0 +1,21 @@
+@import "../variables.css";
+@import "../breakpoints.css";
+@import "../base.css";
+
+.container {
+  width: var(--container-width);
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+}
+
+.container--small {
+  width: var(--small-container-width);
+  max-width: var(--small-container-max-width);
+  margin: 0 auto;
+}
+
+.container--x-small {
+  width: var(--x-small-container-width);
+  max-width: var(--x-small-container-max-width);
+  margin: 0 auto;
+}

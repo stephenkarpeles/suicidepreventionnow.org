@@ -1,12 +1,19 @@
 :root {
   /* Colors */
-  --color-1: #4B7D91;
-  --color-2: #567C8F;
-  --color-3: #112930;
-  --color-4: #17292F;
-  --color-5: #75C0E3;
+  --color-dark-gray: #363737;
+  --color-light-gray: #5F5F5F;
+  --color-purple: #734FB1;
+  --color-light-purple: #AB8DDE;
+  --color-blue: #0066A4;
+  --color-dark-blue: #0C4060;
+  --color-light-blue: #00A8E0;
+  --color-green: #1D8019;
+  --color-light-green: #47AA42;
+  --color-yellow: #FFBB1B;
+  --color-light-yellow: #FFCD3B;
 
-  --border-color-1: rgba(86, 124, 143, .6);
+  /* Gradients */
+--gradient-rainbow: linear-gradient(90deg, rgba(255, 187, 27, 1) 0%, rgba(71, 170, 66, 1) 40%, rgba(0, 102, 164, 1) 60%, rgba(115, 79, 177, 1) 100%);
 
   /* Fonts */
   --font-stack-light: 'Benton Sans Lt', Helvetica, Arial, sans-serif;

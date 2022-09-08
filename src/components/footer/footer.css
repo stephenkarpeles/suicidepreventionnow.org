@@ -1,0 +1,81 @@
+@import "../variables.css";
+@import "../breakpoints.css";
+@import "../base.css";
+
+.footer {
+  padding: 32px 0 0;
+  background: var(--color-dark-gray);
+  color: white;
+
+  a {
+    color: white;
+  }
+
+  &__title {
+    padding-bottom: 40px;
+  }
+
+  &__grid {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3rem;
+  }
+
+  &__col-left {
+    width: 45%;
+    padding-right: 60px;
+    border-right: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__col-right {
+    width: 55%;
+    padding-left: 60px;
+  }
+
+  &__download-cta {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__nav {
+    ul {
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 16px;
+      letter-spacing: .48px;
+      list-style-type: none;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+  }
+
+  &__sponsor-title {
+    font-weight: 700;
+  }
+
+  &__base-gradient {
+    width: 100%;
+    height: 36px;
+    padding: 8px 0;
+    background-image: var(--gradient-rainbow);
+  }
+
+  &__copyright {
+    color: white;
+    text-align: right;
+  }
+}

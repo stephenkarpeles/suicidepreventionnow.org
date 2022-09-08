@@ -17,14 +17,6 @@ body {
 
 body {
   font-family: var(--font-stack-regular);
-
-  &.mega-menu-is-open {
-    overflow: hidden;
-
-    @media (--small-breakpoint-down) {
-      overflow: visible;
-    }
-  }
 }
 
 img,
@@ -32,4 +24,17 @@ video,
 iframe {
   max-width: 100%;
   display: block;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+
+  &--outlined {
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 8px 16px;
+  }
 }
