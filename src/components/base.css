@@ -17,6 +17,7 @@ body {
 
 body {
   font-family: var(--font-stack-regular);
+  font-weight: 300;
 }
 
 img,
