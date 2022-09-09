@@ -1,6 +1,8 @@
+require("dotenv").config()
+
 module.exports = {
   siteMetadata: {
-    title: `harris-test-gatsby`,
+    title: `harris-poll-microsite`,
     siteUrl: `https://www.yourdomain.tld`
   },
   plugins: [
@@ -17,6 +19,14 @@ module.exports = {
           require('postcss-custom-media'),
         ]
       }
+    },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        typekit: {
+          id: process.env.TYPEKIT_ID,
+        },
+      },
     },
   ]
 };
