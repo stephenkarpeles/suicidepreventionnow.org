@@ -1,6 +1,8 @@
 import React from "react"
 import Fade from 'react-reveal/Fade'
 
+import TwoColumnTextBlock from '../components/two-column-text-block/two-column-text-block';
+
 // Components
 import Layout from "../components/layout/layout"
 
@@ -13,8 +15,11 @@ const IndexPage = () => {
           <div className="container">
             Test Homepage test
           </div>
-        </section>   
-      </Fade>     
+        </section>
+        <section>
+          <TwoColumnTextBlock />
+        </section>
+      </Fade>
     </Layout>
   )
 }
