@@ -1,0 +1,68 @@
+@import "../variables.css";
+@import "../breakpoints.css";
+@import "../base.css";
+
+.c-partners {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+    background-color: hsl(0, 0%, 100%);
+
+    &:nth-child(2n+1) {
+      flex-direction: row-reverse;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    @media (--small-breakpoint-down) {
+      display: block;
+    }
+
+  &__col-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 33%;
+    padding-inline: 6%;
+
+    @media (--medium-breakpoint) {
+      flex-basis: 45%;
+    }
+
+    @media (--small-breakpoint-down) {
+      padding: 48px;
+    }
+  }
+
+  &__col-right {
+    flex-basis: 66%;
+    padding: 24px;
+    background-color: hsl(0, 0%, 95%);
+
+    @media (--medium-breakpoint) {
+      flex-basis: 55%;
+    }
+  }
+
+  &__header-title {
+    margin-block: 24px;
+    font-family: var(--font-serif);
+    font-size: var(--font-size-h4);
+    line-height: 1.2;
+
+    @media (--small-breakpoint-down) {
+      font-size: calc(var(--font-size-h4) - 30%);
+    }
+  }
+
+  &__body-text {
+    font-family: var(--font-stack-regular);
+
+    &--link {
+      color: var(--color-blue);
+      font-weight: 500;
+    }
+  }
+}
