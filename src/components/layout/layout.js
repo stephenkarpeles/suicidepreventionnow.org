@@ -5,7 +5,6 @@ import { Helmet } from "react-helmet";
 import Header from "../header/header"
 import Footer from "../footer/footer"
 
-
 const Layout = props => {
   return (
     <div id="App">
