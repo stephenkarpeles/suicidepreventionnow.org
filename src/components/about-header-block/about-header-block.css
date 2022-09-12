@@ -32,10 +32,6 @@
 
     @media (--small-breakpoint-down) {
       font-size: var(--font-size-h4);
-
-      &::after {
-        width: 140px;
-      }
     }
   }
 }

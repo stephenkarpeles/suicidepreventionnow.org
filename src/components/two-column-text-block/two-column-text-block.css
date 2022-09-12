@@ -9,6 +9,10 @@
   -webkit-box-shadow: 0px 3px 6px 0px rgba(95,95,95,0.15);
   box-shadow: 0px 3px 6px 0px rgba(95,95,95,0.15);
 
+  @media (--small-breakpoint-down) {
+    padding: 12px 24px 24px;
+  }
+
   &::after {
     content: '';
     display: block;
@@ -17,11 +21,10 @@
     bottom: -12px;
     width: 98%;
     height: 98%;
-    background: var(--color-light-yellow);
     z-index: -9999;
   }
 
-  &__tab {
+  &__label {
     position: absolute;
     top: 12px;
     left: 12px;
@@ -32,21 +35,45 @@
     letter-spacing: 0.065ch;
     text-transform: uppercase;
     background-color: var(--color-yellow);
+
+    @media (--small-breakpoint-down) {
+      display: none !important;
+    }
   }
 
   &__header-title {
     font-family: var(--font-serif);
     font-size: var(--font-size-h1);
+    line-height: 1.2;
     text-align: center;
+
+    @media (--small-breakpoint-down) {
+      font-size: var(--font-size-h4);
+    }
+
+    > span {
+      background-image:linear-gradient(var(--color-yellow), var(--color-yellow));
+      background-position: 0 100%;
+      background-size: 100% 8px;
+      background-repeat: no-repeat;
+    }
   }
 
   &__content {
     padding-left: 120px;
+
+    @media (--small-breakpoint-down) {
+      padding: 0;
+    }
   }
 
   &__body-text {
     columns: auto 2;
     column-gap: 24px;
+
+    @media (--small-breakpoint-down) {
+      columns: 1;
+    }
 
     > p {
       margin-top: 0;
@@ -59,7 +86,6 @@
       font-weight: var(--fw-700);
       line-height: 1;
       text-transform: lowercase;
-      background-color: var(--color-yellow);
       float: left;
 
       @media (--small-breakpoint-down) {
@@ -105,22 +131,34 @@
   width: 100%;
   padding-block: 24px 12px;
 
+  @media (--small-breakpoint-down) {
+    padding-block: 12px;
+  }
+
   &__link {
     display: block;
     margin-left: calc(100% - 50% + 12PX);
 
+    @media (--small-breakpoint-down) {
+      margin-left: 0;
+    }
+
     a {
-      display: flex;
+      display: inline-flex;
       gap: 8px;
       font-weight: var(--fw-700);
       text-decoration: none;
       color: var(--color-blue);
 
+      @media (--small-breakpoint-down) {
+        font-size: 24px;
+      }
+
       &:hover {
         color: var(--color-dark-blue);
 
         > span * {
-          fill: var(--color-blue);
+          fill: var(--color-dark-blue);
         }
       }
     }
@@ -133,8 +171,27 @@
     float: left;
     fill: var(--color-blue);
 
-    &:hover {
-      fill: var(--color-dark-blue);
+    @media (--small-breakpoint-down) {
+      width: 32px;
+      height: 32px;
     }
   }
+}
+
+/* Conditional Background Colors */
+.bg-yellow::after {
+  background: var(--color-light-yellow);
+}
+
+.bg-gradient::after {
+  background: var(--gradient-rainbow);
+}
+
+.bg-yellow .c-two-col-block__body-text p:first-child:first-letter {
+  background: var(--color-light-yellow);
+}
+
+.bg-gradient .c-two-col-block__body-text p:first-child:first-letter {
+  color: #fff;
+  background: var(--gradient-rainbow);
 }
