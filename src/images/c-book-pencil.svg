@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="141.018" height="150.786" viewBox="0 0 141.018 150.786">
+  <g id="Lecture" transform="translate(-1.5 -0.5)">
+    <path id="Path_13662" data-name="Path 13662" d="M109.455,1H18.281A16.3,16.3,0,0,0,2,17.281V134.505a16.3,16.3,0,0,0,16.281,16.281h91.174a3.256,3.256,0,0,0,3.256-3.256V4.256A3.256,3.256,0,0,0,109.455,1ZM18.281,7.512H106.2v6.512H24.794v6.512H106.2V27.05H18.281a9.769,9.769,0,1,1,0-19.537Zm0,136.761a9.769,9.769,0,0,1-9.769-9.769V30.221a16.112,16.112,0,0,0,9.769,3.341H106.2V144.274Z" transform="translate(0 0)" fill="#734fb1" stroke="#fff" stroke-width="1"/>
+    <rect id="Rectangle_1907" data-name="Rectangle 1907" width="38.829" height="5.547" transform="translate(38.056 63.42)" fill="#734fb1" stroke="#fff" stroke-width="1"/>
+    <rect id="Rectangle_1908" data-name="Rectangle 1908" width="58.244" height="5.547" transform="translate(28.348 82.835)" fill="#734fb1" stroke="#fff" stroke-width="1"/>
+    <path id="Path_13663" data-name="Path 13663" d="M52.025,2H45.513A6.512,6.512,0,0,0,39,8.512v120.48a3.256,3.256,0,0,0,.326,1.456l6.512,13.025a3.256,3.256,0,0,0,5.829,0l6.512-13.025a3.256,3.256,0,0,0,.358-1.456V8.512A6.512,6.512,0,0,0,52.025,2Zm0,6.512V21.537H45.513V8.512ZM50.013,132.249H47.525l-2.012-4.025V28.05h6.512V128.224Z" transform="translate(83.48 2.256)" fill="#734fb1" stroke="#fff" stroke-width="1"/>
+  </g>
+</svg>
