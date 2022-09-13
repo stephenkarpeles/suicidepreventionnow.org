@@ -21,7 +21,7 @@ const TwoColumnTextBlock = (props) => {
             {props.bodyText}
           </div>
           <div className="c-cta-container">
-            <div className="c-cta-container__link">
+            <div className="c-cta-container__link" style={{ display: label ? "block" : "none" }}>
               <Link to={props.anchorLink}>
                 <span>
                   Let's get started

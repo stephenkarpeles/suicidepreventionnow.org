@@ -80,23 +80,15 @@
     }
 
     > p:first-child:first-letter {
-      margin: 6px 12px 0 -96px;
-      padding: 4px 24px 12px;
+      margin: 6px 12px 0 -102px;
+      padding: 12px 24px;
       font-size: 54px;
       font-weight: var(--fw-700);
       line-height: 1;
-      text-transform: lowercase;
       float: left;
 
       @media (--small-breakpoint-down) {
-        margin: 0 12px 0 0;
-        padding: 4px 24px 12px;
-        font-size: 54px;
-        font-weight: var(--fw-700);
-        line-height: 1;
-        text-transform: lowercase;
-        background-color: var(--color-yellow);
-        float: left;
+        margin-inline: 0 24px;
       }
     }
   }

@@ -61,4 +61,9 @@
   --padding-bottom-lg: 120px;
   --padding-bottom-md: 80px;
   --padding-bottom-sm: 40px;
+  
+  --layout-spacer1: 32px;
+  --layout-spacer2: 64px;
+  --layout-spacer3: 96px;
+  --layout-spacer4: 128px;
 }
