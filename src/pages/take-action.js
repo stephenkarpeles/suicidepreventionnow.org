@@ -1,18 +1,18 @@
-import React from "react"
-import Fade from 'react-reveal/Fade'
+import React from "react";
+import Fade from 'react-reveal/Fade';
 
 // Components
 import Layout from "../components/layout/layout"
 import TwoColumnTextBlock from '../components/two-column-text-block/two-column-text-block';
 
-const IndexPage = () => {
+const TakeAction = () => {
 
   return (
-    <Layout pageTitle="AFSP Site">
+    <Layout pageTitle="AFSP Site - Take Action">
       <Fade>
         <section>
           <div className="container">
-            Test Homepage test
+            About the project
           </div>
         </section>
         <section>
@@ -23,4 +23,4 @@ const IndexPage = () => {
   )
 }
 
-export default IndexPage
+export default TakeAction;

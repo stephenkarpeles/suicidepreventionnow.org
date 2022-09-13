@@ -19,3 +19,27 @@
   max-width: var(--x-small-container-max-width);
   margin: 0 auto;
 }
+
+.t-section-sm {
+  padding-block: var(--layout-spacer2);
+
+  @media (--small-breakpoint-down) {
+    padding-block: var(--layout-spacer1);
+  }
+}
+
+.t-section-lg {
+
+}
+
+/* Backgrounds */
+.t-gray-image-background {
+  background-image: url('../../images/bg-gray.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.t-gradient-background {
+  background: var(--gradient-rainbow);
+}

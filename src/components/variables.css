@@ -49,4 +49,9 @@
 
   --x-small-container-width: 92%;
   --x-small-container-max-width: 800px;
+
+  --layout-spacer1: 32px;
+  --layout-spacer2: 64px;
+  --layout-spacer3: 96px;
+  --layout-spacer4: 128px;
 }

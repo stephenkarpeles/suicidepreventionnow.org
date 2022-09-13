@@ -11,10 +11,10 @@ const AboutHeaderBlock = () => {
         </h1>
         <div className="c-about-content">
           <div className="c-about-content__col-left">
-            <p>Cras id mauris malesuada nulla posuere posuere non ut ligula. Cras ut justo id lacus porta aliquet. Fusce in semper ex.</p>
+            <p>Research matters - especially when it comes to messaging. We must better understand the attitudes, beliefs, and perceptions about mental health and suicide prevention if we are to messaging effectively and clearly to the public.</p>
           </div>
           <div className="c-about-content__col-right">
-            <p>Lorem ipsum dolor sit amet, <Link to="/" className="o-body-text-link">consectetur adipiscing elit</Link> consectetur adipiscing elit. Aenean iaculis gravida nisl a imperdiet. Nullam congue sapien non nisl accumsan, in elementum elit semper. Pellentesque blandit lectus id dui ultrices, ut congue massa pellentesque. Nullam ut laoreet velit. In lacinia euismod felis eu consequat. Aenean iaculis gravida nisl a imperdiet. Nullam congue sapien non nisl accumsan, in elementum elit semper. Pellentesque blandit lectus id dui ultrices, ut congue massa pellentesque. Nullam ut laoreet velit. In lacinia euismod felis eu consequat.</p>
+            <p>That’s why, the <Link to="https://afsp.org/" target={"_blank"} className="o-body-text-link">American Foundation for Suicide Prevention (AFSP)</Link>, the <Link to="https://theactionalliance.org/" target={"_blank"} className="o-body-text-link">National Action Alliance for Suicide Prevention (Action Alliance)</Link>, the <Link to="https://www.sprc.org/" target={"_blank"} className="o-body-text-link">Suicide Prevention Resource Center (SPRC)</Link>, has collaboratively united in 2015, 2018, 2020, and again in 2022 to conduct regular national polling to get a better sense about the public's perceptions of mental health and suicide prevention—and use this information to inform and transform our nation's narrative about these important growing public health issues.</p>
           </div>
         </div>
       </div>

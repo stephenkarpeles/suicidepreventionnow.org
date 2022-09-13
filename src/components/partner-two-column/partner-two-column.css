@@ -2,6 +2,16 @@
 @import "../breakpoints.css";
 @import "../base.css";
 
+.o-partners-header {
+  margin: 0;
+  padding-block: 0 var(--layout-spacer1);
+  font-family: var(--font-serif);
+  font-size: var(--font-size-h2);
+  line-height: 1.2;
+  text-align: center;
+  color: #fff;
+}
+
 .c-partners {
     display: flex;
     justify-content: space-between;
@@ -57,12 +67,8 @@
     }
   }
 
-  &__body-text {
-    font-family: var(--font-stack-regular);
-
-    &--link {
-      color: var(--color-blue);
-      font-weight: 500;
-    }
+  .o-body-text-link {
+    color: var(--color-blue);
+    font-weight: 700;
   }
 }
