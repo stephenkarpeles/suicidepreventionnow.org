@@ -8,12 +8,13 @@
   --color-dark-blue: #0C4060;
   --color-light-blue: #00A8E0;
   --color-green: #1D8019;
+  --color-dark-green: #31552F;
   --color-light-green: #47AA42;
   --color-yellow: #FFBB1B;
   --color-light-yellow: #FFCD3B;
 
   /* Gradients */
---gradient-rainbow: linear-gradient(90deg, rgba(255, 187, 27, 1) 0%, rgba(71, 170, 66, 1) 40%, rgba(0, 102, 164, 1) 60%, rgba(115, 79, 177, 1) 100%);
+  --gradient-rainbow: linear-gradient(90deg, rgba(255, 187, 27, 1) 0%, rgba(71, 170, 66, 1) 40%, rgba(0, 102, 164, 1) 60%, rgba(115, 79, 177, 1) 100%);
 
   /* Fonts */
   --font-stack-regular: 'Merriweather Sans', Helvetica, Arial, sans-serif;
@@ -24,6 +25,7 @@
   --fw-400: 400;
   --fw-500: 500;
   --fw-700: 700;
+  --fw-800: 800;
 
   /* Typography */
   --font-size-h1: 50px;
@@ -43,6 +45,7 @@
   --mega-menu-width: 480px;
   --container-width: 92%;
   --container-max-width: 1280px;
+  --gutter-width: 40px;
 
   --small-container-width: 92%;
   --small-container-max-width: 1000px;
@@ -50,6 +53,15 @@
   --x-small-container-width: 92%;
   --x-small-container-max-width: 800px;
 
+  /* Spacing */
+  --padding-top-lg: 120px;
+  --padding-top-md: 80px;
+  --padding-top-sm: 40px;
+
+  --padding-bottom-lg: 120px;
+  --padding-bottom-md: 80px;
+  --padding-bottom-sm: 40px;
+  
   --layout-spacer1: 32px;
   --layout-spacer2: 64px;
   --layout-spacer3: 96px;
