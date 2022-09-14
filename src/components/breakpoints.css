@@ -39,3 +39,6 @@ To set 0 padding on an element when the viewport is 441px or greater
 
 @custom-media --x-large-breakpoint-down (max-width: 1400px);
 @custom-media --x-large-breakpoint-up (min-width: 1201px);
+
+/* Accessibility Viewport */
+@custom-media --motion-no-preference (prefers-reduced-motion: no-preference);
