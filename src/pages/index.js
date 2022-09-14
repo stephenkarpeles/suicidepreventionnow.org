@@ -38,8 +38,9 @@ const IndexPage = () => {
                   </div>
                   <div className="section-intro-block__intro-text">
                     <p>
-                      <span aria-hidden="true"><span class="dropcap dropcap--dark-green">B</span>ased</span>
-                      <span class="sr-only">Based</span> on public perception polling of attitudes and behaviors about mental health and suicide, gains have been made in how people are valuing mental health while there are reported increases in barriers to care and societal beliefs about mental health and suicide.</p>
+                      <span aria-hidden="true"><span class="dropcap dropcap--dark-green">B</span>ased</span> 
+                      <span class="sr-only">Based</span> on public perception polling of attitudes and behaviors about mental health and suicide, gains have been made in how people are valuing mental health while there are reported increases in barriers to care and societal beliefs about mental health and suicide.
+                    </p>
                   </div>
                   <div className="section-intro-block__share">
                     Share this topic
