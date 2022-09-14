@@ -64,7 +64,7 @@
 }
 
 .t-gray-image-background {
-  background-image: url('../../images/bg-gray.svg');
+  background-image: url('../../images/bg-gray.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -73,7 +73,6 @@
 .t-gradient-background {
   background: var(--gradient-rainbow);
 }
-
 
 /* Styles for CTAs with icons */
 .o-resource-links {
