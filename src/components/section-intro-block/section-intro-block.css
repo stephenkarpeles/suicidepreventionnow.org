@@ -5,6 +5,25 @@
 .section-intro-block {
   padding: var(--padding-top-lg) 0;
 
+  h2 {
+    font-size: var(--font-size-h2);
+    line-height: 1.3;
+    font-family: var(--font-serif);
+    margin-bottom: 0;
+    padding-bottom: 1.25rem;
+
+    @media (--medium-breakpoint-down) {
+      font-size: 32px;
+    }
+
+    span {
+      background-image: linear-gradient(to bottom, var(--color-yellow) 33%, transparent 33%, transparent 66%, var(--color-yellow) 66%, var(--color-yellow));
+      background-position: 0 1.13em;
+      background-repeat: repeat-x;
+      background-size: 2px;
+    }
+  }
+
   &__tag {
     color: white;
     align-self: flex-start;
@@ -22,9 +41,14 @@
 
   &__grid {
     &.row {
-      .col-5-12 {
+      .col-5-12,
+      .col-7-12 {
+        @media (--large-breakpoint-down) {
+          width: calc(50% - var(--gutter-width));
+        }
+
         @media (--medium-breakpoint-down) {
-          background: red;
+          width: 100%;
         }
       }
     }
@@ -37,13 +61,45 @@
     justify-content: flex-start;
   }
 
+  &__col-left {
+    @media (--medium-breakpoint-down) {
+      padding-bottom: var(--padding-bottom-sm);
+    }
+  }
+
+  &__intro-text {
+    p {
+      line-height: 28px;
+    }
+  }
+
   &__image {
     height: 100%;
+    position: relative;
 
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
     }
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      right: -16px;
+      bottom: -16px;
+      width: 98%;
+      height: 98%;
+      z-index: -9999;
+      background: var(--color-green);
+    }
+  }
+
+  &__share {
+    color: var(--color-blue);
+    text-align: right;
+    align-self: flex-end;
+    border-bottom: 4px solid var(--color-blue);
   }
 }

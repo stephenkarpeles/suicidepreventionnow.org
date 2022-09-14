@@ -24,6 +24,7 @@ body {
   font-family: var(--font-stack-regular);
   font-weight: var(--fw-300);
   line-height: 1.5;
+  color: var(--color-dark-gray);
 }
 
 img,
@@ -140,9 +141,9 @@ p {
   color: white;
   float: left;
   font-size: 53px;
-  line-height: 1;
-  margin: 0.1em 0.1em 0.2em 0;
-  padding: 20px;
+  line-height: 1.1;
+  margin: 0.1em .3em 0.2em 0;
+  padding: 25px;
 
   &--dark-green {
     background: var(--color-dark-green);
