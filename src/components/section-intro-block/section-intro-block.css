@@ -17,10 +17,10 @@
     }
 
     span {
-      background-image: linear-gradient(to bottom, var(--color-yellow) 33%, transparent 33%, transparent 66%, var(--color-yellow) 66%, var(--color-yellow));
-      background-position: 0 1.13em;
-      background-repeat: repeat-x;
-      background-size: 2px;
+      background-image: linear-gradient(var(--color-yellow), var(--color-yellow));
+      background-position: 0 100%;
+      background-repeat: no-repeat;
+      background-size: 100% 8px;
     }
   }
 
