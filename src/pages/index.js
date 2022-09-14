@@ -1,16 +1,18 @@
 // Base
-import React from "react"
-import Fade from 'react-reveal/Fade'
+import React from "react";
+import Fade from 'react-reveal/Fade';
+import { Link } from "gatsby";
 
 // Components
-import Layout from "../components/layout/layout"
+import Layout from "../components/layout/layout";
 import TwoColumnTextBlock from '../components/two-column-text-block/two-column-text-block';
 
 // Styles
 import '../components/section-intro-block/section-intro-block.css';
+import '../components/single-column-text-block/single-column-text-block.css';
 
 // Images
-import imgWomanDog from '../images/woman-dog-bed.jpg'
+import imgWomanDog from '../images/woman-dog-bed.jpg';
 
 const IndexPage = () => {
 
@@ -34,9 +36,9 @@ const IndexPage = () => {
                   <div className="section-intro-block__heading">
                     <h2>Understand the <span>perceptions, beliefs, and attitudes</span> of the U.S. public about <span>mental health and suicide</span></h2>
                   </div>
-                  <div className="section-intro-block__intro-text">                
+                  <div className="section-intro-block__intro-text">
                     <p>
-                      <span aria-hidden="true"><span class="dropcap dropcap--dark-green">B</span>ased</span> 
+                      <span aria-hidden="true"><span class="dropcap dropcap--dark-green">B</span>ased</span>
                       <span class="sr-only">Based</span> on public perception polling of attitudes and behaviors about mental health and suicide, gains have been made in how people are valuing mental health while there are reported increases in barriers to care and societal beliefs about mental health and suicide.</p>
                   </div>
                   <div className="section-intro-block__share">
@@ -51,8 +53,26 @@ const IndexPage = () => {
               </div>
             </div>
           </section>
+          <section className="t-section-lg t-gray-image-background">
+            <div className="c-one-col-block t-offset-bg t-offset-color-gradient container">
+              <h2 className="c-one-col-block__header-title">
+                <span>Wrap Up</span>
+              </h2>
+              <div className="c-one-col-block__content">
+                <p>Now that you understand the data, learn more about this project and how you can take action.</p>
+                <div className="c-one-col-block__resources">
+                  <div className="c-one-col-block__resources-links">
+                    <Link to={'/'} className="o-resource-links o-resource-links--book-icon"><span>Find Resources</span></Link>
+                  </div>
+                  <div className="c-one-col-block__resources-links">
+                    <Link to={'/'} className="o-resource-links o-resource-links--share-icon"><span>Share this Page</span></Link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </Fade>
-      
+
     </Layout>
   )
 }
