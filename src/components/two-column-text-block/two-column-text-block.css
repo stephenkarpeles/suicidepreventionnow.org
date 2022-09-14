@@ -3,25 +3,10 @@
 @import "../base.css";
 
 .c-two-col-block {
-  position: relative;
-  padding: 54px 84px 74px;
-  background-color: #fff;
-  -webkit-box-shadow: 0px 3px 6px 0px rgba(95,95,95,0.15);
-  box-shadow: 0px 3px 6px 0px rgba(95,95,95,0.15);
+  padding: var(--layout-spacer1) 84px;
 
   @media (--small-breakpoint-down) {
     padding: 12px 24px 24px;
-  }
-
-  &::after {
-    content: '';
-    display: block;
-    position: absolute;
-    right: -12px;
-    bottom: -12px;
-    width: 98%;
-    height: 98%;
-    z-index: -9999;
   }
 
   &__label {

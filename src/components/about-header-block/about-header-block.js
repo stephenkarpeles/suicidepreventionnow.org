@@ -5,7 +5,7 @@ import './about-header-block.css';
 const AboutHeaderBlock = () => {
   return (
     <>
-      <div className="c-about-header-block container">
+      <div className="c-about-header-block t-offset-bg t-offset-color-gradient container">
         <h1 className="c-about-header-block__header-title">
           About the Project
         </h1>

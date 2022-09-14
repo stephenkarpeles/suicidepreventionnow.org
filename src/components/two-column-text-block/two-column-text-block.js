@@ -9,7 +9,7 @@ const TwoColumnTextBlock = (props) => {
 
   return (
     <>
-      <div className={`c-two-col-block container ${label ? 'bg-yellow' : 'bg-gradient'}`}>
+      <div className={`c-two-col-block t-offset-bg container ${label ? 'bg-yellow' : 'bg-gradient'}`}>
 
         <div className="c-two-col-block__label" style={{ display: label ? "block" : "none" }}>
           <span>1. Introduction</span>
