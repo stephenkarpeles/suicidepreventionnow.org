@@ -1,0 +1,66 @@
+@import "../variables.css";
+@import "../breakpoints.css";
+@import "../base.css";
+
+.c-social-media-3col {
+  padding: 0;
+
+  @media (--small-breakpoint-down) {
+    padding: var(--layout-spacer2) var(--layout-spacer1);
+  }
+
+  &__header-title {
+    margin-block: 0 var(--layout-spacer2);
+    font-family: var(--font-serif);
+    font-size: var(--font-size-h2);
+    line-height: 1.2;
+    text-align: center;
+
+    @media (--small-breakpoint-down) {
+      font-size: var(--font-size-h4);
+    }
+
+    > span {
+      background-image:linear-gradient(var(--color-yellow), var(--color-yellow));
+      background-position: 0 100%;
+      background-size: 100% 8px;
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__content {
+
+    @media (--small-breakpoint-down) {
+      .row {
+        display: block;
+
+        > div {
+          width: 100%;
+        }
+      }
+    }
+  }
+}
+
+.c-social-card {
+  margin-bottom: var(--layout-spacer1);
+
+  &__figure {
+    margin: 0;
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+
+    @media (--medium-breakpoint) {
+      display: block;
+    }
+  }
+}

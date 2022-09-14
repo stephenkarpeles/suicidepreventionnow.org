@@ -9,6 +9,7 @@ import TwoColumnTextBlock from '../components/two-column-text-block/two-column-t
 // Styles
 import '../components/section-intro-block/section-intro-block.css';
 import '../components/single-column-text-block/single-column-text-block.css';
+import '../components/social-media-3col/social-media-3col.css';
 
 // Images
 import imgWomanDog from '../images/woman-dog-bed.jpg';
@@ -34,7 +35,7 @@ const IndexPage = () => {
                 </div>
                 <div className="section-intro-block__intro-text">
                   <p>
-                    <span aria-hidden="true"><span class="dropcap dropcap--dark-green">B</span>ased</span> 
+                    <span aria-hidden="true"><span class="dropcap dropcap--dark-green">B</span>ased</span>
                     <span class="sr-only">Based</span> on public perception polling of attitudes and behaviors about mental health and suicide, gains have been made in how people are valuing mental health while there are reported increases in barriers to care and societal beliefs about mental health and suicide.
                   </p>
                 </div>
