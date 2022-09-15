@@ -11,8 +11,12 @@ import '../components/section-intro-block/section-intro-block.css';
 import '../components/single-column-text-block/single-column-text-block.css';
 import '../components/social-media-3col/social-media-3col.css';
 import '../components/downloadable-resources/downloadable-resources.css';
+import '../components/three-column-cta/three-column-cta.css';
 
 // Images
+import placeholderImage from '../images/placeholder-image.png';
+import placeholderImageBlue from '../images/placeholder-image-blue.png';
+import placeholderImagePurple from '../images/placeholder-image-purple.png';
 import imgWomanDog from '../images/woman-dog-bed.jpg';
 
 const IndexPage = () => {
@@ -21,7 +25,7 @@ const IndexPage = () => {
     <Layout pageTitle="AFSP Site">
 
         <section>
-          <TwoColumnTextBlock showLabel={true} anchorLink={''} header={'Introduction & Executive Summary'} bodyText={[<><p>Sorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at pharetra dolor, nec pellentesque tortor. Suspendisse vel interdum quam, a hendrerit magna. Sed semper lacinia orci finibus sagittis. Etiam nec nisl sodales, dictum neque sit amet, vehicula quam. Donec tempus a lorem nec volutpat. Aliquam suscipit consequat lectus et commodo. Aliquam nec lobortis purus. Quisque interdum erat id arcu scelerisque, in tincidunt ipsum dictum. Proin posuere venenatis lacus in cursus.</p><p>Sed consequat neque sed nibh condimentum, eu lobortis ex hendrerit. Maecenas vestibulum sem quis ultricies luctus. Aenean finibus libero mi, ac tempor purus auctor vitae. Nulla euismod nunc vitae sapien aliquam ultricies. Sed malesuada eros mauris, imperdiet fermentum felis tincidunt sed. Sed ullamcorper feugiat odio, ac euismod tellus pharetra non. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec molestie lacus eu tortor faucibus, vitae facilisis ex tempor. Proin efficitur, velit eget ornare tristique, augue enim sollicitudin mauris, at dictum urna dui eu dolor. Proin sagittis consequat metus quis pellentesque. Cras lorem est, facilisis a faucibus ut, dapibus eu lacus. Integer sed nunc non erat aliquet interdum. Vestibulum volutpat arcu eu elit porttitor porta. Cras eget tempus felis, ac ultrices lorem. Nunc sagittis varius sapien, ac imperdiet quam aliquam eget.</p><p>Ut aliquet magna et congue iaculis. Proin fermentum at libero porttitor molestie. Duis quis leo in nulla rutrum gravida non vel nibh. Mauris interdum venenatis ornare. Quisque libero orci, auctor eget aliquet consequat, tempus id magna. Sed auctor non elit eu porttitor. Nullam a tristique lectus. Vivamus pharetra nunc nec ex ornare molestie.</p></>]}  />
+          <TwoColumnTextBlock showLabel={true} anchorLink={''} header={'Introduction & Executive Summary'} bodyText={[<><p>Since 2015, the American Foundation for Suicide Prevention (AFSP), the National Action Alliance for Suicide Prevention (Action Alliance), and the Suicide Prevention Resource Center (SPRC) have commissioned The Harris Poll bi-annually to conduct nationally representative surveys of adults in the U.S. The survey’s purpose is to understand what the public knows about mental health and suicide – and ways to support someone who is struggling – while uncovering the public’s beliefs and attitudes toward help seeking for themselves and others, sharing experiences, talking about mental health and understanding barriers that may prevent them from helping someone at risk for suicide. The poll also helps inform the public’s usage, expectations, and barriers to using crisis services.</p><p>In the latest poll (2022) we take an early pulse on public awareness of 988, the new Suicide & Crisis Lifeline, and we explore changes in knowledge and attitudes and assess the impact of unified suicide prevention messaging efforts over time. We find that gains have been made in valuing mental health on a personal level, but that society lags. We find a strong desire to help but also equally strong reservations against doing so. And we learn that access to care is seen as the leading barrier to getting help.</p><p>Overall, the poll indicates that there is much progress being made, but there is more to do. We must continue to learn about suicide through research, teach others how to help with innovative mental health and suicide prevention education programs, and advocate for improved access to care and robust crisis services.</p></>]}  />
         </section>
 
         <section className="section-intro-block">
@@ -52,7 +56,114 @@ const IndexPage = () => {
             </div>
           </div>
         </section>
-
+        <section className="t-section-lg">
+          <div className="c-three-col-cta container">
+            <div className="row">
+              <div className="col-1-3">
+                <div className="c-three-col-cta__content">
+                  <div>
+                    <h2 className="c-three-col-cta__header c-three-col-cta__header--green">Let Your Network Know</h2>
+                    <p>More people recognize that they have the power to seek mental health support, practice self-care techniques and routines, and impact the conversation so that mental health is seen as equally important to physical health. Download and share.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-1-3">
+                <div className="c-social-card">
+                    <figure className="c-social-card__figure">
+                      <img src={placeholderImage} alt="" className="c-social-card__image" />
+                    </figure>
+                    <div className="c-social-card__links">
+                      <Link to={'/'} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
+                      <Link to={'/'} className="o-resource-links o-resource-links--share-icon"><span>Share</span></Link>
+                    </div>
+                  </div>
+                </div>
+              <div className="col-1-3">
+                <div className="c-social-card">
+                    <figure className="c-social-card__figure">
+                      <img src={placeholderImage} alt="" className="c-social-card__image" />
+                    </figure>
+                    <div className="c-social-card__links">
+                      <Link to={'/'} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
+                      <Link to={'/'} className="o-resource-links o-resource-links--share-icon"><span>Share</span></Link>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
+        <section className="t-section-lg">
+          <div className="c-three-col-cta container">
+            <div className="row">
+              <div className="col-1-3">
+                <div className="c-three-col-cta__content">
+                  <div>
+                    <h2 className="c-three-col-cta__header c-three-col-cta__header--blue">Open Conversations Can Save Lives</h2>
+                    <p>If you’re struggling with your mental health or suicidal thoughts or know someone who is, you are not alone. Education programs help people talk about mental health and suicide prevention and understand ways to help. We must continue to develop opportunities to increase confidence around talking about our mental health and help seeking for suicide risk. Download and share.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-1-3">
+                <div className="c-social-card">
+                    <figure className="c-social-card__figure">
+                      <img src={placeholderImageBlue} alt="" className="c-social-card__image" />
+                    </figure>
+                    <div className="c-social-card__links">
+                      <Link to={'/'} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
+                      <Link to={'/'} className="o-resource-links o-resource-links--share-icon"><span>Share</span></Link>
+                    </div>
+                  </div>
+                </div>
+              <div className="col-1-3">
+                <div className="c-social-card">
+                    <figure className="c-social-card__figure">
+                      <img src={placeholderImageBlue} alt="" className="c-social-card__image" />
+                    </figure>
+                    <div className="c-social-card__links">
+                      <Link to={'/'} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
+                      <Link to={'/'} className="o-resource-links o-resource-links--share-icon"><span>Share</span></Link>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
+        <section className="t-section-lg">
+          <div className="c-three-col-cta container">
+            <div className="row">
+              <div className="col-1-3">
+                <div className="c-three-col-cta__content">
+                  <div>
+                    <h2 className="c-three-col-cta__header c-three-col-cta__header--purple">Let Your Network Know</h2>
+                    <p>We need your help. By advocating for more mental health and suicide prevention research, resources and access to care, including increased support for the new 988 Suicide & Crisis Lifeline, you can make a difference. Download and share.</p>
+                  </div>
+                </div>
+              </div>
+              <div className="col-1-3">
+                <div className="c-social-card">
+                    <figure className="c-social-card__figure">
+                      <img src={placeholderImagePurple} alt="" className="c-social-card__image" />
+                    </figure>
+                    <div className="c-social-card__links">
+                      <Link to={'/'} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
+                      <Link to={'/'} className="o-resource-links o-resource-links--share-icon"><span>Share</span></Link>
+                    </div>
+                  </div>
+                </div>
+              <div className="col-1-3">
+                <div className="c-social-card">
+                    <figure className="c-social-card__figure">
+                      <img src={placeholderImagePurple} alt="" className="c-social-card__image" />
+                    </figure>
+                    <div className="c-social-card__links">
+                      <Link to={'/'} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
+                      <Link to={'/'} className="o-resource-links o-resource-links--share-icon"><span>Share</span></Link>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
         <section className="t-section-lg t-gray-image-background">
           <div className="c-one-col-block t-offset-bg t-offset-color-gradient container">
             <h2 className="c-one-col-block__header-title">

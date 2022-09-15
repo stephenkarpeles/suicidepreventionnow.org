@@ -6,6 +6,8 @@ import Layout from "../components/layout/layout";
 
 // Images
 import placeholderImage from '../images/placeholder-image.png';
+import placeholderImageBlue from '../images/placeholder-image-blue.png';
+import placeholderImagePurple from '../images/placeholder-image-purple.png';
 import es2022 from '../images/executive-summary-2022.png';
 import es2020 from '../images/executive-summary-2020.png';
 import es2018 from '../images/executive-summary-2018.png';
@@ -257,7 +259,7 @@ const TakeAction = () => {
               <div className="col-1-3">
                 <div className="c-social-card">
                   <figure className="c-social-card__figure">
-                    <img src={placeholderImage} alt="" className="c-social-card__image" />
+                    <img src={placeholderImageBlue} alt="" className="c-social-card__image" />
                   </figure>
                   <div className="c-social-card__links">
                     <Link to={'/'} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
@@ -268,7 +270,7 @@ const TakeAction = () => {
               <div className="col-1-3">
                 <div className="c-social-card">
                   <figure className="c-social-card__figure">
-                    <img src={placeholderImage} alt="" className="c-social-card__image" />
+                    <img src={placeholderImageBlue} alt="" className="c-social-card__image" />
                   </figure>
                   <div className="c-social-card__links">
                     <Link to={'/'} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
@@ -279,7 +281,7 @@ const TakeAction = () => {
               <div className="col-1-3">
                 <div className="c-social-card">
                   <figure className="c-social-card__figure">
-                    <img src={placeholderImage} alt="" className="c-social-card__image" />
+                    <img src={placeholderImagePurple} alt="" className="c-social-card__image" />
                   </figure>
                   <div className="c-social-card__links">
                     <Link to={'/'} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
@@ -290,7 +292,7 @@ const TakeAction = () => {
               <div className="col-1-3">
                 <div className="c-social-card">
                   <figure className="c-social-card__figure">
-                    <img src={placeholderImage} alt="" className="c-social-card__image" />
+                    <img src={placeholderImagePurple} alt="" className="c-social-card__image" />
                   </figure>
                   <div className="c-social-card__links">
                     <Link to={'/'} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
