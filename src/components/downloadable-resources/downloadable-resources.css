@@ -18,6 +18,10 @@
 
     @media (--small-breakpoint-down) {
       padding: 0 12px var(--layout-spacer1);
+
+      p {
+        margin-bottom: 0;
+      }
     }
 
     h2 {
@@ -28,6 +32,7 @@
     }
 
   }
+
   &__col-right {
     flex-basis: 70%;
     padding-left: var(--layout-spacer2);
@@ -48,16 +53,6 @@
       }
     }
 
-    h3 {
-      padding-block: 12px 0;
-      font-size: calc(var(--font-size-h4) / 1.5);
-      line-height: 1.2;
-
-      @media (--small-breakpoint-down) {
-        padding: 0;
-      }
-    }
-
     figure {
       margin: 0 0 calc(var(--layout-spacer1) / 2);
       border: 1px solid var(--color-dark-gray);
@@ -65,8 +60,26 @@
     }
   }
 
+  &__header {
+    padding-block: 12px 0;
+    font-size: calc(var(--font-size-h4) / 1.5);
+    line-height: 1.2;
+
+    @media (--small-breakpoint-down) {
+      padding: 0;
+    }
+
+    &--link {
+      margin-top: 0;
+    }
+  }
+
   &__downloadable-row {
     padding-block: var(--layout-spacer1);
+
+    &:nth-of-type() {
+      padding-bottom: 0;
+    }
   }
 
   &__file-image {
@@ -100,6 +113,18 @@
     }
   }
 
+  &__advocate-card {
+    min-height: 240px;
+
+    @media (--large-breakpoint) {
+      min-height: 220px;
+    }
+
+    @media (--small-breakpoint-down) {
+      min-height: auto;
+    }
+  }
+
   &__pdf-icon {
     display: inline;
     width: 16px;
@@ -116,12 +141,11 @@
   }
 }
 
-.t-section-bg-pattern--01 {
+.t-section-bg-pattern {
   position: relative;
 
   @media (--small-breakpoint-down) {
     padding-bottom: 0;
-    background-color: hsl(0, 0%, 90%);
   }
 
   &::before {
@@ -132,7 +156,6 @@
     width: calc(50vw - 255px);
     height: 100%;
     z-index: -50;
-    background-color: hsl(0, 0%, 90%);
 
     @media (max-width: 1280px) {
       width: 31.5%;
@@ -151,10 +174,39 @@
     width: 100%;
     height: 100%;
     z-index: -100;
-    background-color: hsl(0, 0%, 97%);
 
     @media (--small-breakpoint-down) {
       display: none;
     }
+  }
+}
+
+.t-bg-pattern-color-01 {
+  @media (--small-breakpoint-down) {
+    background-color: hsl(0, 0%, 90%);
+  }
+
+  &::before {
+    background-color: hsl(0, 0%, 90%);
+  }
+
+  &::after {
+    background-color: hsl(0, 0%, 97%);
+
+  }
+}
+
+.t-bg-pattern-color-02 {
+  @media (--small-breakpoint-down) {
+    background-color: hsl(0, 0%, 90%);
+  }
+
+  &::before {
+    background-color: hsl(0, 0%, 97%);
+  }
+
+  &::after {
+    background-color: #fff;
+
   }
 }
