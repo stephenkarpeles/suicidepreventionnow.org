@@ -10,6 +10,7 @@ import TwoColumnTextBlock from '../components/two-column-text-block/two-column-t
 import '../components/section-intro-block/section-intro-block.css';
 import '../components/single-column-text-block/single-column-text-block.css';
 import '../components/social-media-3col/social-media-3col.css';
+import '../components/downloadable-resources/downloadable-resources.css';
 
 // Images
 import imgWomanDog from '../images/woman-dog-bed.jpg';
