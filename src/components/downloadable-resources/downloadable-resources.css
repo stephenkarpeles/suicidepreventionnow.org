@@ -1,0 +1,160 @@
+@import "../variables.css";
+@import "../breakpoints.css";
+@import "../base.css";
+
+.c-downloadable-resources {
+  display: flex;
+  justify-content: space-between;
+
+  @media (--small-breakpoint-down) {
+    margin: 0;
+    width: 100%;
+    display: block;
+  }
+
+  &__col-left {
+    flex-basis: 30%;
+    padding-inline: 0 var(--layout-spacer2);
+
+    @media (--small-breakpoint-down) {
+      padding: 0 12px var(--layout-spacer1);
+    }
+
+    h2 {
+      font-family: var(--font-serif);
+      font-size: var(--font-size-h4);
+      line-height: 1;
+      color: var(--color-blue);
+    }
+
+  }
+  &__col-right {
+    flex-basis: 70%;
+    padding-left: var(--layout-spacer2);
+
+    @media (--small-breakpoint-down) {
+      position: relative;
+      width: 100%;
+      padding: var(--layout-spacer1) 12px 0;
+      background-color: hsl(0, 0%, 97%);
+      z-index: 100;
+
+      .row {
+        display: block;
+
+        > div {
+          width: 100%;
+        }
+      }
+    }
+
+    h3 {
+      padding-block: 12px 0;
+      font-size: calc(var(--font-size-h4) / 1.5);
+      line-height: 1.2;
+
+      @media (--small-breakpoint-down) {
+        padding: 0;
+      }
+    }
+
+    figure {
+      margin: 0 0 calc(var(--layout-spacer1) / 2);
+      border: 1px solid var(--color-dark-gray);
+      background-color: #fff;
+    }
+  }
+
+  &__downloadable-row {
+    padding-block: var(--layout-spacer1);
+  }
+
+  &__file-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__file-link {
+    display: block;
+    font-weight: var(--fw-700);
+    color: var(--color-blue);
+    cursor: pointer;
+
+    @media (--small-breakpoint-down) {
+      margin-bottom: var(--layout-spacer1);
+    }
+
+    &:hover {
+      color: var(--color-dark-blue);
+
+      .c-downloadable-resources__pdf-icon {
+        filter:
+          invert(17%)
+          sepia(99%)
+          saturate(741%)
+          hue-rotate(169deg)
+          brightness(90%)
+          contrast(94%);
+      }
+    }
+  }
+
+  &__pdf-icon {
+    display: inline;
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
+    object-fit: cover;
+    filter:
+      invert(26%)
+      sepia(75%)
+      saturate(1703%)
+      hue-rotate(180deg)
+      brightness(92%)
+      contrast(101%);
+  }
+}
+
+.t-section-bg-pattern--01 {
+  position: relative;
+
+  @media (--small-breakpoint-down) {
+    padding-bottom: 0;
+    background-color: hsl(0, 0%, 90%);
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(50vw - 255px);
+    height: 100%;
+    z-index: -50;
+    background-color: hsl(0, 0%, 90%);
+
+    @media (max-width: 1280px) {
+      width: 31.5%;
+    }
+
+    @media (--small-breakpoint-down) {
+      display: none;
+    }
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -100;
+    background-color: hsl(0, 0%, 97%);
+
+    @media (--small-breakpoint-down) {
+      display: none;
+    }
+  }
+}
