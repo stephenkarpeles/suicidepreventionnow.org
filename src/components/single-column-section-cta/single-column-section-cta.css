@@ -1,0 +1,96 @@
+@import "../variables.css";
+@import "../breakpoints.css";
+@import "../base.css";
+
+.c-single-col-cta {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #fff;
+
+    > p {
+      color: #fff;
+
+      &:nth-of-type(2) {
+        font-weight: var(--fw-700);
+      }
+    }
+  }
+
+  &__header {
+    margin-top: 0;
+    font-family: var(--font-serif);
+    font-size: var(--font-size-h4);
+  }
+
+  &__row {
+    justify-content: center;
+    text-align: center;
+  }
+
+  &__link {
+    color: #fff;
+  }
+
+  &__social-links {
+    display: flex;
+    justify-content: space-between;
+    max-width: 380px;
+    margin-inline: auto;
+
+    @media (--small-breakpoint-down) {
+      flex-direction: column;
+    }
+
+    > a {
+      color: #fff;
+
+      @media (--small-breakpoint-down) {
+        max-width: 140px;
+        margin: 24px auto;
+      }
+
+      &::before {
+        filter:
+          invert(100%)
+          sepia(96%)
+          saturate(15%)
+          hue-rotate(212deg)
+          brightness(104%)
+          contrast(104%);
+      }
+    }
+
+    > a span {
+      background-image:linear-gradient(#fff, #fff);
+    }
+  }
+
+  @media (--small-breakpoint-down) {
+    .row {
+
+      > div {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.t-purple-image-bg {
+  background-image: url('../../images/bg-purple.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.t-blue-image-bg {
+  background-image: url('../../images/bg-blue.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.t-green-image-bg {
+  background-image: url('../../images/bg-green.png');
+  background-size: cover;
+  background-position: center;
+}

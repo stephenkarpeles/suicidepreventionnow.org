@@ -14,6 +14,7 @@ import '../components/downloadable-resources/downloadable-resources.css';
 import '../components/three-column-cta/three-column-cta.css';
 import '../components/three-row-block/three-row-block.css';
 import '../components/two-column-card/two-column-card.css';
+import '../components/single-column-section-cta/single-column-section-cta.css';
 
 // Images
 import placeholderImage from '../images/placeholder-image.png';
@@ -58,6 +59,23 @@ const IndexPage = () => {
               <div className="section-intro-block__col-right col-5-12">
                 <div className="section-intro-block__image">
                   <img src={imgWomanDog} alt="Woman looking at phone on bed with dog" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="t-section-lg t-green-image-bg">
+          <div className="c-single-col-cta container">
+            <div className="c-single-col-cta__row row">
+              <div className="col-2-3">
+                <div className="c-single-col-cta__content">
+                  <h2 className="c-single-col-cta__header">Know the Facts</h2>
+                  <p>The change in the public’s perception of and knowledge about suicide is encouraging. More people have a greater understanding of the importance of mental health and are willing to talk about it. Over time a greater number of people are recognizing that they may have a mental health condition and are taking steps - such as seeking professional care, supporting self-care routines and talking more openly about mental health with their friends and loved ones.</p>
+                  <p><Link to={"/"} target={'_blank'} className="c-single-col-cta__link">Learn more</Link> about the data and the public's perceptions about these issues</p>
+                </div>
+                <div className="c-single-col-cta__social-links">
+                  <Link to={'/'} className="o-resource-links o-resource-links--book-icon"><span>Find Resources</span></Link>
+                  <Link to={'/'} className="o-resource-links o-resource-links--share-icon"><span>Share this Topic</span></Link>
                 </div>
               </div>
             </div>
@@ -167,6 +185,23 @@ const IndexPage = () => {
                     </div>
                   </div>
                 </div>
+            </div>
+          </div>
+        </section>
+        <section className="t-section-lg t-blue-image-bg">
+          <div className="c-single-col-cta container">
+            <div className="c-single-col-cta__row row">
+              <div className="col-2-3">
+                <div className="c-single-col-cta__content">
+                  <h2 className="c-single-col-cta__header">Take Action</h2>
+                  <p>80% of people surveyed are eager to learn ways to help prevent suicide, and 94 percent of people also believe that suicide may be prevented. Together, these statistics are a powerful force for change. More education is needed to close the gap between people who are eager to help and those who feel equipped to do so. Empowering people to have conversations about mental health and suicide prevention can save lives.</p>
+                  <p><Link to={"/"} target={'_blank'} className="c-single-col-cta__link">Learn more</Link> about how you can be there for yourself and others.</p>
+                </div>
+                <div className="c-single-col-cta__social-links">
+                  <Link to={'/'} className="o-resource-links o-resource-links--book-icon"><span>Find Resources</span></Link>
+                  <Link to={'/'} className="o-resource-links o-resource-links--share-icon"><span>Share this Topic</span></Link>
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -290,6 +325,23 @@ const IndexPage = () => {
                   <h3 className="c-two-column-card__header">People who want access can’t get it</h3>
                   <p>81% of respondents are more aware of the importance of mental health care in the wake of the pandemic, but half have found it is more difficult to access the mental health care they need.</p>
                   <img src={covidIcon} alt="" className="c-two-column-card__image" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section className="t-section-lg t-purple-image-bg">
+          <div className="c-single-col-cta container">
+            <div className="c-single-col-cta__row row">
+              <div className="col-2-3">
+                <div className="c-single-col-cta__content">
+                  <h2 className="c-single-col-cta__header">Advocate for Change</h2>
+                  <p>More than ever, people are recognizing the importance of and need for taking care of their mental health. However, they’re finding that the support system we have in place is not adequate to fill that need. We must continue to advocate for increasing access to care and improving the training available to all health care professionals so that those who make the brave choice to seek care are able to receive it.</p>
+                  <p><Link to={"/"} target={'_blank'} className="c-single-col-cta__link">Become a</Link> mental health and suicide prevention advocate.</p>
+                </div>
+                <div className="c-single-col-cta__social-links">
+                  <Link to={'/'} className="o-resource-links o-resource-links--book-icon"><span>Find Resources</span></Link>
+                  <Link to={'/'} className="o-resource-links o-resource-links--share-icon"><span>Share this Topic</span></Link>
                 </div>
               </div>
             </div>
