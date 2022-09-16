@@ -13,6 +13,7 @@ import '../components/social-media-3col/social-media-3col.css';
 import '../components/downloadable-resources/downloadable-resources.css';
 import '../components/three-column-cta/three-column-cta.css';
 import '../components/three-row-block/three-row-block.css';
+import '../components/two-column-card/two-column-card.css';
 
 // Images
 import placeholderImage from '../images/placeholder-image.png';
@@ -22,6 +23,8 @@ import imgWomanDog from '../images/woman-dog-bed.jpg';
 import twoOut3 from '../images/2-out-3.png';
 import eightOut10 from '../images/8-out-10.png';
 import peopleImage from '../images/c-group-people.svg';
+import firstAidKit from '../images/c-first-aid-kit.svg';
+import covidIcon from '../images/c-covid.svg';
 
 const IndexPage = () => {
 
@@ -270,6 +273,26 @@ const IndexPage = () => {
                   </div>
                 </div>
               </div>
+          </div>
+        </section>
+        <section>
+          <div className="c-two-column-card container">
+            <div className="row">
+              <div className="col-1-2">
+                <div className="c-two-column-card__card">
+                  <h3 className="c-two-column-card__header">Access vs affordable treatment</h3>
+                  <p>Nearly half of respondents (46%) believe lack of affordable treatment keeps people who are thinking about suicide from seeking help, while another 44 percent believe lack of access to treatment is what keeps people who are thinking about suicide from seeking help.</p>
+                  <img src={firstAidKit} alt="" className="c-two-column-card__image" />
+                </div>
+              </div>
+              <div className="col-1-2">
+                <div className="c-two-column-card__card">
+                  <h3 className="c-two-column-card__header">People who want access can’t get it</h3>
+                  <p>81% of respondents are more aware of the importance of mental health care in the wake of the pandemic, but half have found it is more difficult to access the mental health care they need.</p>
+                  <img src={covidIcon} alt="" className="c-two-column-card__image" />
+                </div>
+              </div>
+            </div>
           </div>
         </section>
         <section className="t-section-lg">
