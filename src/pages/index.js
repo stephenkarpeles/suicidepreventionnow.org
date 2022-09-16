@@ -12,12 +12,16 @@ import '../components/single-column-text-block/single-column-text-block.css';
 import '../components/social-media-3col/social-media-3col.css';
 import '../components/downloadable-resources/downloadable-resources.css';
 import '../components/three-column-cta/three-column-cta.css';
+import '../components/three-row-block/three-row-block.css';
 
 // Images
 import placeholderImage from '../images/placeholder-image.png';
 import placeholderImageBlue from '../images/placeholder-image-blue.png';
 import placeholderImagePurple from '../images/placeholder-image-purple.png';
 import imgWomanDog from '../images/woman-dog-bed.jpg';
+import twoOut3 from '../images/2-out-3.png';
+import eightOut10 from '../images/8-out-10.png';
+import peopleImage from '../images/c-group-people.svg';
 
 const IndexPage = () => {
 
@@ -92,6 +96,41 @@ const IndexPage = () => {
             </div>
           </div>
         </section>
+        <section className="t-section-sm t-gray-image-background">
+          <div className="c-three-row-block container">
+            <h2 className="c-three-row-block__headerH2 c-three-row-block__headerH2--blue">
+              People are eager to help but unsure how
+            </h2>
+              <div className="c-content-stats">
+                <div className="c-content-stats__row row">
+                  <div className="col-1-2">
+                    <h3 className="c-content-stats__headerH3 c-content-stats__headerH3--blue">2 out of 3 adults</h3>
+                    <p>Adults believe they don’t have enough knowledge about suicide to talk about it with someone who may be struggling</p>
+                  </div>
+                  <div className="col-1-2">
+                    <img src={twoOut3} alt="2 out of 3 adults" className="c-content-stats__image" />
+                  </div>
+                </div>
+                <div className="c-content-stats__row row">
+                  <div className="col-1-2">
+                    <h3 className="c-content-stats__headerH3 c-content-stats__headerH3--light-blue">But 8 out of 10</h3>
+                    <p>Adults are open to learning how they can do more to help someone in need</p>
+                  </div>
+                  <div className="col-1-2">
+                    <img src={eightOut10} alt="But 8 out of 10" className="c-content-stats__image" />
+                  </div>
+                </div>
+                <div className="c-content-stats__row row">
+                  <div className="col-full-width">
+                    <p>People need to know how to help, which is why we must continue to advocate for additional funding for educational resources and programming to teach the public what they can do to help prevent suicide.</p>
+                  </div>
+                </div>
+                <div className="c-content-stats__download-cta">
+                    <Link to={'/'} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
+                </div>
+              </div>
+          </div>
+        </section>
         <section className="t-section-lg">
           <div className="c-three-col-cta container">
             <div className="row">
@@ -126,6 +165,111 @@ const IndexPage = () => {
                   </div>
                 </div>
             </div>
+          </div>
+        </section>
+        <section className="t-section-sm t-gray-image-background">
+          <div className="c-three-row-block container">
+            <h2 className="c-three-row-block__headerH2 c-three-row-block__headerH2--purple">
+              Understanding perceived barriers to care
+            </h2>
+              <div className="c-content-quotes">
+                <div className="c-content-quotes__row row">
+                  <div className="col-full-width">
+                    <h3 className="c-content-quotes__headerH3">
+                      What respondents are saying&hellip;
+                    </h3>
+                  </div>
+                </div>
+                <div className="c-content-quotes__row row">
+                  <div className="col-1-4">
+                    <h3 className="c-content-quotes__headerH3  c-content-quotes__headerH3--purple">Barriers</h3>
+                  </div>
+                  <div className="col-1-4">
+                    <figure className="c-quote__container">
+                      <blockquote className="c-quote__block c-quote__block--white-bg">
+                        <p className="c-quote__quote">States need to step up and do something [to reduce barriers]</p>
+                        <div className="c-quote__block--bubble-point c-quote__block--white-bg"></div>
+                      </blockquote>
+                      <figcaption className="c-quote__caption">
+                        69-year-old Male
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div className="col-1-4">
+                    <figure className="c-quote__container">
+                      <blockquote className="c-quote__block c-quote__block--white-bg">
+                        <p className="c-quote__quote">[People feel they are] isolated or they are only one</p>
+                        <div className="c-quote__block--bubble-point c-quote__block--white-bg"></div>
+                      </blockquote>
+                      <figcaption className="c-quote__caption">
+                        55-year-old Male
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div className="col-1-4">
+                    <figure className="c-quote__container">
+                      <blockquote className="c-quote__block c-quote__block--white-bg">
+                        <p className="c-quote__quote">Family isn't there for them</p>
+                        <div className="c-quote__block--bubble-point c-quote__block--white-bg"></div>
+                      </blockquote>
+                      <figcaption className="c-quote__caption">
+                        29-year-old Female
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div className="c-content-quotes__row row">
+                  <div className="col-1-4">
+                    <h3 className="c-content-quotes__headerH3 c-content-quotes__headerH3--purple">Solutions</h3>
+                  </div>
+                  <div className="col-1-4">
+                    <figure className="c-quote__container">
+                      <blockquote className="c-quote__block c-quote__block--purple-bg">
+                        <p className="c-quote__quote">[Provide] better education on overall health</p>
+                        <div className="c-quote__block--bubble-point c-quote__block--bubble-point-flip c-quote__block--purple-bg"></div>
+                      </blockquote>
+                      <figcaption className="c-quote__caption c-quote__caption--flip">
+                        66-year-old Female
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div className="col-1-4">
+                    <figure className="c-quote__container">
+                      <blockquote className="c-quote__block c-quote__block--purple-bg">
+                        <p className="c-quote__quote">[Make] mental healthcare easy and affordable</p>
+                        <div className="c-quote__block--bubble-point c-quote__block--bubble-point-flip c-quote__block--purple-bg"></div>
+                      </blockquote>
+                      <figcaption className="c-quote__caption c-quote__caption--flip">
+                        59-year-old Male
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <div className="col-1-4">
+                    <figure className="c-quote__container">
+                      <blockquote className="c-quote__block c-quote__block--purple-bg">
+                        <p className="c-quote__quote">Make it less of a stigma</p>
+                        <div className="c-quote__block--bubble-point c-quote__block--bubble-point-flip c-quote__block--purple-bg"></div>
+                      </blockquote>
+                      <figcaption className="c-quote__caption c-quote__caption--flip">
+                        33-year-old Female
+                      </figcaption>
+                    </figure>
+                  </div>
+                </div>
+                <div className="c-content-quotes__row row">
+                  <div className="col-1-4">
+                    <img src={peopleImage} alt="group of people" className="c-content-quotes__image" />
+                  </div>
+                  <div className="c-content-quotes__statement col-1-2">
+                    <p><strong>Over 60 percent of people</strong> believe we need to provide better access to mental health care (e.g., talk therapy, couples counseling, family therapy, tele-therapy). But with the number of barriers to care, not enough people have access to the care they need.</p>
+                  </div>
+                  <div className="col-1-4">
+                    <div className="c-content-quotes__download-cta">
+                      <Link to={'/'} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
+                    </div>
+                  </div>
+                </div>
+              </div>
           </div>
         </section>
         <section className="t-section-lg">
