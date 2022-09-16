@@ -3,7 +3,7 @@
 @import "../base.css";
 
 .c-two-column-card {
-
+  margin-bottom: var(--layout-spacer2);
   &__card {
     display: flex;
     flex-direction: column;

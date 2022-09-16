@@ -1,0 +1,50 @@
+@import "../variables.css";
+@import "../breakpoints.css";
+@import "../base.css";
+
+.c-single-num-highlight {
+
+  &__headerH2 {
+    font-family: var(--font-serif);
+    font-size: var(--font-size-h3);
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  &__headerH3 {
+    font-family: var(--font-stack-regular);
+    font-size: calc(var(--font-size-h4) / 1.4);
+    line-height: 1.2;
+    text-align: center;
+  }
+
+  &__stats-text {
+    font-weight: var(--fw-700);
+  }
+
+  &__stats-num {
+    position: relative;
+    font-family: var(--font-serif);
+    font-size: calc(var(--font-size-h2) * 2);
+    font-weight: var(--fw-700);
+
+    &::after {
+      content: '\000025';
+      position: absolute;
+      top: 20px;
+      right: -50px;
+      width: 50px;
+      height: 50px;
+      font-size: 60%;
+      line-height: 1;
+    }
+  }
+
+  &__green {
+    color: var(--color-green);
+  }
+
+  &__dark-green {
+    color: var(--color-dark-green);
+  }
+}

@@ -15,6 +15,7 @@ import '../components/three-column-cta/three-column-cta.css';
 import '../components/three-row-block/three-row-block.css';
 import '../components/two-column-card/two-column-card.css';
 import '../components/single-column-section-cta/single-column-section-cta.css';
+import '../components/single-number-highlight/single-number-highlight.css';
 
 // Images
 import placeholderImage from '../images/placeholder-image.png';
@@ -60,6 +61,45 @@ const IndexPage = () => {
                 <div className="section-intro-block__image">
                   <img src={imgWomanDog} alt="Woman looking at phone on bed with dog" />
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section  className="t-section-lg">
+          <div className="c-single-num-highlight container">
+            <h2 className="c-single-num-highlight__headerH2 c-single-num-highlight__dark-green">More People Believe that Suicide Can be Prevented and Want to Take Action to Help</h2>
+            <h3 className="c-single-num-highlight__headerH3 c-single-num-highlight__green">Most people report that suicide can be prevented, at least sometimes</h3>
+            <div className="row">
+              <div className="col-1-4">
+                <span className="c-single-num-highlight__stats-num c-single-num-highlight__green">94</span>
+              </div>
+              <div className="col-1-4">
+                <p className="c-single-num-highlight__stats-text c-single-num-highlight__dark-green">believe that suicide can be prevented at least sometimes</p>
+              </div>
+              <div className="col-1-4">
+                <img src={""} alt="Heart icon" />
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-1-4">
+                <span className="c-single-num-highlight__stats-num c-single-num-highlight__green">75</span>
+              </div>
+              <div className="col-1-4">
+                <p className="c-single-num-highlight__stats-text c-single-num-highlight__dark-green">Three-quarters of U.S. adults (75%, more than in previous years) say that most people who die by suicide usually show some signs beforehand</p>
+              </div>
+              <div className="col-1-4">
+                <img src={""} alt="Heart icon" />
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-1-4">
+                <span className="c-single-num-highlight__stats-num c-single-num-highlight__green">96</span>
+              </div>
+              <div className="col-1-4">
+                <p className="c-single-num-highlight__stats-text c-single-num-highlight__dark-green">More and more U.S. adults overtime (96% in 2022) would take action to help prevent suicide if someone close to them was thinking about suicide</p>
+              </div>
+              <div className="col-1-4">
+                <img src={""} alt="Heart icon" />
               </div>
             </div>
           </div>
