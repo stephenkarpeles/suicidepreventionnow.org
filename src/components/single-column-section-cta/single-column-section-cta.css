@@ -27,6 +27,7 @@
   &__row {
     justify-content: center;
     text-align: center;
+
   }
 
   &__link {
@@ -67,8 +68,11 @@
     }
   }
 
-  @media (--small-breakpoint-down) {
-    .row {
+  .row {
+    justify-content: center;
+
+    @media (--small-breakpoint-down) {
+      justify-content: center;
 
       > div {
         width: 100%;

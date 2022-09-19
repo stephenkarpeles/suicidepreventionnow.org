@@ -15,6 +15,7 @@ import '../components/three-column-cta/three-column-cta.css';
 import '../components/three-row-block/three-row-block.css';
 import '../components/two-column-card/two-column-card.css';
 import '../components/single-column-section-cta/single-column-section-cta.css';
+import '../components/num-highlight/num-highlight.css';
 
 // Images
 import placeholderImage from '../images/placeholder-image.png';
@@ -26,6 +27,11 @@ import eightOut10 from '../images/8-out-10.png';
 import peopleImage from '../images/c-group-people.svg';
 import firstAidKit from '../images/c-first-aid-kit.svg';
 import covidIcon from '../images/c-covid.svg';
+import chatBubble from '../images/c-chat-bubbles.svg';
+import twoHearts from '../images/c-two-hearts.svg';
+import exclamationPoint from '../images/c-exclamation.svg';
+import bookPencil from '../images/c-book-pencil.svg';
+import medicalShield from '../images/c-medical-shield.svg';
 
 const IndexPage = () => {
 
@@ -60,6 +66,45 @@ const IndexPage = () => {
                 <div className="section-intro-block__image">
                   <img src={imgWomanDog} alt="Woman looking at phone on bed with dog" />
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section  className="t-section-lg">
+          <div className="c-num-highlight container">
+            <h2 className="c-num-highlight__headerH2 c-num-highlight__dark-green">More People Believe that Suicide Can be Prevented and Want to Take Action to Help</h2>
+            <h3 className="c-num-highlight__headerH3 c-num-highlight__green">Most people report that suicide can be prevented, at least sometimes</h3>
+            <div className="row c-num-highlight__row">
+              <div className="col-1-3">
+                <p className="c-num-highlight__stats-num c-num-highlight__green">94<span>%</span></p>
+              </div>
+              <div className="col-1-3">
+                <p className="c-num-highlight__stats-text c-num-highlight__dark-green">believe that suicide can be prevented at least sometimes</p>
+              </div>
+              <div className="col-1-3">
+                <img src={twoHearts} alt="Heart icon" className="c-num-highlight__image" />
+              </div>
+            </div>
+            <div className="row c-num-highlight__row c-num-highlight__row--reverse">
+              <div className="col-1-3">
+                <p className="c-num-highlight__stats-num c-num-highlight__green">75<span>%</span></p>
+              </div>
+              <div className="col-1-3">
+                <p className="c-num-highlight__stats-text c-num-highlight__dark-green">Three-quarters of U.S. adults (75%, more than in previous years) say that most people who die by suicide usually show some signs beforehand</p>
+              </div>
+              <div className="col-1-3">
+                <img src={exclamationPoint} alt="Exclamation icon" className="c-num-highlight__image" />
+              </div>
+            </div>
+            <div className="row c-num-highlight__row">
+              <div className="col-1-3">
+                <p className="c-num-highlight__stats-num c-num-highlight__green">96<span>%</span></p>
+              </div>
+              <div className="col-1-3">
+                <p className="c-num-highlight__stats-text c-num-highlight__dark-green">More and more U.S. adults overtime (96% in 2022) would take action to help prevent suicide if someone close to them was thinking about suicide</p>
+              </div>
+              <div className="col-1-3">
+                <img src={chatBubble} alt="Chat bubbles icon" className="c-num-highlight__image" />
               </div>
             </div>
           </div>
@@ -159,7 +204,7 @@ const IndexPage = () => {
                 <div className="c-three-col-cta__content">
                   <div>
                     <h2 className="c-three-col-cta__header c-three-col-cta__header--blue">Open Conversations Can Save Lives</h2>
-                    <p>If you’re struggling with your mental health or suicidal thoughts or know someone who is, you are not alone. Education programs help people talk about mental health and suicide prevention and understand ways to help. We must continue to develop opportunities to increase confidence around talking about our mental health and help seeking for suicide risk. Download and share.</p>
+                    <p>If you're struggling with your mental health or suicidal thoughts or know someone who is, you are not alone. Education programs help people talk about mental health and suicide prevention and understand ways to help. We must continue to develop opportunities to increase confidence around talking about our mental health and help seeking for suicide risk. Download and share.</p>
                   </div>
                 </div>
               </div>
@@ -308,6 +353,33 @@ const IndexPage = () => {
                   </div>
                 </div>
               </div>
+          </div>
+        </section>
+        <section  className="t-section-lg">
+          <div className="c-num-highlight container">
+            <h2 className="c-num-highlight__headerH2 c-num-highlight__dark-purple">We can reduce suicide risk</h2>
+            <div className="row c-num-highlight__row c-num-highlight__row--reverse">
+              <div className="col-1-3">
+                <p className="c-num-highlight__stats-num c-num-highlight__purple">93<span>%</span></p>
+              </div>
+              <div className="col-1-3">
+                <p className="c-num-highlight__stats-text c-num-highlight__dark-purple">Nearly all respondents feel more training and education for professionals and/or access to care can help reduce number of deaths by suicide.</p>
+              </div>
+              <div className="col-1-3">
+                <img src={bookPencil} alt="Book pencil icon" className="c-num-highlight__image" />
+              </div>
+            </div>
+            <div className="row c-num-highlight__row">
+              <div className="col-1-3">
+                <p className="c-num-highlight__stats-num c-num-highlight__purple">94<span>%</span></p>
+              </div>
+              <div className="col-1-3">
+                <p className="c-num-highlight__stats-text c-num-highlight__dark-purple">of people believe suicide can be prevented, and almost the same number believe more can and needs to be done.</p>
+              </div>
+              <div className="col-1-3">
+                <img src={medicalShield} alt="Medical shield icon" className="c-num-highlight__image" />
+              </div>
+            </div>
           </div>
         </section>
         <section>
