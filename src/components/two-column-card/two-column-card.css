@@ -25,6 +25,7 @@
     font-family: var(--font-serif);
     font-size: var(--font-size-h4);
     line-height: 1.2;
+    color: var(--color-dark-purple);
 
     @media (--small-breakpoint-down) {
       margin-bottom: 0;
