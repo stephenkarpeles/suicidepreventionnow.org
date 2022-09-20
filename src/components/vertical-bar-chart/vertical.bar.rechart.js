@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
 import {BarChart, Bar, XAxis, Cell, ResponsiveContainer} from "recharts";
-import useOnScreen from "../useOnSite";
+import useOnScreen from "../useOnScreen";
 
 const data = [
     {
