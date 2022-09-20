@@ -121,9 +121,7 @@ const IndexPage = () => {
               <div className="c-vertical-bar-chart__content">
                 <div className="c-vertical-bar-chart__row row">
                   <div className="col-5-12">
-                    <div id="vertical-barchart">
-                      <VerticalBarRechart />
-                    </div>
+                    <VerticalBarRechart />
                   </div>
                   <div className="col-5-12">
                     <h3 className="c-vertical-bar-chart__header">More people report they have or have had a mental health condition</h3>
