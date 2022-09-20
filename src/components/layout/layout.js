@@ -28,6 +28,7 @@ const Layout = props => {
           sizes="16x16"
           href={favicon16}
         />
+        <script async src="https://siteimproveanalytics.com/js/siteanalyze_6019066.js"></script>
       </Helmet>
       <Header />
       {props.children}
