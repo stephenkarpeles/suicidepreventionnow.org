@@ -1,5 +1,7 @@
-import React from "react";
+import React, { useRef } from "react";
 import {BarChart, Bar, XAxis, Cell, ResponsiveContainer} from "recharts";
+import useOnScreen from "../useOnSite";
+
 const data = [
     {
       "Color": "green",
@@ -32,31 +34,39 @@ const CustomizedLabel = (props) => {
 }
 
 const  VerticalBarRechart = () => {
+
+  // import useRef hook and add ref={ref} to container div tag
+  // const variables for useOnScreen Hook
+  const ref = useRef(null);
+  const isVisible = useOnScreen(ref);
+
   return (
-    <ResponsiveContainer width='100%' aspect={1} >
-      <BarChart
-        data={data}
-        margin={{top: 0, right: 0, left: 0, bottom: 0}}>
-        <XAxis
-          dataKey='Year'
-          fontFamily='sans-serif'
-          fontWeight='bold'
-        />
-        <Bar
-          isAnimationActive={true}
-          dataKey='RespondentPercentage'
-          barSize={100}
-          fontFamily='sans-serif'
-          label={<CustomizedLabel />}
-          >
-          {
-            data.map((entry, index) => (
-              <Cell fill={data[index].Color === "yellow" ? '#FFBB1B' : '#1D8019'} />
-            ))
-          }
-        </Bar>
-      </BarChart>
-    </ResponsiveContainer>
+    <div id="vertical-barchart" ref={ref}>
+      <ResponsiveContainer width='100%' aspect={1} >
+        <BarChart
+          data={data}
+          margin={{top: 0, right: 0, left: 0, bottom: 0}}>
+          <XAxis
+            dataKey='Year'
+            fontFamily='sans-serif'
+            fontWeight='bold'
+          />
+          <Bar
+            isAnimationActive={isVisible}
+            dataKey='RespondentPercentage'
+            barSize={100}
+            fontFamily='sans-serif'
+            label={<CustomizedLabel />}
+            >
+            {
+              data.map((entry, index) => (
+                <Cell fill={data[index].Color === "yellow" ? '#FFBB1B' : '#1D8019'} />
+              ))
+            }
+          </Bar>
+        </BarChart>
+      </ResponsiveContainer>
+    </div>
   );
 }
 
