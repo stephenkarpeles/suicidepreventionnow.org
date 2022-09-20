@@ -5,6 +5,8 @@ import { Link } from "gatsby";
 // Components
 import Layout from "../components/layout/layout";
 import TwoColumnTextBlock from '../components/two-column-text-block/two-column-text-block';
+import VerticalBarRechart from "../components/vertical-bar-chart/vertical.bar.rechart";
+
 
 // Styles
 import '../components/section-intro-block/section-intro-block.css';
@@ -16,22 +18,25 @@ import '../components/three-row-block/three-row-block.css';
 import '../components/two-column-card/two-column-card.css';
 import '../components/single-column-section-cta/single-column-section-cta.css';
 import '../components/num-highlight/num-highlight.css';
+import '../components/vertical-bar-chart/vertical-bar-chart.css';
 
 // Images
-import placeholderImage from '../images/placeholder-image.png';
-import placeholderImageBlue from '../images/placeholder-image-blue.png';
-import placeholderImagePurple from '../images/placeholder-image-purple.png';
-import imgWomanDog from '../images/woman-dog-bed.jpg';
-import twoOut3 from '../images/2-out-3.png';
-import eightOut10 from '../images/8-out-10.png';
-import peopleImage from '../images/c-group-people.svg';
-import firstAidKit from '../images/c-first-aid-kit.svg';
-import covidIcon from '../images/c-covid.svg';
-import chatBubble from '../images/c-chat-bubbles.svg';
-import twoHearts from '../images/c-two-hearts.svg';
-import exclamationPoint from '../images/c-exclamation.svg';
-import bookPencil from '../images/c-book-pencil.svg';
-import medicalShield from '../images/c-medical-shield.svg';
+import {
+placeholderImage,
+placeholderImageBlue,
+placeholderImagePurple ,
+imgWomanDog,
+twoOut3,
+eightOut10,
+peopleImage,
+firstAidKit,
+covidIcon,
+chatBubble,
+twoHearts,
+exclamationPoint,
+bookPencil,
+medicalShield,
+heartBrain } from '../indexImages';
 
 const IndexPage = () => {
 
@@ -41,7 +46,6 @@ const IndexPage = () => {
         <section>
           <TwoColumnTextBlock showLabel={true} anchorLink={''} header={'Introduction & Executive Summary'} bodyText={[<><p>Since 2015, the American Foundation for Suicide Prevention (AFSP), the National Action Alliance for Suicide Prevention (Action Alliance), and the Suicide Prevention Resource Center (SPRC) have commissioned The Harris Poll bi-annually to conduct nationally representative surveys of adults in the U.S. The survey’s purpose is to understand what the public knows about mental health and suicide – and ways to support someone who is struggling – while uncovering the public’s beliefs and attitudes toward help seeking for themselves and others, sharing experiences, talking about mental health and understanding barriers that may prevent them from helping someone at risk for suicide. The poll also helps inform the public’s usage, expectations, and barriers to using crisis services.</p><p>In the latest poll (2022) we take an early pulse on public awareness of 988, the new Suicide & Crisis Lifeline, and we explore changes in knowledge and attitudes and assess the impact of unified suicide prevention messaging efforts over time. We find that gains have been made in valuing mental health on a personal level, but that society lags. We find a strong desire to help but also equally strong reservations against doing so. And we learn that access to care is seen as the leading barrier to getting help.</p><p>Overall, the poll indicates that there is much progress being made, but there is more to do. We must continue to learn about suicide through research, teach others how to help with innovative mental health and suicide prevention education programs, and advocate for improved access to care and robust crisis services.</p></>]}  />
         </section>
-
         <section className="section-intro-block">
           <div className="container">
             <div className="section-intro-block__grid row">
@@ -109,13 +113,39 @@ const IndexPage = () => {
             </div>
           </div>
         </section>
+        <section className="t-section-sm t-gray-image-background">
+          <div className="c-vertical-bar-chart container">
+            <h2 className="c-vertical-bar-chart__headerH2 c-vertical-bar-chart__headerH2--green">
+              Recognizing mental health conditions
+            </h2>
+              <div className="c-vertical-bar-chart__content">
+                <div className="c-vertical-bar-chart__row row">
+                  <div className="col-5-12">
+                    <div id="vertical-barchart">
+                      <VerticalBarRechart />
+                    </div>
+                  </div>
+                  <div className="col-5-12">
+                    <h3 className="c-vertical-bar-chart__header">More people report they have or have had a mental health condition</h3>
+                    <p>67% believe that they have had a mental health condition at some point in their life (up from 2018 and 2020). Over 40% of respondents said they had experienced anxiety and/or depression.</p>
+                  </div>
+                  <div className="col-1-10">
+                    <img src={heartBrain} alt="Heart brain icon" className="c-vertical-bar-chart__image" />
+                  </div>
+                </div>
+                <div className="c-vertical-bar-chart__download-cta">
+                    <Link to={'/'} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
+                </div>
+              </div>
+          </div>
+        </section>
         <section className="t-section-lg t-green-image-bg">
           <div className="c-single-col-cta container">
             <div className="c-single-col-cta__row row">
               <div className="col-2-3">
                 <div className="c-single-col-cta__content">
                   <h2 className="c-single-col-cta__header">Know the Facts</h2>
-                  <p>The change in the public’s perception of and knowledge about suicide is encouraging. More people have a greater understanding of the importance of mental health and are willing to talk about it. Over time a greater number of people are recognizing that they may have a mental health condition and are taking steps - such as seeking professional care, supporting self-care routines and talking more openly about mental health with their friends and loved ones.</p>
+                  <p>The change in the public's perception of and knowledge about suicide is encouraging. More people have a greater understanding of the importance of mental health and are willing to talk about it. Over time a greater number of people are recognizing that they may have a mental health condition and are taking steps - such as seeking professional care, supporting self-care routines and talking more openly about mental health with their friends and loved ones.</p>
                   <p><Link to={"/"} target={'_blank'} className="c-single-col-cta__link">Learn more</Link> about the data and the public's perceptions about these issues</p>
                 </div>
                 <div className="c-single-col-cta__social-links">
@@ -171,7 +201,7 @@ const IndexPage = () => {
                 <div className="c-content-stats__row row">
                   <div className="col-1-2">
                     <h3 className="c-content-stats__headerH3 c-content-stats__headerH3--blue">2 out of 3 adults</h3>
-                    <p>Adults believe they don’t have enough knowledge about suicide to talk about it with someone who may be struggling</p>
+                    <p>Adults believe they don't have enough knowledge about suicide to talk about it with someone who may be struggling</p>
                   </div>
                   <div className="col-1-2">
                     <img src={twoOut3} alt="2 out of 3 adults" className="c-content-stats__image" />

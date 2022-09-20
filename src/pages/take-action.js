@@ -5,22 +5,23 @@ import { Link } from "gatsby";
 import Layout from "../components/layout/layout";
 
 // Images
-import placeholderImage from '../images/placeholder-image.png';
-import placeholderImageBlue from '../images/placeholder-image-blue.png';
-import placeholderImagePurple from '../images/placeholder-image-purple.png';
-import es2022 from '../images/executive-summary-2022.png';
-import es2020 from '../images/executive-summary-2020.png';
-import es2018 from '../images/executive-summary-2018.png';
-import es2015 from '../images/executive-summary-2015.png';
-import pdfIcon from '../images/file.svg';
-import bethere from '../images/bethere.png';
-import keepSafe from '../images/keep-them-safe.png';
-import realConvo from '../images/realconvo.png';
-import sprcBeThere from '../images/sprc-how-to-be-there.png';
-import sprcHelpSeek from '../images/sprc-increase-help-seeking.png';
-import take5 from '../images/Take5toSaveLives.png';
-import reachOut from '../images/va-take-moment-reach-out.png';
-import suicidePrevention from '../images/Advocate-for-Suicide-Prevention.png';
+import {
+placeholderImage,
+placeholderImageBlue,
+placeholderImagePurple,
+es2022,
+es2020,
+es2018,
+es2015,
+pdfIcon,
+bethere,
+keepSafe,
+realConvo,
+sprcBeThere,
+sprcHelpSeek,
+take5,
+reachOut,
+suicidePrevention } from '../indexImages';
 
 
 const TakeAction = () => {
