@@ -1,6 +1,13 @@
 import React from 'react';
 import "./footer.css"
 
+// Images
+import {
+logoSprc,
+logoAfsp,
+suicidePrevention,
+logoAlliance } from '../../indexImages';
+
 const Footer = () => {
   return (
     <footer className="footer">
@@ -12,9 +19,8 @@ const Footer = () => {
           <div className="footer__col-left">
             <nav className="footer__nav">
               <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/">Partners and Methodology</a></li>
-                <li><a href="/">Diving Deeper</a></li>
+                <li><a href="/about-project">About</a></li>
+                <li><a href="/take-action">Take Action</a></li>
               </ul>
             </nav>
             <div className="footer__download-cta">
@@ -23,6 +29,19 @@ const Footer = () => {
           </div>
           <div className="footer__col-right">
             <div className="footer__sponsor-title">Sponsored by</div>
+            <div className="footer__logo-block">
+              <ul>
+                <li>
+                  <img src={logoAfsp} alt="American Foundation for Suicide Prevention Logo"/>
+                </li>
+                <li>
+                  <img src={logoAlliance} alt="National Action Alliance Logo"/>
+                </li>
+                <li>
+                  <img src={logoSprc} alt="National Action Alliance Logo"/>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>

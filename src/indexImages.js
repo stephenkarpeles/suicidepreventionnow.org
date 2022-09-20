@@ -26,3 +26,6 @@ export { default as sprcHelpSeek } from './images/sprc-increase-help-seeking.png
 export { default as take5 } from './images/Take5toSaveLives.png';
 export { default as reachOut } from './images/va-take-moment-reach-out.png';
 export { default as suicidePrevention } from './images/Advocate-for-Suicide-Prevention.png';
+export { default as logoSprc } from './images/sprc-color.png';
+export { default as logoAlliance } from './images/action-alliance-color.png';
+export { default as logoAfsp } from './images/afsp-logo-white.png';
