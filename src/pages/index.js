@@ -123,7 +123,7 @@ const IndexPage = () => {
                   <div className="col-5-12">
                     <VerticalBarRechart />
                   </div>
-                  <div className="col-5-12">
+                  <div className="col-5-12 c-vertical-bar-chart__row-mb">
                     <h3 className="c-vertical-bar-chart__header">More people report they have or have had a mental health condition</h3>
                     <p>67% believe that they have had a mental health condition at some point in their life (up from 2018 and 2020). Over 40% of respondents said they had experienced anxiety and/or depression.</p>
                   </div>

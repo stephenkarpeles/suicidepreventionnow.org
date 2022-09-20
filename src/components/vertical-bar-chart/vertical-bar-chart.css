@@ -31,6 +31,12 @@
     align-items: center;
   }
 
+  &__row-mb {
+    @media (--small-breakpoint-down) {
+      order: -1;
+    }
+  }
+
   &__content {
     padding: var(--layout-spacer1) var(--layout-spacer2);
 
@@ -48,7 +54,7 @@
 
   &__image {
     @media (--small-breakpoint-down) {
-      margin-inline: auto;
+      margin: var(--layout-spacer1) auto;
     }
   }
 
