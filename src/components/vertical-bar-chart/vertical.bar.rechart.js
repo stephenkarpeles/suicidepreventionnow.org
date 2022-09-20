@@ -39,6 +39,7 @@ const  VerticalBarRechart = () => {
   // const variables for useOnScreen Hook
   const ref = useRef(null);
   const isVisible = useOnScreen(ref);
+  const duration = 2400;
 
   return (
     <div id="vertical-barchart" ref={ref}>
@@ -53,6 +54,7 @@ const  VerticalBarRechart = () => {
           />
           <Bar
             isAnimationActive={isVisible}
+            animationDuration={duration}
             dataKey='RespondentPercentage'
             barSize={100}
             fontFamily='sans-serif'
