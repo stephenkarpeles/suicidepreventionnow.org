@@ -32,13 +32,19 @@ const Footer = () => {
             <div className="footer__logo-block">
               <ul>
                 <li>
-                  <img src={logoAfsp} alt="American Foundation for Suicide Prevention Logo"/>
+                  <a href="https://afsp.org/">
+                    <img src={logoAfsp} alt="American Foundation for Suicide Prevention Logo"/>
+                  </a>
                 </li>
                 <li>
-                  <img src={logoAlliance} alt="National Action Alliance Logo"/>
+                  <a href="https://theactionalliance.org/">
+                    <img src={logoAlliance} alt="National Action Alliance Logo"/>
+                  </a>
                 </li>
                 <li>
-                  <img src={logoSprc} alt="National Action Alliance Logo"/>
+                  <a href="https://sprc.org/">
+                    <img src={logoSprc} alt="National Action Alliance Logo"/>
+                  </a>
                 </li>
               </ul>
             </div>
