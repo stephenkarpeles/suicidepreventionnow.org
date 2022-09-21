@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Link } from 'gatsby';
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 import "./header.css"
 
 export const useScrollHandler = () => {
@@ -64,16 +65,16 @@ const Header = () => {
             <div className="header__bottom-menu">
               <ul>
                 <li>
-                  <Link to="/">1. Introduction</Link>
+                  <AnchorLink href="#section1" offset={() => 150}>1. Introduction</AnchorLink>
                 </li>
                 <li>
-                  <Link to="/">2. Know the Facts</Link>
+                  <AnchorLink href="#section2" offset={() => 100}>2. Know the Facts</AnchorLink>
                 </li>
                 <li>
-                  <Link to="/">3. Learn How to Help</Link>
+                  <AnchorLink href="#section3" offset={() => 150}>3. Learn How to Help</AnchorLink>
                 </li>
                 <li>
-                  <Link to="/">4. Advocate for Change</Link>
+                  <AnchorLink href="#section4" offset={() => 150}>4. Advocate for Change</AnchorLink>
                 </li>
 
               </ul>
