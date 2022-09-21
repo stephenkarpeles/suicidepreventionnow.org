@@ -43,10 +43,10 @@ const IndexPage = () => {
   return (
     <Layout pageTitle="AFSP Site">
 
-        <section>
+        <section id="section1">
           <TwoColumnTextBlock showLabel={true} anchorLink={''} header={'Introduction & Executive Summary'} bodyText={[<><p>Since 2015, the American Foundation for Suicide Prevention (AFSP), the National Action Alliance for Suicide Prevention (Action Alliance), and the Suicide Prevention Resource Center (SPRC) have commissioned The Harris Poll bi-annually to conduct nationally representative surveys of adults in the U.S. The survey’s purpose is to understand what the public knows about mental health and suicide – and ways to support someone who is struggling – while uncovering the public’s beliefs and attitudes toward help seeking for themselves and others, sharing experiences, talking about mental health and understanding barriers that may prevent them from helping someone at risk for suicide. The poll also helps inform the public’s usage, expectations, and barriers to using crisis services.</p><p>In the latest poll (2022) we take an early pulse on public awareness of 988, the new Suicide & Crisis Lifeline, and we explore changes in knowledge and attitudes and assess the impact of unified suicide prevention messaging efforts over time. We find that gains have been made in valuing mental health on a personal level, but that society lags. We find a strong desire to help but also equally strong reservations against doing so. And we learn that access to care is seen as the leading barrier to getting help.</p><p>Overall, the poll indicates that there is much progress being made, but there is more to do. We must continue to learn about suicide through research, teach others how to help with innovative mental health and suicide prevention education programs, and advocate for improved access to care and robust crisis services.</p></>]}  />
         </section>
-        <section className="section-intro-block">
+        <section id="section2" className="section-intro-block">
           <div className="container">
             <div className="section-intro-block__grid row">
               <div className="section-intro-block__col-left col-7-12">
@@ -74,7 +74,7 @@ const IndexPage = () => {
             </div>
           </div>
         </section>
-        <section  className="t-section-lg">
+        <section id="section3"  className="t-section-lg">
           <div className="c-num-highlight container">
             <h2 className="c-num-highlight__headerH2 c-num-highlight__dark-green">More People Believe that Suicide Can be Prevented and Want to Take Action to Help</h2>
             <h3 className="c-num-highlight__headerH3 c-num-highlight__green">Most people report that suicide can be prevented, at least sometimes</h3>
@@ -113,7 +113,7 @@ const IndexPage = () => {
             </div>
           </div>
         </section>
-        <section className="t-section-sm t-gray-image-background">
+        <section id="section4" className="t-section-sm t-gray-image-background">
           <div className="c-vertical-bar-chart container">
             <h2 className="c-vertical-bar-chart__headerH2 c-vertical-bar-chart__headerH2--green">
               Recognizing mental health conditions
