@@ -89,6 +89,12 @@
     li {
       width: 25%;
       list-style-type: none;
+
+      &:first-child {
+        a { 
+          border-left: 1px solid white;
+        }
+      }
     }
 
     a {
@@ -102,19 +108,89 @@
       display: inline-block;
       background: var(--color-light-gray);
       position: relative;
+      border-top: 1px solid var(--color-dark-gray);
+    }
 
-      &:first-child {
-        border-left: 1px solid white;
-      }
+    li:nth-child(1) {
+      a:hover {
+        background: var(--color-yellow);
+        color: black;
+        border-top: 1px solid white;
 
-      &:nth-child(1) {
-        &:hover {
+        &::after {
+          position: absolute;
+          bottom: -7px;
+          left: 0;
+          content: '';
+          z-index: 999;
+          width: 100%;
+          height: 7px;
+          border-radius: 0 0 20px 20px;
           background: var(--color-yellow);
-          color: black;
+          border-bottom: 1px solid white;
+        }
+      }
+    }
+    
+    li:nth-child(2) {
+      a:hover {
+        background: var(--color-green);
+        color: white;
+        border-top: 1px solid white;
 
-          &::after {
-            
-          }
+        &::after {
+          position: absolute;
+          bottom: -7px;
+          left: 0;
+          content: '';
+          z-index: 999;
+          width: 100%;
+          height: 7px;
+          border-radius: 0 0 20px 20px;
+          background: var(--color-green);
+          border-bottom: 1px solid white;
+        }
+      }
+    }
+
+    li:nth-child(3) {
+      a:hover {
+        background: var(--color-blue);
+        color: white;
+        border-top: 1px solid white;
+
+        &::after {
+          position: absolute;
+          bottom: -7px;
+          left: 0;
+          content: '';
+          z-index: 999;
+          width: 100%;
+          height: 7px;
+          border-radius: 0 0 20px 20px;
+          background: var(--color-blue);
+          border-bottom: 1px solid white;
+        }
+      }
+    }
+
+    li:nth-child(4) {
+      a:hover {
+        background: var(--color-purple);
+        color: white;
+        border-top: 1px solid white;
+
+        &::after {
+          position: absolute;
+          bottom: -7px;
+          left: 0;
+          content: '';
+          z-index: 999;
+          width: 100%;
+          height: 7px;
+          border-radius: 0 0 20px 20px;
+          background: var(--color-purple);
+          border-bottom: 1px solid white;
         }
       }
     }
