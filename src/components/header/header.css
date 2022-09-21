@@ -5,6 +5,15 @@
 .header {
   background: var(--color-dark-gray);
   color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  height: 163px;
+  z-index: 2000;
+
+  + * {
+    margin-top: 163px;
+  }
 
   &__base-gradient {
     width: 100%;
@@ -121,6 +130,30 @@
       span {
         font-weight: 700;
       }
+    }
+  }
+
+  &--user-has-scrolled {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 116px;
+
+    + * {
+      margin-top: 116px;
+    }
+
+    .header__logo {
+      padding: 10px 0;
+      line-height: .95;
+
+      a { 
+        font-size: 26px;
+      }
+    }
+
+    .header__utility-nav {
+      padding-bottom: 20px;
     }
   }
 }

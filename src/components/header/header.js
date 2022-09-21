@@ -1,10 +1,30 @@
+import React, { useState, useEffect } from "react";
 import { Link } from 'gatsby';
-import React from 'react';
 import "./header.css"
 
+export const useScrollHandler = () => {
+  const [scroll, setScroll] = useState(1);
+
+  useEffect(() => {
+    const onScroll = () => {
+      const scrollCheck = window.scrollY > 100;
+      setScroll(scrollCheck);
+    };
+
+    document.addEventListener("scroll", onScroll);
+    return () => {
+      document.removeEventListener("scroll", onScroll);
+    };
+  }, [scroll, setScroll]);
+
+  return scroll;
+};
+
 const Header = () => {
+  const scroll = useScrollHandler();
+
   return (
-    <header className="header">
+    <header className={`header${scroll ? " header--user-has-scrolled" : ""}`}>
       <div className="header__base-gradient">
       </div>
       <div className="container">
