@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "gatsby";
-import ShareSocialMedia from "../components/share-social-media/ShareSocialMedia";
 
 // Components
 import Layout from "../components/layout/layout";
@@ -24,16 +23,9 @@ take5,
 reachOut,
 suicidePrevention } from '../indexImages';
 
-const style = {
-  background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
-  borderRadius: 3,
-  border: 0,
-  color: 'white',
-  padding: '0 30px',
-  boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
-};
 
 const TakeAction = () => {
+
   return (
     <Layout pageTitle="AFSP Site - Take Action">
       <section className="t-section-sm bg-50-50">
@@ -250,7 +242,7 @@ const TakeAction = () => {
                   </figure>
                   <div className="c-social-card__links">
                     <Link to={'/'} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
-                    <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
+                    <Link to={'/'} className="o-resource-links o-resource-links--share-icon"><span>Share</span></Link>
                   </div>
                 </div>
               </div>
@@ -261,7 +253,7 @@ const TakeAction = () => {
                   </figure>
                   <div className="c-social-card__links">
                     <Link to={'/'} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
-                    <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
+                    <Link to={'/'} className="o-resource-links o-resource-links--share-icon"><span>Share</span></Link>
                   </div>
                 </div>
               </div>
@@ -272,7 +264,7 @@ const TakeAction = () => {
                   </figure>
                   <div className="c-social-card__links">
                     <Link to={'/'} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
-                    <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
+                    <Link to={'/'} className="o-resource-links o-resource-links--share-icon"><span>Share</span></Link>
                   </div>
                 </div>
               </div>
@@ -283,7 +275,7 @@ const TakeAction = () => {
                   </figure>
                   <div className="c-social-card__links">
                     <Link to={'/'} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
-                    <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
+                    <Link to={'/'} className="o-resource-links o-resource-links--share-icon"><span>Share</span></Link>
                   </div>
                 </div>
               </div>
@@ -294,7 +286,7 @@ const TakeAction = () => {
                   </figure>
                   <div className="c-social-card__links">
                     <Link to={'/'} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
-                    <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
+                    <Link to={'/'} className="o-resource-links o-resource-links--share-icon"><span>Share</span></Link>
                   </div>
                 </div>
               </div>
@@ -305,7 +297,7 @@ const TakeAction = () => {
                   </figure>
                   <div className="c-social-card__links">
                     <Link to={'/'} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
-                    <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
+                    <Link to={'/'} className="o-resource-links o-resource-links--share-icon"><span>Share</span></Link>
                   </div>
                 </div>
               </div>

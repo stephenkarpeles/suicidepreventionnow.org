@@ -4,9 +4,9 @@ import { Link } from "gatsby";
 
 // Components
 import Layout from "../components/layout/layout";
-import TwoColumnTextBlock from "../components/two-column-text-block/two-column-text-block";
+import TwoColumnTextBlock from '../components/two-column-text-block/two-column-text-block';
 import VerticalBarRechart from "../components/vertical-bar-chart/vertical.bar.rechart";
-import ShareSocialMedia from "../components/share-social-media/ShareSocialMedia";
+
 
 // Styles
 import '../components/section-intro-block/section-intro-block.css';
@@ -42,7 +42,8 @@ const IndexPage = () => {
 
   return (
     <Layout pageTitle="AFSP Site">
-        <section className="t-section-sm t-gray-image-background">
+
+        <section id="section1">
           <TwoColumnTextBlock showLabel={true} anchorLink={''} header={'Introduction & Executive Summary'} bodyText={[<><p>Since 2015, the American Foundation for Suicide Prevention (AFSP), the National Action Alliance for Suicide Prevention (Action Alliance), and the Suicide Prevention Resource Center (SPRC) have commissioned The Harris Poll bi-annually to conduct nationally representative surveys of adults in the U.S. The survey’s purpose is to understand what the public knows about mental health and suicide – and ways to support someone who is struggling – while uncovering the public’s beliefs and attitudes toward help seeking for themselves and others, sharing experiences, talking about mental health and understanding barriers that may prevent them from helping someone at risk for suicide. The poll also helps inform the public’s usage, expectations, and barriers to using crisis services.</p><p>In the latest poll (2022) we take an early pulse on public awareness of 988, the new Suicide & Crisis Lifeline, and we explore changes in knowledge and attitudes and assess the impact of unified suicide prevention messaging efforts over time. We find that gains have been made in valuing mental health on a personal level, but that society lags. We find a strong desire to help but also equally strong reservations against doing so. And we learn that access to care is seen as the leading barrier to getting help.</p><p>Overall, the poll indicates that there is much progress being made, but there is more to do. We must continue to learn about suicide through research, teach others how to help with innovative mental health and suicide prevention education programs, and advocate for improved access to care and robust crisis services.</p></>]}  />
         </section>
         <section id="section2" className="section-intro-block">
@@ -62,7 +63,7 @@ const IndexPage = () => {
                   </p>
                 </div>
                 <div className="section-intro-block__share">
-                  <ShareSocialMedia linkText={'Share this Topic'} url={'https://suicidepreventionnow.org'} />
+                  Share this topic
                 </div>
               </div>
               <div className="section-intro-block__col-right col-5-12">
@@ -147,7 +148,7 @@ const IndexPage = () => {
                 </div>
                 <div className="c-single-col-cta__social-links">
                   <Link to={'/'} className="o-resource-links o-resource-links--book-icon"><span>Find Resources</span></Link>
-                  <ShareSocialMedia linkText={'Share this Topic'} url={'https://suicidepreventionnow.org'} />
+                  <Link to={'/'} className="o-resource-links o-resource-links--share-icon"><span>Share this Topic</span></Link>
                 </div>
               </div>
             </div>
@@ -171,7 +172,7 @@ const IndexPage = () => {
                     </figure>
                     <div className="c-social-card__links">
                       <Link to={'/'} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
-                      <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
+                      <Link to={'/'} className="o-resource-links o-resource-links--share-icon"><span>Share</span></Link>
                     </div>
                   </div>
                 </div>
@@ -182,7 +183,7 @@ const IndexPage = () => {
                     </figure>
                     <div className="c-social-card__links">
                       <Link to={'/'} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
-                      <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
+                      <Link to={'/'} className="o-resource-links o-resource-links--share-icon"><span>Share</span></Link>
                     </div>
                   </div>
                 </div>
@@ -242,7 +243,7 @@ const IndexPage = () => {
                     </figure>
                     <div className="c-social-card__links">
                       <Link to={'/'} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
-                      <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
+                      <Link to={'/'} className="o-resource-links o-resource-links--share-icon"><span>Share</span></Link>
                     </div>
                   </div>
                 </div>
@@ -253,7 +254,7 @@ const IndexPage = () => {
                     </figure>
                     <div className="c-social-card__links">
                       <Link to={'/'} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
-                      <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
+                      <Link to={'/'} className="o-resource-links o-resource-links--share-icon"><span>Share</span></Link>
                     </div>
                   </div>
                 </div>
@@ -271,7 +272,7 @@ const IndexPage = () => {
                 </div>
                 <div className="c-single-col-cta__social-links">
                   <Link to={'/'} className="o-resource-links o-resource-links--book-icon"><span>Find Resources</span></Link>
-                  <ShareSocialMedia linkText={'Share this Topic'} url={'https://suicidepreventionnow.org'} />
+                  <Link to={'/'} className="o-resource-links o-resource-links--share-icon"><span>Share this Topic</span></Link>
                 </div>
               </div>
             </div>
@@ -440,7 +441,7 @@ const IndexPage = () => {
                 </div>
                 <div className="c-single-col-cta__social-links">
                   <Link to={'/'} className="o-resource-links o-resource-links--book-icon"><span>Find Resources</span></Link>
-                  <ShareSocialMedia linkText={'Share this Topic'} url={'https://suicidepreventionnow.org'} />
+                  <Link to={'/'} className="o-resource-links o-resource-links--share-icon"><span>Share this Topic</span></Link>
                 </div>
               </div>
             </div>
@@ -464,7 +465,7 @@ const IndexPage = () => {
                     </figure>
                     <div className="c-social-card__links">
                       <Link to={'/'} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
-                      <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
+                      <Link to={'/'} className="o-resource-links o-resource-links--share-icon"><span>Share</span></Link>
                     </div>
                   </div>
                 </div>
@@ -475,7 +476,7 @@ const IndexPage = () => {
                     </figure>
                     <div className="c-social-card__links">
                       <Link to={'/'} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
-                      <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
+                      <Link to={'/'} className="o-resource-links o-resource-links--share-icon"><span>Share</span></Link>
                     </div>
                   </div>
                 </div>
@@ -494,7 +495,7 @@ const IndexPage = () => {
                   <Link to={'/'} className="o-resource-links o-resource-links--book-icon"><span>Find Resources</span></Link>
                 </div>
                 <div className="c-one-col-block__resources-links">
-                <ShareSocialMedia linkText={'Share this Page'} url={'https://suicidepreventionnow.org'} />
+                  <Link to={'/'} className="o-resource-links o-resource-links--share-icon"><span>Share this Page</span></Link>
                 </div>
               </div>
             </div>
