@@ -5,12 +5,14 @@
 .c-num-highlight {
 
   &__headerH2 {
+    padding-inline: var(--layout-spacer2);
     font-family: var(--font-serif);
     font-size: var(--font-size-h3);
     line-height: 1.2;
     text-align: center;
 
     @media (--small-breakpoint-down) {
+      padding-inline: 0;
       font-size: calc(var(--font-size-h4) / 1.2);
     }
   }

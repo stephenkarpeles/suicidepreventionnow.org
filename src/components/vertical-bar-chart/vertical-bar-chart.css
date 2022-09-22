@@ -9,7 +9,7 @@
 
   &__headerH2 {
     margin: 0;
-    padding-block: calc(var(--layout-spacer1) / 2);
+    padding: calc(var(--layout-spacer1) / 2) var(--layout-spacer3);
     font-family: var(--font-serif);
     font-size: var(--font-size-h4);
     line-height: 1.2;

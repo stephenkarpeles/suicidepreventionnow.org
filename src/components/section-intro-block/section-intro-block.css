@@ -37,6 +37,14 @@
     &--green {
       background: var(--color-green);
     }
+
+    &--blue {
+      background: var(--color-blue);
+    }
+
+    &--purple {
+      background: var(--color-purple);
+    }
   }
 
   &__grid {
@@ -74,7 +82,7 @@
   }
 
   &__image {
-    height: 100%;
+    aspect-ratio: 1/1;
     position: relative;
 
     img {
@@ -92,7 +100,25 @@
       width: 98%;
       height: 98%;
       z-index: -9999;
+    }
+
+  }
+
+  &__image--purple {
+    &::after {
+      background: var(--color-purple);
+    }
+  }
+
+  &__image--green {
+    &::after {
       background: var(--color-green);
+    }
+  }
+
+  &__image--blue {
+    &::after {
+      background: var(--color-blue);
     }
   }
 
