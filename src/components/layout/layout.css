@@ -51,7 +51,7 @@
     bottom: -12px;
     width: 98%;
     height: 98%;
-    z-index: -9999;
+    z-index: -400;
   }
 }
 
@@ -64,10 +64,12 @@
 }
 
 .t-gray-image-background {
+  position: relative;
   background-image: url('../../images/bg-gray.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  z-index: -500;
 }
 
 .t-gradient-background {

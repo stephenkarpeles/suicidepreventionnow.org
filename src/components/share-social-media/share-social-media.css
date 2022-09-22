@@ -43,10 +43,12 @@
 
 }
 
-.makeStyles-copyIcon-7 p {
+.makeStyles-copyIcon-7 p,
+.jss7 p {
   color: #0c66ff;
 }
 
-.makeStyles-iconContainer-3 {
+.makeStyles-iconContainer-3,
+.jss3 {
   text-align: center !important;
 }
