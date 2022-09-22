@@ -49,7 +49,7 @@ hsV45,
 hsV47,
 harrisChart01,
 harrisChart02,
-harrisChart03 } from '../indexImages';
+harrisChart03,
 medicalOnline,
 heartBrain } from '../indexImages';
 
