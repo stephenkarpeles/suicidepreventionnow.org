@@ -1,6 +1,3 @@
-export { default as placeholderImage } from './images/placeholder-image.png';
-export { default as placeholderImageBlue } from './images/placeholder-image-blue.png';
-export { default as placeholderImagePurple } from './images/placeholder-image-purple.png';
 export { default as imgWomanDog } from './images/know-the-facts.jpg';
 export { default as twoOut3 } from './images/2-out-3.png';
 export { default as eightOut10 } from './images/8-out-10.png';
@@ -11,7 +8,6 @@ export { default as chatBubble } from './images/c-chat-bubbles.svg';
 export { default as twoHearts } from './images/c-two-hearts.svg';
 export { default as exclamationPoint } from './images/c-exclamation.svg';
 export { default as bookPencil } from './images/c-book-pencil.svg';
-export { default as medicalShield } from './images/c-medical-shield.svg';
 export { default as heartBrain } from './images/c-heart-brain.svg';
 export { default as es2022 } from './images/executive-summary-2022.png';
 export { default as es2020 } from './images/executive-summary-2020.png';
