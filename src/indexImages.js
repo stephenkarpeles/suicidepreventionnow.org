@@ -47,3 +47,4 @@ export { default as hsV425 } from './images/Harris_Squares_v425.png';
 export { default as harrisChart01 } from './images/harris-chart-01.png';
 export { default as harrisChart02 } from './images/harris-chart-02.png';
 export { default as harrisChart03 } from './images/harris-chart-03.png';
+export { default as medicalOnline } from './images/c-medical-online.svg';
