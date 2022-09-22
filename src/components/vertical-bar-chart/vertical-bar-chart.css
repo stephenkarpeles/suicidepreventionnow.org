@@ -25,6 +25,11 @@
       color: #fff;
       background-color: var(--color-green);
     }
+
+    &--purple {
+      color: #fff;
+      background-color: var(--color-purple);
+    }
   }
 
   &__row {
