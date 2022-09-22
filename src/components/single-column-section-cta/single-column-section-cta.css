@@ -44,6 +44,26 @@
       flex-direction: column;
     }
 
+    .c-modal__container {
+      .o-resource-links {
+        color: #fff;
+
+        &::before {
+          filter:
+            invert(100%)
+            sepia(96%)
+            saturate(15%)
+            hue-rotate(212deg)
+            brightness(104%)
+            contrast(104%);
+        }
+
+        span {
+          background-image:linear-gradient(#fff, #fff);
+        }
+      }
+    }
+
     > a {
       color: #fff;
 
