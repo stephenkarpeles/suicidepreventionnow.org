@@ -146,7 +146,15 @@ p {
   padding: 25px;
 
   &--dark-green {
-    background: var(--color-dark-green);
+    background: var(--color-green);
+  }
+
+  &--dark-blue {
+    background: var(--color-dark-blue);
+  }
+
+  &--dark-purple {
+    background: var(--color-dark-purple);
   }
 }
 

@@ -39,9 +39,9 @@ const Header = () => {
         <div className="header__grid">
           <div className="header__col-left">
             <div className="header__logo">
-              <Link to="/">  
+              <Link to="/">
                 Suicide<br/>
-                Prevention<br/> 
+                Prevention<br/>
                 <span>Now</span>
               </Link>
             </div>
@@ -68,10 +68,10 @@ const Header = () => {
                   <AnchorLink href="#section1" offset={() => 150}>1. Introduction</AnchorLink>
                 </li>
                 <li>
-                  <AnchorLink href="#section2" offset={() => 100}>2. Know the Facts</AnchorLink>
+                  <AnchorLink href="#section2" offset={() => 100}>2. Learn about the Data</AnchorLink>
                 </li>
                 <li>
-                  <AnchorLink href="#section3" offset={() => 150}>3. Learn How to Help</AnchorLink>
+                  <AnchorLink href="#section3" offset={() => 150}>3. Know how to Help</AnchorLink>
                 </li>
                 <li>
                   <AnchorLink href="#section4" offset={() => 150}>4. Advocate for Change</AnchorLink>
