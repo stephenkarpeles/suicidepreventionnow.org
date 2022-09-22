@@ -12,9 +12,9 @@ const HorizontalBarChart = () => {
         <div className="h-bar">
           <div className="h-bar__num-label">61%</div>
           <Fade direction="left">
-            <svg width="500" height="41">
-              <rect width="305" height="41" x="0" fill="#8764C3"></rect>
-              <rect width="195" height="41" x="305" fill="#D1D1D1"></rect>
+            <svg width="100%" height="41">
+              <rect width="61%" height="41" x="0" fill="#8764C3"></rect>
+              <rect width="39%" height="41" x="61%" fill="#D1D1D1"></rect>
             </svg>
           </Fade>
         </div>
@@ -27,9 +27,9 @@ const HorizontalBarChart = () => {
         <div className="h-bar">
           <div className="h-bar__num-label">60%</div>
           <Fade direction="left">
-            <svg width="500" height="41">
-              <rect width="300" height="41" x="0" fill="#734fb1"></rect>
-              <rect width="200" height="41" x="300" fill="#D1D1D1"></rect>
+            <svg width="100%" height="41">
+              <rect width="60%" height="41" x="0" fill="#734fb1"></rect>
+              <rect width="40%" height="41" x="60%" fill="#D1D1D1"></rect>
             </svg>
           </Fade>
         </div>
@@ -42,9 +42,9 @@ const HorizontalBarChart = () => {
         <div className="h-bar">
           <div className="h-bar__num-label">54%</div>
           <Fade direction="left">
-            <svg width="500" height="41">
-              <rect width="270" height="41" x="0" fill="#432674"></rect>
-              <rect width="230" height="41" x="270" fill="#D1D1D1"></rect>
+            <svg width="100%" height="41">
+              <rect width="54%" height="41" x="0" fill="#432674"></rect>
+              <rect width="46%" height="41" x="54%" fill="#D1D1D1"></rect>
             </svg>
           </Fade>
         </div>
@@ -57,9 +57,9 @@ const HorizontalBarChart = () => {
         <div className="h-bar">
           <div className="h-bar__num-label">53%</div>
           <Fade direction="left">
-            <svg width="500" height="41">
-              <rect width="265" height="41" x="0" fill="#2e1a53"></rect>
-              <rect width="235" height="41" x="265" fill="#D1D1D1"></rect>
+            <svg width="100%" height="41">
+              <rect width="53%" height="41" x="0" fill="#2e1a53"></rect>
+              <rect width="47%" height="41" x="53%" fill="#D1D1D1"></rect>
             </svg>
           </Fade>
         </div>

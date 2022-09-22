@@ -9,6 +9,11 @@
   position: relative;
   margin-bottom: 15px;
   overflow: hidden;
+  width: calc(100% - 350px);
+
+  @media (--medium-breakpoint-down) {
+    width: 100%;
+  }
 }
 
 .h-bar__num-label {
@@ -24,6 +29,10 @@
 .h-bar__grid {
   display: flex;
   justify-content: flex-start;
+
+  @media (--medium-breakpoint-down) {
+    flex-direction: column;
+  }
 }
 
 .h-bar__text-label {
@@ -33,10 +42,22 @@
   width: 350px;
   font-size: 16px;
   text-align: right;
+
+  @media (--medium-breakpoint-down) {
+    width: 100%;
+    text-align: left;
+    padding-top: 0;
+    padding-bottom: 8px;
+    margin-right: 0;
+  }
 }
 
 .h-bar__col-wrap {
   margin-left: auto;
+
+  @media (--medium-breakpoint-down) {
+    margin-bottom: 10px;
+  }
 }
 
 .c-horizontal-bar-chart {
@@ -53,7 +74,7 @@
     line-height: 1.2;
     text-align: center;
 
-    @media (--small-breakpoint-down) {
+    @media (--medium-breakpoint-down) {
       padding-inline: var(--layout-spacer1);
       font-size: calc(var(--font-size-h4) / 1.5);
       text-align: left;
@@ -69,10 +90,14 @@
     align-items: center;
     padding-top: 30px;
     padding-bottom: 20px;
+
+    @media (--medium-breakpoint-down) {
+      flex-direction: column-reverse;
+    }
   }
 
   &__row-mb {
-    @media (--small-breakpoint-down) {
+    @media (--medium-breakpoint-down) {
       order: -1;
     }
   }
@@ -80,7 +105,7 @@
   &__content {
     padding: var(--layout-spacer1) var(--layout-spacer2);
 
-    @media (--small-breakpoint-down) {
+    @media (--medium-breakpoint-down) {
       padding: var(--layout-spacer1);
     }
   }
@@ -95,8 +120,9 @@
   &__image {
     margin: 0 auto;
 
-    @media (--small-breakpoint-down) {
+    @media (--medium-breakpoint-down) {
       margin: var(--layout-spacer1) auto;
+      max-width: 140px;
     }
   }
 
@@ -104,21 +130,24 @@
     display: flex;
     justify-content: flex-end;
 
-    @media (--small-breakpoint-down) {
+    @media (--medium-breakpoint-down) {
       justify-content: center;
     }
   }
 
   .row {
-
-    @media (--small-breakpoint-down) {
+    @media (--medium-breakpoint-down) {
       justify-content: center;
 
-      >div {
+      > div {
         width: 100%;
       }
     }
   }
 }
 
-.c-bar-chart-component {}
+.c-num-highlight__stats-text {
+  @media (--medium-breakpoint-down) {
+    text-align: left;
+  }
+}

@@ -424,7 +424,7 @@ const IndexPage = () => {
                 </div>
 
                 <div className="c-horizontal-bar-chart__row row">
-                  <div className="col-1-6">
+                  <div className="col-1-6 h-bar__img-col-wrap">
                     <img src={medicalOnline} alt="Heart brain icon" className="c-horizontal-bar-chart__image" />
                   </div>
                   <div className="col-5-6 h-bar__col-wrap">
