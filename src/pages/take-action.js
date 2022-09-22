@@ -33,6 +33,7 @@ hsV423,
 hsV424,
 hsV425 } from '../indexImages';
 
+//Downloadable PDF Files
 import executiveSummary2020 from '../static/executive-summary-2020.pdf';
 import executiveSummary2018 from '../static/executive-summary-2018.pdf';
 import executiveSummary2015 from '../static/executive-summary-2015.pdf';
