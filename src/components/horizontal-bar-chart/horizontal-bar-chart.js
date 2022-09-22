@@ -1,76 +1,50 @@
-import React, { useRef } from "react";
-import {BarChart, Bar, XAxis, Cell, ResponsiveContainer} from "recharts";
-import useOnScreen from "../useOnScreen";
-
-const data = [
-    {
-      "Color": "green",
-      "Year": "2018",
-      "RespondentPercentage": 57,
-    },
-    {
-      "Color": "green",
-      "Year": "2020",
-      "RespondentPercentage": 60,
-    },
-    {
-      "Color": "yellow",
-      "Year": "2022",
-      "RespondentPercentage": 67,
-    },
-];
-
-const CustomizedLabel = (props) => {
-  const {x, y, width, value} = props;
-  return <text
-    x={x + width / 2}
-    y={y}
-    dy={-4}
-    fontSize='18'
-    fontFamily='sans-serif'
-    fontWeight='bold'
-    fill='#363737'
-    textAnchor="middle">{value}%</text>
-}
+import React from "react";
+import { Fade } from "react-awesome-reveal";
 
 const HorizontalBarChart = () => {
-
-  // import useRef hook and add ref={ref} to container div tag
-  // const variables for useOnScreen Hook
-  const ref = useRef(null);
-  const isVisible = useOnScreen(ref);
-  const duration = 2400;
-
   return (
-    <div id="horizontal-barchart" ref={ref}>
-      <ResponsiveContainer width='100%' aspect={1} >
-        <BarChart
-          data={data}
-          layout="vertical"
-          margin={{top: 0, right: 0, left: 0, bottom: 0}}>
-          <XAxis
-            dataKey='Year'
-            fontFamily='sans-serif'
-            fontWeight='bold'
-          />
-          <Bar
-            isAnimationActive={isVisible}
-            animationDuration={duration}
-            dataKey='RespondentPercentage'
-            barSize={100}
-            fontFamily='sans-serif'
-            label={<CustomizedLabel />}
-            >
-            {
-              data.map((entry, index) => (
-                <Cell fill={data[index].Color === "yellow" ? '#FFBB1B' : '#1D8019'} />
-              ))
-            }
-          </Bar>
-        </BarChart>
-      </ResponsiveContainer>
+    <div className="h-bar-wrapper">
+      <div className="h-bar">
+        <div className="h-bar__text-label">61%</div>
+        <Fade direction="left">
+          <svg width="500" height="41">
+            <rect width="305" height="41" x="0" fill="#8764C3"></rect>
+            <rect width="195" height="41" x="305" fill="#D1D1D1"></rect>
+          </svg>
+        </Fade>
+      </div>
+
+      <div className="h-bar">
+        <div className="h-bar__text-label">60%</div>
+        <Fade direction="left">
+          <svg width="500" height="41">
+            <rect width="300" height="41" x="0" fill="#734fb1"></rect>
+            <rect width="200" height="41" x="300" fill="#D1D1D1"></rect>
+          </svg>
+        </Fade>
+      </div>
+
+      <div className="h-bar">
+        <div className="h-bar__text-label">54%</div>
+        <Fade direction="left">
+          <svg width="500" height="41">
+            <rect width="270" height="41" x="0" fill="#432674"></rect>
+            <rect width="230" height="41" x="270" fill="#D1D1D1"></rect>
+          </svg>
+        </Fade>
+      </div>
+
+      <div className="h-bar">
+        <div className="h-bar__text-label">53%</div>
+        <Fade direction="left">
+          <svg width="500" height="41">
+            <rect width="265" height="41" x="0" fill="#2e1a53"></rect>
+            <rect width="235" height="41" x="265" fill="#D1D1D1"></rect>
+          </svg>
+        </Fade>
+      </div>
     </div>
-  );
+  )
 }
 
 export default HorizontalBarChart;
