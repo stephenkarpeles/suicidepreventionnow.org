@@ -3,15 +3,15 @@
 @import "../base.css";
 
 .h-bar-wrapper {
-  overflow: hidden;
 }
 
 .h-bar {
   position: relative;
   margin-bottom: 15px;
+  overflow: hidden;
 }
 
-.h-bar__text-label {
+.h-bar__num-label {
   position: absolute;
   color: white;
   font-family: var(--font-stack-regular);
@@ -19,6 +19,24 @@
   z-index: 900;
   top: 10px;
   left: 15px;
+}
+
+.h-bar__grid {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.h-bar__text-label {
+  margin-right: 20px;
+  padding-top: 8px;
+  color: black;
+  width: 350px;
+  font-size: 16px;
+  text-align: right;
+}
+
+.h-bar__col-wrap {
+  margin-left: auto;
 }
 
 .c-horizontal-bar-chart {
@@ -49,6 +67,8 @@
 
   &__row {
     align-items: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
   }
 
   &__row-mb {
@@ -73,6 +93,8 @@
   }
 
   &__image {
+    margin: 0 auto;
+
     @media (--small-breakpoint-down) {
       margin: var(--layout-spacer1) auto;
     }

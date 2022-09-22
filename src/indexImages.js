@@ -29,3 +29,4 @@ export { default as suicidePrevention } from './images/Advocate-for-Suicide-Prev
 export { default as logoSprc } from './images/sprc-color.png';
 export { default as logoAlliance } from './images/action-alliance-color.png';
 export { default as logoAfsp } from './images/afsp-logo-white.png';
+export { default as medicalOnline } from './images/c-medical-online.svg';

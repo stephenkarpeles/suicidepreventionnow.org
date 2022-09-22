@@ -38,6 +38,7 @@ twoHearts,
 exclamationPoint,
 bookPencil,
 medicalShield,
+medicalOnline,
 heartBrain } from '../indexImages';
 
 const IndexPage = () => {
@@ -424,9 +425,9 @@ const IndexPage = () => {
 
                 <div className="c-horizontal-bar-chart__row row">
                   <div className="col-1-6">
-                    <img src={heartBrain} alt="Heart brain icon" className="c-horizontal-bar-chart__image" />
+                    <img src={medicalOnline} alt="Heart brain icon" className="c-horizontal-bar-chart__image" />
                   </div>
-                  <div className="col-5-6">
+                  <div className="col-5-6 h-bar__col-wrap">
                     <HorizontalBarChart/>
                   </div>
                   
