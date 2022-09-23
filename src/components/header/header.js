@@ -24,7 +24,6 @@ export const useScrollHandler = () => {
 
 const Header = () => {
   const scroll = useScrollHandler();
-
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
