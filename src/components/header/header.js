@@ -71,10 +71,10 @@ const Header = () => {
                   <AnchorLink href="#section2" offset={() => 100}>2. Learn about the Data</AnchorLink>
                 </li>
                 <li>
-                  <AnchorLink href="#section3" offset={() => 150}>3. Know how to Help</AnchorLink>
+                  <AnchorLink href="#section3" offset={() => 100}>3. Know how to Help</AnchorLink>
                 </li>
                 <li>
-                  <AnchorLink href="#section4" offset={() => 150}>4. Advocate for Change</AnchorLink>
+                  <AnchorLink href="#section4" offset={() => 100}>4. Advocate for Change</AnchorLink>
                 </li>
 
               </ul>
