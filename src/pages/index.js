@@ -3,6 +3,7 @@ import React from "react";
 import { Link } from "gatsby";
 import { Tabs } from 'react-simple-tabs-component'
 import Helmet from 'react-helmet'
+import { Fade } from "react-awesome-reveal";
 
 // Components
 import Layout from "../components/layout/layout";
@@ -104,38 +105,42 @@ const IndexPage = () => {
           }}
       />
       <section id="section1" className="t-section-sm t-gray-image-background">
-        <TwoColumnTextBlock showLabel={true} anchorLink={'#section2'} header={'Introduction & Executive Summary'} bodyText={[<><p>Since 2015, the American Foundation for Suicide Prevention (AFSP), the National Action Alliance for Suicide Prevention (Action Alliance), and the Suicide Prevention Resource Center (SPRC) have commissioned The Harris Poll to conduct a bi-annual, nationally representative survey of adults in the U.S. to understand the public’s beliefs and attitudes about mental health and suicide. The survey measures what the public knows about how to support someone who is struggling and their perceptions of barriers to helping someone at risk for suicide.  The poll also helps reveal the public’s usage of, expectations about, and barriers to using crisis services.</p><p><a href={"/"} class="o-body-text-link">In the latest poll (2022)</a> we take an early pulse on public awareness of 988, the new Suicide & Crisis Lifeline, exploring expectations and awareness of 988 and access to using crisis services, and assess the impact of unified suicide prevention messaging efforts over time. We find that gains have been made in valuing mental health, but also a perception that there is not consistent societal support for mental health care. We find a strong desire to help but also strong uncertainty about the best ways to do so. And we learn that access to care is seen as the leading barrier to getting help.</p><p>Overall, the poll indicates that progress has been made, but there is more to do. We must continue to learn more about suicide and mental health particularly through increased research efforts, teach everyone how to help prevent suicide and strengthen mental health,  and advocate for improved access to care and robust crisis services.</p><p><small><i>This collaborative, multi-year project is conducted by the American Foundation for Suicide Prevention (AFSP), the National Action Alliance for Suicide Prevention, and the Suicide Prevention Resource Center. AFSP provided support to fund the website.</i></small></p></>]}  />
+        <Fade>
+          <TwoColumnTextBlock showLabel={true} anchorLink={'#section2'} header={'Introduction & Executive Summary'} bodyText={[<><p>Since 2015, the American Foundation for Suicide Prevention (AFSP), the National Action Alliance for Suicide Prevention (Action Alliance), and the Suicide Prevention Resource Center (SPRC) have commissioned The Harris Poll to conduct a bi-annual, nationally representative survey of adults in the U.S. to understand the public’s beliefs and attitudes about mental health and suicide. The survey measures what the public knows about how to support someone who is struggling and their perceptions of barriers to helping someone at risk for suicide.  The poll also helps reveal the public’s usage of, expectations about, and barriers to using crisis services.</p><p><a href={"/"} class="o-body-text-link">In the latest poll (2022)</a> we take an early pulse on public awareness of 988, the new Suicide & Crisis Lifeline, exploring expectations and awareness of 988 and access to using crisis services, and assess the impact of unified suicide prevention messaging efforts over time. We find that gains have been made in valuing mental health, but also a perception that there is not consistent societal support for mental health care. We find a strong desire to help but also strong uncertainty about the best ways to do so. And we learn that access to care is seen as the leading barrier to getting help.</p><p>Overall, the poll indicates that progress has been made, but there is more to do. We must continue to learn more about suicide and mental health particularly through increased research efforts, teach everyone how to help prevent suicide and strengthen mental health,  and advocate for improved access to care and robust crisis services.</p><p><small><i>This collaborative, multi-year project is conducted by the American Foundation for Suicide Prevention (AFSP), the National Action Alliance for Suicide Prevention, and the Suicide Prevention Resource Center. AFSP provided support to fund the website.</i></small></p></>]}  />
+        </Fade>
       </section>
 
       <div id="section2">
-        <section className="section-intro-block">
-          <div className="container">
-            <div className="section-intro-block__grid row">
-              <div className="section-intro-block__col-left col-7-12">
-                <div id="know-the-facts" className="section-intro-block__tag section-intro-block__tag--green">
-                  2. Learn about the Data
+        <Fade>
+          <section className="section-intro-block">
+            <div className="container">
+              <div className="section-intro-block__grid row">
+                <div className="section-intro-block__col-left col-7-12">
+                  <div id="know-the-facts" className="section-intro-block__tag section-intro-block__tag--green">
+                    2. Learn about the Data
+                  </div>
+                  <div className="section-intro-block__heading">
+                    <h2>Understand the <span>perceptions, beliefs, and attitudes</span> of the U.S. public about <span>suicide and mental health</span></h2>
+                  </div>
+                  <div className="section-intro-block__intro-text">
+                    <p>
+                      <span aria-hidden="true"><span class="dropcap dropcap--dark-green">B</span>ased</span>
+                      <span class="sr-only">Based</span> on public perception polling of attitudes about mental health and suicide, more people than ever value mental health as much or more than physical health, but most adults do not feel they are treated equally by the overall health care system.
+                    </p>
+                  </div>
+                  <div className="section-intro-block__share">
+                    <ShareSocialMedia linkText={'Share this Topic'} url={'https://suicidepreventionnow.org/#know-the-facts'} />
+                  </div>
                 </div>
-                <div className="section-intro-block__heading">
-                  <h2>Understand the <span>perceptions, beliefs, and attitudes</span> of the U.S. public about <span>suicide and mental health</span></h2>
-                </div>
-                <div className="section-intro-block__intro-text">
-                  <p>
-                    <span aria-hidden="true"><span class="dropcap dropcap--dark-green">B</span>ased</span>
-                    <span class="sr-only">Based</span> on public perception polling of attitudes about mental health and suicide, more people than ever value mental health as much or more than physical health, but most adults do not feel they are treated equally by the overall health care system.
-                  </p>
-                </div>
-                <div className="section-intro-block__share">
-                  <ShareSocialMedia linkText={'Share this Topic'} url={'https://suicidepreventionnow.org/#know-the-facts'} />
-                </div>
-              </div>
-              <div className="section-intro-block__col-right col-5-12">
-                <div className="section-intro-block__image section-intro-block__image--green">
-                  <img src={imgWomanDog} alt="Woman looking at phone on bed with dog" />
+                <div className="section-intro-block__col-right col-5-12">
+                  <div className="section-intro-block__image section-intro-block__image--green">
+                    <img src={imgWomanDog} alt="Woman looking at phone on bed with dog" />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </Fade>
         <section className="t-section-sm t-gray-image-background">
           <div className="c-tabbed-bar-chart container">
             <h2 className="c-tabbed-bar-chart__headerH2 c-tabbed-bar-chart__headerH2--green">
@@ -158,45 +163,47 @@ const IndexPage = () => {
               </div>
           </div>
         </section>
-        <section className="t-section-sm">
-          <div className="c-num-highlight container">
-            <h2 className="c-num-highlight__headerH2 c-num-highlight__dark-green">More People Believe that Suicide Can be Prevented and Want to Take Action to Help</h2>
-            <h3 className="c-num-highlight__headerH3 c-num-highlight__green">Most people report that suicide can be prevented, at least sometimes</h3>
-            <div className="row c-num-highlight__row">
-              <div className="col-1-3">
-                <p className="c-num-highlight__stats-num c-num-highlight__green">94<span>%</span></p>
+        <Fade>
+          <section className="t-section-sm">
+            <div className="c-num-highlight container">
+              <h2 className="c-num-highlight__headerH2 c-num-highlight__dark-green">More People Believe that Suicide Can be Prevented and Want to Take Action to Help</h2>
+              <h3 className="c-num-highlight__headerH3 c-num-highlight__green">Most people report that suicide can be prevented, at least sometimes</h3>
+              <div className="row c-num-highlight__row">
+                <div className="col-1-3">
+                  <p className="c-num-highlight__stats-num c-num-highlight__green">94<span>%</span></p>
+                </div>
+                <div className="col-1-3">
+                  <p className="c-num-highlight__stats-text c-num-highlight__dark-green">believe that suicide can be prevented at least sometimes</p>
+                </div>
+                <div className="col-1-3">
+                  <img src={twoHearts} alt="Heart icon" className="c-num-highlight__image" />
+                </div>
               </div>
-              <div className="col-1-3">
-                <p className="c-num-highlight__stats-text c-num-highlight__dark-green">believe that suicide can be prevented at least sometimes</p>
+              <div className="row c-num-highlight__row c-num-highlight__row--reverse">
+                <div className="col-1-3">
+                  <p className="c-num-highlight__stats-num c-num-highlight__green">75<span>%</span></p>
+                </div>
+                <div className="col-1-3">
+                  <p className="c-num-highlight__stats-text c-num-highlight__dark-green">Three-quarters of U.S. adults (75%, more than in previous years) say that most people who die by suicide usually show some signs beforehand</p>
+                </div>
+                <div className="col-1-3">
+                  <img src={exclamationPoint} alt="Exclamation icon" className="c-num-highlight__image" />
+                </div>
               </div>
-              <div className="col-1-3">
-                <img src={twoHearts} alt="Heart icon" className="c-num-highlight__image" />
+              <div className="row c-num-highlight__row">
+                <div className="col-1-3">
+                  <p className="c-num-highlight__stats-num c-num-highlight__green">96<span>%</span></p>
+                </div>
+                <div className="col-1-3">
+                  <p className="c-num-highlight__stats-text c-num-highlight__dark-green">More and more U.S. adults overtime (96% in 2022) would take action to help prevent suicide if someone close to them was thinking about suicide</p>
+                </div>
+                <div className="col-1-3">
+                  <img src={chatBubble} alt="Chat bubbles icon" className="c-num-highlight__image" />
+                </div>
               </div>
             </div>
-            <div className="row c-num-highlight__row c-num-highlight__row--reverse">
-              <div className="col-1-3">
-                <p className="c-num-highlight__stats-num c-num-highlight__green">75<span>%</span></p>
-              </div>
-              <div className="col-1-3">
-                <p className="c-num-highlight__stats-text c-num-highlight__dark-green">Three-quarters of U.S. adults (75%, more than in previous years) say that most people who die by suicide usually show some signs beforehand</p>
-              </div>
-              <div className="col-1-3">
-                <img src={exclamationPoint} alt="Exclamation icon" className="c-num-highlight__image" />
-              </div>
-            </div>
-            <div className="row c-num-highlight__row">
-              <div className="col-1-3">
-                <p className="c-num-highlight__stats-num c-num-highlight__green">96<span>%</span></p>
-              </div>
-              <div className="col-1-3">
-                <p className="c-num-highlight__stats-text c-num-highlight__dark-green">More and more U.S. adults overtime (96% in 2022) would take action to help prevent suicide if someone close to them was thinking about suicide</p>
-              </div>
-              <div className="col-1-3">
-                <img src={chatBubble} alt="Chat bubbles icon" className="c-num-highlight__image" />
-              </div>
-            </div>
-          </div>
-        </section>
+          </section>
+        </Fade>
         <section className="t-section-sm t-gray-image-background">
           <div className="c-vertical-bar-chart container">
             <h2 className="c-vertical-bar-chart__headerH2 c-vertical-bar-chart__headerH2--green">
@@ -240,16 +247,17 @@ const IndexPage = () => {
         </section>
         <section className="t-section-lg">
           <div className="c-three-col-cta container">
-            <div className="row">
-              <div className="col-1-3">
+             <Fade>
+              <div className="row">              
+                <div className="col-1-3">
                 <div className="c-three-col-cta__content">
                   <div>
                     <h2 className="c-three-col-cta__header c-three-col-cta__header--green">Let Your Network Know</h2>
                     <p>More people recognize that they have the power to seek mental health support, practice self-care techniques and routines, and impact the conversation so that mental health is seen as equally important to physical health. Download and share.</p>
                   </div>
                 </div>
-              </div>
-              <div className="col-1-3">
+                </div>
+                <div className="col-1-3">
                 <div className="c-social-card">
                     <figure className="c-social-card__figure">
                       <img src={hsV4} alt="" className="c-social-card__image" />
@@ -260,7 +268,7 @@ const IndexPage = () => {
                     </div>
                   </div>
                 </div>
-              <div className="col-1-3">
+                <div className="col-1-3">
                 <div className="c-social-card">
                     <figure className="c-social-card__figure">
                       <img src={hsV42} alt="" className="c-social-card__image" />
@@ -270,41 +278,44 @@ const IndexPage = () => {
                       <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
                     </div>
                   </div>
-                </div>
-            </div>
+                </div>                
+              </div>
+            </Fade>
           </div>
         </section>
       </div>
 
       <div id="section3">
-        <section className="section-intro-block">
-          <div className="container">
-            <div className="section-intro-block__grid row">
-              <div className="section-intro-block__col-left col-7-12">
-                <div id="know-the-facts" className="section-intro-block__tag section-intro-block__tag--blue">
-                  3. Know How to Help
+        <Fade>
+          <section className="section-intro-block">
+            <div className="container">
+              <div className="section-intro-block__grid row">
+                <div className="section-intro-block__col-left col-7-12">
+                  <div id="know-the-facts" className="section-intro-block__tag section-intro-block__tag--blue">
+                    3. Know How to Help
+                  </div>
+                  <div className="section-intro-block__heading">
+                    <h2><span>Be there for yourself</span> and <span>reach out</span> to someone who might be struggling.</h2>
+                  </div>
+                  <div className="section-intro-block__intro-text">
+                    <p>
+                      <span aria-hidden="true"><span class="dropcap dropcap--dark-blue">P</span>eople</span>
+                      <span class="sr-only">People</span> in the U.S. have a desire to help and are becoming more comfortable talking about mental health and suicide. But many adults are not sure that they have enough knowledge to help.
+                    </p>
+                  </div>
+                  <div className="section-intro-block__share">
+                    <ShareSocialMedia linkText={'Share this Topic'} url={'https://suicidepreventionnow.org/#know-the-facts'} />
+                  </div>
                 </div>
-                <div className="section-intro-block__heading">
-                  <h2><span>Be there for yourself</span> and <span>reach out</span> to someone who might be struggling.</h2>
-                </div>
-                <div className="section-intro-block__intro-text">
-                  <p>
-                    <span aria-hidden="true"><span class="dropcap dropcap--dark-blue">P</span>eople</span>
-                    <span class="sr-only">People</span> in the U.S. have a desire to help and are becoming more comfortable talking about mental health and suicide. But many adults are not sure that they have enough knowledge to help.
-                  </p>
-                </div>
-                <div className="section-intro-block__share">
-                  <ShareSocialMedia linkText={'Share this Topic'} url={'https://suicidepreventionnow.org/#know-the-facts'} />
-                </div>
-              </div>
-              <div className="section-intro-block__col-right col-5-12">
-                <div className="section-intro-block__image section-intro-block__image--blue">
-                  <img src={imgDadSon} alt="Father and son" />
+                <div className="section-intro-block__col-right col-5-12">
+                  <div className="section-intro-block__image section-intro-block__image--blue">
+                    <img src={imgDadSon} alt="Father and son" />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </Fade>
         <section className="t-section-sm t-gray-image-background">
           <div className="c-three-row-block container">
             <h2 className="c-three-row-block__headerH2 c-three-row-block__headerH2--blue">
@@ -358,73 +369,77 @@ const IndexPage = () => {
             </div>
           </div>
         </section>
-        <section className="t-section-lg">
-          <div className="c-three-col-cta container">
-            <div className="row">
-              <div className="col-1-3">
-                <div className="c-three-col-cta__content">
-                  <div>
-                    <h2 className="c-three-col-cta__header c-three-col-cta__header--blue">Open Conversations Can Save Lives</h2>
-                    <p> If you're struggling with your mental health or suicidal thoughts or know someone who is, you are not alone. Education programs help people talk about mental health and suicide prevention and understand ways to help. We must continue to develop opportunities to increase confidence around talking about our mental health and help seeking for suicide risk.  Download and share.</p>
+        <Fade>
+          <section className="t-section-lg">
+            <div className="c-three-col-cta container">
+              <div className="row">
+                <div className="col-1-3">
+                  <div className="c-three-col-cta__content">
+                    <div>
+                      <h2 className="c-three-col-cta__header c-three-col-cta__header--blue">Open Conversations Can Save Lives</h2>
+                      <p> If you're struggling with your mental health or suicidal thoughts or know someone who is, you are not alone. Education programs help people talk about mental health and suicide prevention and understand ways to help. We must continue to develop opportunities to increase confidence around talking about our mental health and help seeking for suicide risk.  Download and share.</p>
+                    </div>
                   </div>
                 </div>
+                <div className="col-1-3">
+                  <div className="c-social-card">
+                      <figure className="c-social-card__figure">
+                        <img src={hsV43} alt="" className="c-social-card__image" />
+                      </figure>
+                      <div className="c-social-card__links">
+                        <Link to={hsV43} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
+                        <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
+                      </div>
+                    </div>
+                  </div>
+                <div className="col-1-3">
+                  <div className="c-social-card">
+                      <figure className="c-social-card__figure">
+                        <img src={hsV44} alt="" className="c-social-card__image" />
+                      </figure>
+                      <div className="c-social-card__links">
+                        <Link to={hsV44} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
+                        <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
+                      </div>
+                    </div>
+                  </div>
               </div>
-              <div className="col-1-3">
-                <div className="c-social-card">
-                    <figure className="c-social-card__figure">
-                      <img src={hsV43} alt="" className="c-social-card__image" />
-                    </figure>
-                    <div className="c-social-card__links">
-                      <Link to={hsV43} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
-                      <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
-                    </div>
-                  </div>
-                </div>
-              <div className="col-1-3">
-                <div className="c-social-card">
-                    <figure className="c-social-card__figure">
-                      <img src={hsV44} alt="" className="c-social-card__image" />
-                    </figure>
-                    <div className="c-social-card__links">
-                      <Link to={hsV44} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
-                      <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
-                    </div>
-                  </div>
-                </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </Fade>
       </div>
 
       <div id="section4">
-        <section className="section-intro-block">
-          <div className="container">
-            <div className="section-intro-block__grid row">
-              <div className="section-intro-block__col-left col-7-12">
-                <div id="know-the-facts" className="section-intro-block__tag section-intro-block__tag--purple">
-                  4. Advocate for Change
+        <Fade>
+          <section className="section-intro-block">
+            <div className="container">
+              <div className="section-intro-block__grid row">
+                <div className="section-intro-block__col-left col-7-12">
+                  <div id="know-the-facts" className="section-intro-block__tag section-intro-block__tag--purple">
+                    4. Advocate for Change
+                  </div>
+                  <div className="section-intro-block__heading">
+                    <h2>Help to <span>improve access</span> and <span>strengthen systems of care</span></h2>
+                  </div>
+                  <div className="section-intro-block__intro-text">
+                    <p>
+                      <span aria-hidden="true"><span class="dropcap dropcap--dark-purple">M</span>ore</span>
+                      <span class="sr-only">More</span> than ever, people are looking to professionals and others for mental health care, with the pandemic exacerbating needs. However, lack of access and affordability are creating barriers to care.
+                    </p>
+                  </div>
+                  <div className="section-intro-block__share">
+                    <ShareSocialMedia linkText={'Share this Topic'} url={'https://suicidepreventionnow.org/#know-the-facts'} />
+                  </div>
                 </div>
-                <div className="section-intro-block__heading">
-                  <h2>Help to <span>improve access</span> and <span>strengthen systems of care</span></h2>
-                </div>
-                <div className="section-intro-block__intro-text">
-                  <p>
-                    <span aria-hidden="true"><span class="dropcap dropcap--dark-purple">M</span>ore</span>
-                    <span class="sr-only">More</span> than ever, people are looking to professionals and others for mental health care, with the pandemic exacerbating needs. However, lack of access and affordability are creating barriers to care.
-                  </p>
-                </div>
-                <div className="section-intro-block__share">
-                  <ShareSocialMedia linkText={'Share this Topic'} url={'https://suicidepreventionnow.org/#know-the-facts'} />
-                </div>
-              </div>
-              <div className="section-intro-block__col-right col-5-12">
-                <div className="section-intro-block__image section-intro-block__image--purple">
-                  <img src={imgManLaptop} alt="Man on computer" />
+                <div className="section-intro-block__col-right col-5-12">
+                  <div className="section-intro-block__image section-intro-block__image--purple">
+                    <img src={imgManLaptop} alt="Man on computer" />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </Fade>
         <section className="t-section-sm t-gray-image-background">
           <div className="c-three-row-block container">
             <h2 className="c-three-row-block__headerH2 c-three-row-block__headerH2--purple">
@@ -611,59 +626,63 @@ const IndexPage = () => {
             </div>
           </div>
         </section>
-        <section className="t-section-lg">
-          <div className="c-three-col-cta container">
-            <div className="row">
-              <div className="col-1-3">
-                <div className="c-three-col-cta__content">
-                  <div>
-                    <h2 className="c-three-col-cta__header c-three-col-cta__header--purple">Let Your Network Know</h2>
-                    <p>We need your help. By advocating for more mental health and suicide prevention research, resources and access to care, including increased support for the new 988 Suicide & Crisis Lifeline, you can make a difference. Download and share.</p>
+        <Fade>
+          <section className="t-section-lg">
+            <div className="c-three-col-cta container">
+              <div className="row">
+                <div className="col-1-3">
+                  <div className="c-three-col-cta__content">
+                    <div>
+                      <h2 className="c-three-col-cta__header c-three-col-cta__header--purple">Let Your Network Know</h2>
+                      <p>We need your help. By advocating for more mental health and suicide prevention research, resources and access to care, including increased support for the new 988 Suicide & Crisis Lifeline, you can make a difference. Download and share.</p>
+                    </div>
                   </div>
                 </div>
+                <div className="col-1-3">
+                  <div className="c-social-card">
+                      <figure className="c-social-card__figure">
+                        <img src={hsV45} alt="" className="c-social-card__image" />
+                      </figure>
+                      <div className="c-social-card__links">
+                        <Link to={hsV45} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
+                        <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
+                      </div>
+                    </div>
+                  </div>
+                <div className="col-1-3">
+                  <div className="c-social-card">
+                      <figure className="c-social-card__figure">
+                        <img src={hsV47} alt="" className="c-social-card__image" />
+                      </figure>
+                      <div className="c-social-card__links">
+                        <Link to={hsV47} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
+                        <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
+                      </div>
+                    </div>
+                  </div>
               </div>
-              <div className="col-1-3">
-                <div className="c-social-card">
-                    <figure className="c-social-card__figure">
-                      <img src={hsV45} alt="" className="c-social-card__image" />
-                    </figure>
-                    <div className="c-social-card__links">
-                      <Link to={hsV45} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
-                      <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
-                    </div>
-                  </div>
-                </div>
-              <div className="col-1-3">
-                <div className="c-social-card">
-                    <figure className="c-social-card__figure">
-                      <img src={hsV47} alt="" className="c-social-card__image" />
-                    </figure>
-                    <div className="c-social-card__links">
-                      <Link to={hsV47} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
-                      <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
-                    </div>
-                  </div>
-                </div>
             </div>
-          </div>
-        </section>
+          </section>
+        </Fade>
         <section className="t-section-lg t-gray-image-background">
-          <div className="c-one-col-block t-offset-bg t-offset-color-gradient container">
-            <h2 className="c-one-col-block__header-title">
-              <span>Take Action</span>
-            </h2>
-            <div className="c-one-col-block__content">
-              <p>Now that you know the facts, learn more about the data and take action to strengthen suicide prevention and mental health.</p>
-              <div className="c-one-col-block__resources">
-                <div className="c-one-col-block__resources-links">
-                  <Link to={'/take-action'} className="o-resource-links o-resource-links--book-icon"><span>Find Resources</span></Link>
-                </div>
-                <div className="c-one-col-block__resources-links">
-                <ShareSocialMedia linkText={'Share this Page'} url={'https://suicidepreventionnow.org'} />
+          <Fade>
+            <div className="c-one-col-block t-offset-bg t-offset-color-gradient container">
+              <h2 className="c-one-col-block__header-title">
+                <span>Take Action</span>
+              </h2>
+              <div className="c-one-col-block__content">
+                <p>Now that you know the facts, learn more about the data and take action to strengthen suicide prevention and mental health.</p>
+                <div className="c-one-col-block__resources">
+                  <div className="c-one-col-block__resources-links">
+                    <Link to={'/take-action'} className="o-resource-links o-resource-links--book-icon"><span>Find Resources</span></Link>
+                  </div>
+                  <div className="c-one-col-block__resources-links">
+                  <ShareSocialMedia linkText={'Share this Page'} url={'https://suicidepreventionnow.org'} />
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </Fade>
         </section>
       </div>
 
