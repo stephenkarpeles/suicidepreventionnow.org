@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from 'gatsby';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
+import ScrollspyNav from "react-scrollspy-nav";
 import "./header.css"
 
 export const useScrollHandler = () => {
@@ -63,21 +64,28 @@ const Header = () => {
               </div>
             </div>
             <div className="header__bottom-menu">
-              <ul>
-                <li>
-                  <AnchorLink href="#section1" offset={() => 150}>1. Introduction</AnchorLink>
-                </li>
-                <li>
-                  <AnchorLink href="#section2" offset={() => 100}>2. Learn about the Data</AnchorLink>
-                </li>
-                <li>
-                  <AnchorLink href="#section3" offset={() => 100}>3. Know how to Help</AnchorLink>
-                </li>
-                <li>
-                  <AnchorLink href="#section4" offset={() => 100}>4. Advocate for Change</AnchorLink>
-                </li>
-
-              </ul>
+              <ScrollspyNav
+                  scrollTargetIds={["section1", "section2", "section3", "section4"]}
+                  offset={-50}
+                  activeNavClass="is-active-nav-item"
+                  scrollDuration="600"
+                  headerBackground="true"
+              >
+                <ul>
+                  <li>
+                    <Link href="#section1">1. Introduction</Link>
+                  </li>
+                  <li>
+                    <Link href="#section2">2. Learn about the Data</Link>
+                  </li>
+                  <li>
+                    <Link href="#section3">3. Know how to Help</Link>
+                  </li>
+                  <li>
+                    <Link href="#section4">4. Advocate for Change</Link>
+                  </li>
+                </ul>
+              </ScrollspyNav>
             </div>
           </div>
         </div>
