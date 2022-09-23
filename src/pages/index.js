@@ -32,7 +32,7 @@ import '../components/tabbed-bar-chart/tabbed-bar-chart.css';
 // Images
 import {
 imgWomanDog,
-twoOut3,
+twoOut3Wide,
 eightOut10,
 peopleImage,
 firstAidKit,
@@ -233,12 +233,12 @@ const IndexPage = () => {
             <div className="c-single-col-cta__row row">
               <div className="col-2-3">
                 <div className="c-single-col-cta__content">
-                  <h2 className="c-single-col-cta__header">Know the Facts</h2>
+                  <h2 className="c-single-col-cta__header">Learn about the Data</h2>
                   <p>The change in the public's perception of and knowledge about suicide and mental health is encouraging. More people have an understanding of the importance of mental health and believe that suicide can be prevented.</p>
                   <p>Over time, a greater number of people recognize that there are warning signs for suicide and are aware that they may have a mental health condition themselves—and want to take action to help prevent suicide and strengthen mental health.</p>
                 </div>
                 <div className="c-single-col-cta__social-links">
-                  <Link to={'/take-action'} className="o-resource-links o-resource-links--book-icon"><span>Find Resources</span></Link>
+                  <Link to={'/take-action#learn-about-the-data'} className="o-resource-links o-resource-links--book-icon"><span>Find Resources</span></Link>
                   <ShareSocialMedia linkText={'Share this Topic'} url={'https://suicidepreventionnow.org'} />
                 </div>
               </div>
@@ -324,11 +324,11 @@ const IndexPage = () => {
               <div className="c-content-stats">
                 <div className="c-content-stats__row row">
                   <div className="col-1-2">
-                    <h3 className="c-content-stats__headerH3 c-content-stats__headerH3--blue">2 out of 3 adults</h3>
+                    <h3 className="c-content-stats__headerH3 c-content-stats__headerH3--blue">2 out of 3</h3>
                     <p>Adults believe they don't have enough knowledge about to tell if someone is considering suicide</p>
                   </div>
                   <div className="col-1-2">
-                    <img src={twoOut3} alt="2 out of 3 adults" className="c-content-stats__image" />
+                    <img src={twoOut3Wide} alt="2 out of 3 adults" className="c-content-stats__image c-content-stats__image--small" />
                   </div>
                 </div>
                 <div className="c-content-stats__row row">
@@ -346,7 +346,7 @@ const IndexPage = () => {
                   </div>
                 </div>
                 <div className="c-content-stats__download-cta">
-                    <Link to={harrisChart02} className="o-resource-links o-resource-links--down-arrow-icon" target={"_blank"}><span>Download this chart</span></Link>
+                    <Link to={harrisChart02} className="o-resource-links o-resource-links--down-arrow-icon" target="_blank"><span>Download this chart</span></Link>
                 </div>
               </div>
           </div>
@@ -356,13 +356,13 @@ const IndexPage = () => {
             <div className="c-single-col-cta__row row">
               <div className="col-2-3">
                 <div className="c-single-col-cta__content">
-                  <h2 className="c-single-col-cta__header">Take Action</h2>
+                  <h2 className="c-single-col-cta__header">Know how to Help</h2>
                   <p>Year-over-year, people are becoming more comfortable talking about their mental health with clinicians and loved ones and being there for others who are struggling. This progress is encouraging and together, we're reducing barriers to talking about mental health and suicide.</p>
                   <p>If you are struggling with your mental health or suicidal thoughts or know someone who is, you are not alone. Empowering people to have conversations about mental health and suicide prevention can save lives.</p>
                   <p><Link to={"/take-action"} target={'_blank'} className="c-single-col-cta__link">Learn more</Link> about how you can be there for yourself and others.</p>
                 </div>
                 <div className="c-single-col-cta__social-links">
-                  <Link to={'/take-action'} className="o-resource-links o-resource-links--book-icon"><span>Find Resources</span></Link>
+                  <Link to={'/take-action#know-how-to-help'} className="o-resource-links o-resource-links--book-icon"><span>Find Resources</span></Link>
                   <ShareSocialMedia linkText={'Share this Topic'} url={'https://suicidepreventionnow.org/#take-action'} />
                 </div>
               </div>
@@ -619,7 +619,7 @@ const IndexPage = () => {
                   <p><Link to={"https://afsp.org/become-a-suicide-prevention-public-policy-advocate"} target={'_blank'} className="c-single-col-cta__link">Become an advocate</Link> to improve access to mental health and suicide-related treatments and supports.</p>
                 </div>
                 <div className="c-single-col-cta__social-links">
-                  <Link to={'/take-action'} className="o-resource-links o-resource-links--book-icon"><span>Find Resources</span></Link>
+                  <Link to={'/take-action#advocate-for-change'} className="o-resource-links o-resource-links--book-icon"><span>Find Resources</span></Link>
                   <ShareSocialMedia linkText={'Share this Topic'} url={'https://suicidepreventionnow.org/#advocate-for-change'} />
                 </div>
               </div>
