@@ -346,7 +346,7 @@ const IndexPage = () => {
                   </div>
                 </div>
                 <div className="c-content-stats__download-cta">
-                    <Link to={harrisChart02} className="o-resource-links o-resource-links--down-arrow-icon" target={"_blank"}><span>Download this chart</span></Link>
+                    <Link to={harrisChart02} className="o-resource-links o-resource-links--down-arrow-icon" target="_blank"><span>Download this chart</span></Link>
                 </div>
               </div>
           </div>
