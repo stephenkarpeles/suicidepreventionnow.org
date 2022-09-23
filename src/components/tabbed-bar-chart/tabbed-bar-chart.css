@@ -1,0 +1,133 @@
+@import "../variables.css";
+@import "../breakpoints.css";
+@import "../base.css";
+
+.tabbed-bar {
+  position: relative;
+  margin-bottom: 15px;
+  overflow: hidden;
+  width: calc(100% - 350px);
+
+  @media (--medium-breakpoint-down) {
+    width: 100%;
+  }
+}
+
+.tabbed-bar__num-label {
+  position: absolute;
+  color: white;
+  font-family: var(--font-stack-regular);
+  font-weight: 700;
+  z-index: 900;
+  top: 10px;
+  left: 15px;
+}
+
+.tabbed-bar__grid {
+  @media (--medium-breakpoint-down) {
+    flex-direction: column;
+  }
+}
+
+.tabbed-bar__text-label {
+  width: 100%;
+  text-align: left;
+  padding-top: 0;
+  padding-bottom: 8px;
+  margin-right: 0;  
+}
+
+.tabbed-bar__col-wrap {
+  margin-left: auto;
+
+  @media (--medium-breakpoint-down) {
+    margin-bottom: 10px;
+  }
+}
+
+.c-tabbed-bar-chart {
+  background-color: #fff;
+  -webkit-box-shadow: 0px 3px 6px 0px rgb(95 95 95 / 15%);
+  box-shadow: 0px 3px 6px 0px rgb(95 95 95 / 15%);
+
+  &__headerH2 {
+    margin: 0;
+    padding: calc(var(--layout-spacer1) / 2) var(--layout-spacer3);
+    font-family: var(--font-serif);
+    font-size: var(--font-size-h4);
+    line-height: 1.2;
+    text-align: center;
+
+    @media (--small-breakpoint-down) {
+      padding-inline: var(--layout-spacer1);
+      font-size: calc(var(--font-size-h4) / 1.5);
+      text-align: left;
+    }
+
+    &--green {
+      color: #fff;
+      background-color: var(--color-green);
+    }
+
+    &--purple {
+      color: #fff;
+      background-color: var(--color-purple);
+    }
+  }
+
+  &__row {
+    align-items: center;
+  }
+
+  &__row-mb {
+    @media (--small-breakpoint-down) {
+      order: -1;
+    }
+  }
+
+  &__content {
+    padding: var(--layout-spacer1) var(--layout-spacer2);
+
+    @media (--small-breakpoint-down) {
+      padding: var(--layout-spacer1);
+    }
+  }
+
+  &__header {
+    font-family: var(--font-serif);
+    font-size: calc(var(--font-size-h4) / 1.2);
+    line-height: 1.2;
+    color: var(--color-dark-green);
+  }
+
+  &__image {
+    margin: 0 auto;
+    width: 200px;
+    max-width: 100%;
+
+    @media (--small-breakpoint-down) {
+      margin: var(--layout-spacer1) auto;
+      width: 160px;
+    }
+  }
+
+  &__download-cta {
+    display: flex;
+    justify-content: flex-end;
+
+    @media (--small-breakpoint-down) {
+      justify-content: center;
+    }
+  }
+
+  .row {
+
+    @media (--small-breakpoint-down) {
+      justify-content: center;
+
+      >div {
+        width: 100%;
+      }
+    }
+  }
+}

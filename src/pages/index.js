@@ -7,6 +7,7 @@ import Layout from "../components/layout/layout";
 import TwoColumnTextBlock from "../components/two-column-text-block/two-column-text-block";
 import VerticalBarRechart from "../components/vertical-bar-chart/vertical.bar.rechart";
 import HorizontalBarChart from "../components/horizontal-bar-chart/horizontal-bar-chart";
+import TabbedBarChart from "../components/tabbed-bar-chart/tabbed-bar-chart";
 import ShareSocialMedia from "../components/share-social-media/ShareSocialMedia";
 
 // Styles
@@ -21,6 +22,7 @@ import '../components/single-column-section-cta/single-column-section-cta.css';
 import '../components/num-highlight/num-highlight.css';
 import '../components/vertical-bar-chart/vertical-bar-chart.css';
 import '../components/horizontal-bar-chart/horizontal-bar-chart.css';
+import '../components/tabbed-bar-chart/tabbed-bar-chart.css';
 
 // Images
 import {
@@ -38,6 +40,7 @@ heartBrain,
 imgDadSon,
 imgManLaptop,
 medicalOnline,
+medicalClipboard,
 hsV4,
 hsV42,
 hsV43,
@@ -52,7 +55,7 @@ const IndexPage = () => {
 
   return (
     <Layout pageTitle="AFSP Site">
-        <section className="t-section-sm t-gray-image-background">
+        <section id="section1" className="t-section-sm t-gray-image-background">
           <TwoColumnTextBlock showLabel={true} anchorLink={'#section2'} header={'Introduction & Executive Summary'} bodyText={[<><p>Since 2015, the American Foundation for Suicide Prevention (AFSP), the National Action Alliance for Suicide Prevention (Action Alliance), and the Suicide Prevention Resource Center (SPRC) have commissioned The Harris Poll to conduct a bi-annual, nationally representative survey of adults in the U.S. to understand the public’s beliefs and attitudes about mental health and suicide. The survey measures what the public knows about how to support someone who is struggling and their perceptions of barriers to helping someone at risk for suicide.  The poll also helps reveal the public’s usage of, expectations about, and barriers to using crisis services.</p><p><a href={"/"} class="o-body-text-link">In the latest poll (2022)</a> we take an early pulse on public awareness of 988, the new Suicide & Crisis Lifeline, exploring expectations and awareness of 988 and access to using crisis services, and assess the impact of unified suicide prevention messaging efforts over time. We find that gains have been made in valuing mental health, but also a perception that there is not consistent societal support for mental health care. We find a strong desire to help but also strong uncertainty about the best ways to do so. And we learn that access to care is seen as the leading barrier to getting help.</p><p>Overall, the poll indicates that progress has been made, but there is more to do. We must continue to learn more about suicide and mental health particularly through increased research efforts, teach everyone how to help prevent suicide and strengthen mental health,  and advocate for improved access to care and robust crisis services.</p><p><small><i>This collaborative, multi-year project is conducted by the American Foundation for Suicide Prevention (AFSP), the National Action Alliance for Suicide Prevention, and the Suicide Prevention Resource Center. AFSP provided support to fund the website.</i></small></p></>]}  />
         </section>
         <section id="section2" className="section-intro-block">
@@ -81,6 +84,28 @@ const IndexPage = () => {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+        <section className="t-section-sm t-gray-image-background">
+          <div className="c-tabbed-bar-chart container">
+            <h2 className="c-tabbed-bar-chart__headerH2 c-tabbed-bar-chart__headerH2--green">
+              Comparing physical and mental health
+            </h2>
+              <div className="c-tabbed-bar-chart__content">
+                <div className="c-tabbed-bar-chart__row row">
+                  <div className="col-3-4 c-tabbed-bar-chart__row-mb">
+                    <h3 className="c-tabbed-bar-chart__header">Over time, the public's perception of physical health and mental health — and their own health — is changing.</h3>
+
+                    <TabbedBarChart/>
+                  </div>
+                  <div className="col-1-4">
+                    <img src={medicalClipboard} alt="Clipboard icon" className="c-tabbed-bar-chart__image" />
+                  </div>
+                </div>
+                <div className="c-tabbed-bar-chart__download-cta">
+                    <Link to={harrisChart01} className="o-resource-links o-resource-links--down-arrow-icon" target={'_blank'}><span>Download this chart</span></Link>
+                </div>
+              </div>
           </div>
         </section>
         <section className="t-section-sm">
