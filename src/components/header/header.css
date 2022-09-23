@@ -112,7 +112,8 @@
     }
 
     li:nth-child(1) {
-      a:hover {
+      a:hover,
+      a.is-active-nav-item {
         background: var(--color-yellow);
         color: black;
         border-top: 1px solid white;
@@ -133,7 +134,8 @@
     }
     
     li:nth-child(2) {
-      a:hover {
+      a:hover,
+      a.is-active-nav-item {
         background: var(--color-green);
         color: white;
         border-top: 1px solid white;
@@ -154,7 +156,8 @@
     }
 
     li:nth-child(3) {
-      a:hover {
+      a:hover,
+      a.is-active-nav-item {
         background: var(--color-blue);
         color: white;
         border-top: 1px solid white;
@@ -175,7 +178,8 @@
     }
 
     li:nth-child(4) {
-      a:hover {
+      a:hover,
+      a.is-active-nav-item {
         background: var(--color-purple);
         color: white;
         border-top: 1px solid white;
@@ -264,6 +268,54 @@
 
     .header__utility-nav {
       padding-bottom: 15px;
+    }
+  }
+}
+
+.about-project-page,
+.take-action-page {
+  .header__bottom-menu,
+  .header__back-to-top {
+    display: none;
+  }
+
+  .header__logo a {
+    color: white;
+  }
+
+  .header__col-right {
+    justify-content: center;
+  }
+
+  .header__utility-nav {
+    padding-bottom: 0;
+
+    a {
+      font-weight: 800;
+    }
+  }
+}
+
+.about-project-page {
+  .header__utility-nav {
+    li {
+      &:first-child {
+        a {
+          color: var(--color-yellow);
+        }
+      }
+    }
+  }
+}
+
+.take-action-page {
+  .header__utility-nav {
+    li {
+      &:last-child {
+        a {
+          color: var(--color-yellow);
+        }
+      }
     }
   }
 }

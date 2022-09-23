@@ -2,6 +2,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import { Tabs } from 'react-simple-tabs-component'
+import Helmet from 'react-helmet'
 
 // Components
 import Layout from "../components/layout/layout";
@@ -97,10 +98,17 @@ const IndexPage = () => {
 
   return (
     <Layout pageTitle="AFSP Site">
-        <section id="section1" className="t-section-sm t-gray-image-background">
-          <TwoColumnTextBlock showLabel={true} anchorLink={'#section2'} header={'Introduction & Executive Summary'} bodyText={[<><p>Since 2015, the American Foundation for Suicide Prevention (AFSP), the National Action Alliance for Suicide Prevention (Action Alliance), and the Suicide Prevention Resource Center (SPRC) have commissioned The Harris Poll to conduct a bi-annual, nationally representative survey of adults in the U.S. to understand the public’s beliefs and attitudes about mental health and suicide. The survey measures what the public knows about how to support someone who is struggling and their perceptions of barriers to helping someone at risk for suicide.  The poll also helps reveal the public’s usage of, expectations about, and barriers to using crisis services.</p><p><a href={"/"} class="o-body-text-link">In the latest poll (2022)</a> we take an early pulse on public awareness of 988, the new Suicide & Crisis Lifeline, exploring expectations and awareness of 988 and access to using crisis services, and assess the impact of unified suicide prevention messaging efforts over time. We find that gains have been made in valuing mental health, but also a perception that there is not consistent societal support for mental health care. We find a strong desire to help but also strong uncertainty about the best ways to do so. And we learn that access to care is seen as the leading barrier to getting help.</p><p>Overall, the poll indicates that progress has been made, but there is more to do. We must continue to learn more about suicide and mental health particularly through increased research efforts, teach everyone how to help prevent suicide and strengthen mental health,  and advocate for improved access to care and robust crisis services.</p><p><small><i>This collaborative, multi-year project is conducted by the American Foundation for Suicide Prevention (AFSP), the National Action Alliance for Suicide Prevention, and the Suicide Prevention Resource Center. AFSP provided support to fund the website.</i></small></p></>]}  />
-        </section>
-        <section id="section2" className="section-intro-block">
+      <Helmet
+          bodyAttributes={{
+              class: 'home-page'
+          }}
+      />
+      <section id="section1" className="t-section-sm t-gray-image-background">
+        <TwoColumnTextBlock showLabel={true} anchorLink={'#section2'} header={'Introduction & Executive Summary'} bodyText={[<><p>Since 2015, the American Foundation for Suicide Prevention (AFSP), the National Action Alliance for Suicide Prevention (Action Alliance), and the Suicide Prevention Resource Center (SPRC) have commissioned The Harris Poll to conduct a bi-annual, nationally representative survey of adults in the U.S. to understand the public’s beliefs and attitudes about mental health and suicide. The survey measures what the public knows about how to support someone who is struggling and their perceptions of barriers to helping someone at risk for suicide.  The poll also helps reveal the public’s usage of, expectations about, and barriers to using crisis services.</p><p><a href={"/"} class="o-body-text-link">In the latest poll (2022)</a> we take an early pulse on public awareness of 988, the new Suicide & Crisis Lifeline, exploring expectations and awareness of 988 and access to using crisis services, and assess the impact of unified suicide prevention messaging efforts over time. We find that gains have been made in valuing mental health, but also a perception that there is not consistent societal support for mental health care. We find a strong desire to help but also strong uncertainty about the best ways to do so. And we learn that access to care is seen as the leading barrier to getting help.</p><p>Overall, the poll indicates that progress has been made, but there is more to do. We must continue to learn more about suicide and mental health particularly through increased research efforts, teach everyone how to help prevent suicide and strengthen mental health,  and advocate for improved access to care and robust crisis services.</p><p><small><i>This collaborative, multi-year project is conducted by the American Foundation for Suicide Prevention (AFSP), the National Action Alliance for Suicide Prevention, and the Suicide Prevention Resource Center. AFSP provided support to fund the website.</i></small></p></>]}  />
+      </section>
+
+      <div id="section2">
+        <section className="section-intro-block">
           <div className="container">
             <div className="section-intro-block__grid row">
               <div className="section-intro-block__col-left col-7-12">
@@ -266,7 +274,10 @@ const IndexPage = () => {
             </div>
           </div>
         </section>
-        <section id="section3" className="section-intro-block">
+      </div>
+
+      <div id="section3">
+        <section className="section-intro-block">
           <div className="container">
             <div className="section-intro-block__grid row">
               <div className="section-intro-block__col-left col-7-12">
@@ -383,7 +394,10 @@ const IndexPage = () => {
             </div>
           </div>
         </section>
-        <section id="section4" className="section-intro-block">
+      </div>
+
+      <div id="section4">
+        <section className="section-intro-block">
           <div className="container">
             <div className="section-intro-block__grid row">
               <div className="section-intro-block__col-left col-7-12">
@@ -535,33 +549,31 @@ const IndexPage = () => {
           </div>
 
           <div className="c-horizontal-bar-chart container">
-           <h2 className="c-horizontal-bar-chart__headerH2 c-horizontal-bar-chart__headerH2--purple">
-             Demanding more for mental health
-           </h2>
-             <div className="c-horizontal-bar-chart__content">
-               <div className="row row--justify-content-center">
-                 <div className="col-5-6">
-                   <h3 className="c-num-highlight__stats-text c-num-highlight__dark-purple">Clear trends developed when respondents were asked what actions are most important in removing barriers to seeking help and preventing suicide.</h3>
-                 </div>
-               </div>
+          <h2 className="c-horizontal-bar-chart__headerH2 c-horizontal-bar-chart__headerH2--purple">
+            Demanding more for mental health
+          </h2>
+            <div className="c-horizontal-bar-chart__content">
+              <div className="row row--justify-content-center">
+                <div className="col-5-6">
+                  <h3 className="c-num-highlight__stats-text c-num-highlight__dark-purple">Clear trends developed when respondents were asked what actions are most important in removing barriers to seeking help and preventing suicide.</h3>
+                </div>
+              </div>
 
-               <div className="c-horizontal-bar-chart__row row">
-                 <div className="col-1-6 h-bar__img-col-wrap">
-                   <img src={medicalOnline} alt="Heart brain icon" className="c-horizontal-bar-chart__image" />
-                 </div>
-                 <div className="col-5-6 h-bar__col-wrap">
-                   <HorizontalBarChart/>
-                 </div>
+              <div className="c-horizontal-bar-chart__row row">
+                <div className="col-1-6 h-bar__img-col-wrap">
+                  <img src={medicalOnline} alt="Heart brain icon" className="c-horizontal-bar-chart__image" />
+                </div>
+                <div className="col-5-6 h-bar__col-wrap">
+                  <HorizontalBarChart/>
+                </div>
 
-               </div>
-               <div className="c-horizontal-bar-chart__download-cta">
-                   <Link to={'/'} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
-               </div>
-             </div>
-           </div>
+              </div>
+              <div className="c-horizontal-bar-chart__download-cta">
+                  <Link to={'/'} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
+              </div>
+            </div>
+          </div>
         </section>
-
-
         <section>
           <div className="c-two-column-card container">
             <div className="row">
@@ -653,6 +665,7 @@ const IndexPage = () => {
             </div>
           </div>
         </section>
+      </div>
 
     </Layout>
   )
