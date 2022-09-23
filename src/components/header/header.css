@@ -271,3 +271,51 @@
     }
   }
 }
+
+.about-project-page,
+.take-action-page {
+  .header__bottom-menu,
+  .header__back-to-top {
+    display: none;
+  }
+
+  .header__logo a {
+    color: white;
+  }
+
+  .header__col-right {
+    justify-content: center;
+  }
+
+  .header__utility-nav {
+    padding-bottom: 0;
+
+    a {
+      font-weight: 800;
+    }
+  }
+}
+
+.about-project-page {
+  .header__utility-nav {
+    li {
+      &:first-child {
+        a {
+          color: var(--color-yellow);
+        }
+      }
+    }
+  }
+}
+
+.take-action-page {
+  .header__utility-nav {
+    li {
+      &:last-child {
+        a {
+          color: var(--color-yellow);
+        }
+      }
+    }
+  }
+}

@@ -1,4 +1,5 @@
 import React from "react";
+import Helmet from 'react-helmet'
 
 // Components
 import Layout from "../components/layout/layout";
@@ -10,6 +11,11 @@ const AboutProject = () => {
 
   return (
     <Layout pageTitle="AFSP Site - About The Project">
+      <Helmet
+          bodyAttributes={{
+              class: 'about-project-page'
+          }}
+      />
       <section className="t-section-sm t-gray-image-background">
         <AboutHeaderBlock />
       </section>

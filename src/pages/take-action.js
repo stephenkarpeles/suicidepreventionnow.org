@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "gatsby";
 import ShareSocialMedia from "../components/share-social-media/ShareSocialMedia";
+import Helmet from 'react-helmet'
 
 // Components
 import Layout from "../components/layout/layout";
@@ -53,6 +54,11 @@ const style = {
 const TakeAction = () => {
   return (
     <Layout pageTitle="AFSP Site - Take Action">
+      <Helmet
+          bodyAttributes={{
+              class: 'take-action-page'
+          }}
+      />
       <section className="t-section-sm bg-50-50">
         <div className="c-one-col-block take-action-block t-offset-bg container">
           <h2 className="c-one-col-block__header-title">
