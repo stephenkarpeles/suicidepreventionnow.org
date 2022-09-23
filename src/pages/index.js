@@ -1,13 +1,16 @@
 // Base
 import React from "react";
 import { Link } from "gatsby";
+import { Tabs } from 'react-simple-tabs-component'
 
 // Components
 import Layout from "../components/layout/layout";
 import TwoColumnTextBlock from "../components/two-column-text-block/two-column-text-block";
 import VerticalBarRechart from "../components/vertical-bar-chart/vertical.bar.rechart";
 import HorizontalBarChart from "../components/horizontal-bar-chart/horizontal-bar-chart";
-import TabbedBarChart from "../components/tabbed-bar-chart/tabbed-bar-chart";
+import TabbedBarChart2022 from "../components/tabbed-bar-chart/tabbed-bar-chart2022";
+import TabbedBarChart2020 from "../components/tabbed-bar-chart/tabbed-bar-chart2020";
+import TabbedBarChart2018 from "../components/tabbed-bar-chart/tabbed-bar-chart2018";
 import ShareSocialMedia from "../components/share-social-media/ShareSocialMedia";
 
 // Styles
@@ -50,6 +53,45 @@ hsV47,
 harrisChart01,
 harrisChart02,
 harrisChart03 } from '../indexImages';
+
+const TabOne = () => {
+  return (
+    <>
+      <TabbedBarChart2022/>
+    </>
+  )
+}
+
+const TabTwo = () => {
+  return (
+    <>
+     <TabbedBarChart2020/>
+    </>
+  )
+}
+
+const TabThree = () => {
+  return (
+    <>
+      <TabbedBarChart2018/>
+    </>
+  )
+}
+
+const tabs = [
+  {
+    label: '2022', 
+    Component: TabOne 
+  },
+  {
+    label: '2020',
+    Component: TabTwo
+  },
+  {
+    label: '2018',
+    Component: TabThree
+  }
+]
 
 const IndexPage = () => {
 
@@ -96,7 +138,7 @@ const IndexPage = () => {
                   <div className="col-3-4 c-tabbed-bar-chart__row-mb">
                     <h3 className="c-tabbed-bar-chart__header">Over time, the public's perception of physical health and mental health — and their own health — is changing.</h3>
 
-                    <TabbedBarChart/>
+                    <Tabs tabs={tabs} />
                   </div>
                   <div className="col-1-4">
                     <img src={medicalClipboard} alt="Clipboard icon" className="c-tabbed-bar-chart__image" />

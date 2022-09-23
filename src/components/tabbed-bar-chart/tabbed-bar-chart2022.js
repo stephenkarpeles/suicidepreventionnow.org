@@ -1,13 +1,13 @@
 import React from "react";
 import { Fade } from "react-awesome-reveal";
 
-const TabbedBarChart = () => {
+const TabbedBarChart2022 = () => {
   return (
     <div className="tabbed-bar-wrapper">
 
       <div className="tabbed-bar__grid">
         <div className="tabbed-bar__text-label">
-          Better access to mental health care
+          Most people perceive mental health as equal to or more important than physical health
         </div>
         <div className="tabbed-bar">
           <div className="tabbed-bar__num-label">92%</div>
@@ -22,7 +22,7 @@ const TabbedBarChart = () => {
 
       <div className="tabbed-bar__grid">
         <div className="tabbed-bar__text-label">
-          More public education
+          However, over half of U.S. adults feel physical health is treated as more important
         </div>
         <div className="tabbed-bar">
           <div className="tabbed-bar__num-label">51%</div>
@@ -39,4 +39,4 @@ const TabbedBarChart = () => {
   )
 }
 
-export default TabbedBarChart;
+export default TabbedBarChart2022;
