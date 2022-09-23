@@ -2,6 +2,7 @@ export { default as imgWomanDog } from './images/know-the-facts.jpg';
 export { default as twoOut3 } from './images/2-out-3.png';
 export { default as twoOut3Small } from './images/2-out-3-small.png';
 export { default as twoOut3Wide } from './images/2-out-3-wide.png';
+export { default as twoOut3Wide2x } from './images/2-out-3-wide2x.png';
 export { default as eightOut10 } from './images/8-out-10.png';
 export { default as peopleImage } from './images/c-group-people.svg';
 export { default as firstAidKit } from './images/c-first-aid-kit.svg';

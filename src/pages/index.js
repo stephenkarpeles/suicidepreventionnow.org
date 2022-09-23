@@ -32,7 +32,7 @@ import '../components/tabbed-bar-chart/tabbed-bar-chart.css';
 // Images
 import {
 imgWomanDog,
-twoOut3Wide,
+twoOut3Wide2x,
 eightOut10,
 peopleImage,
 firstAidKit,
@@ -328,7 +328,7 @@ const IndexPage = () => {
                     <p>Adults believe they don't have enough knowledge about to tell if someone is considering suicide</p>
                   </div>
                   <div className="col-1-2">
-                    <img src={twoOut3Wide} alt="2 out of 3 adults" className="c-content-stats__image c-content-stats__image--small" />
+                    <img src={twoOut3Wide2x} alt="2 out of 3 adults" className="c-content-stats__image c-content-stats__image--small" />
                   </div>
                 </div>
                 <div className="c-content-stats__row row">
