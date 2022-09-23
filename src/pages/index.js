@@ -6,6 +6,7 @@ import { Link } from "gatsby";
 import Layout from "../components/layout/layout";
 import TwoColumnTextBlock from "../components/two-column-text-block/two-column-text-block";
 import VerticalBarRechart from "../components/vertical-bar-chart/vertical.bar.rechart";
+import HorizontalBarChart from "../components/horizontal-bar-chart/horizontal-bar-chart";
 import ShareSocialMedia from "../components/share-social-media/ShareSocialMedia";
 
 // Styles
@@ -19,6 +20,7 @@ import '../components/two-column-card/two-column-card.css';
 import '../components/single-column-section-cta/single-column-section-cta.css';
 import '../components/num-highlight/num-highlight.css';
 import '../components/vertical-bar-chart/vertical-bar-chart.css';
+import '../components/horizontal-bar-chart/horizontal-bar-chart.css';
 
 // Images
 import {
@@ -35,6 +37,7 @@ bookPencil,
 heartBrain,
 imgDadSon,
 imgManLaptop,
+medicalOnline,
 hsV4,
 hsV42,
 hsV43,
@@ -463,7 +466,35 @@ const IndexPage = () => {
               </div>
             </div>
           </div>
+
+          <div className="c-horizontal-bar-chart container">
+           <h2 className="c-horizontal-bar-chart__headerH2 c-horizontal-bar-chart__headerH2--purple">
+             Demanding more for mental health
+           </h2>
+             <div className="c-horizontal-bar-chart__content">
+               <div className="row row--justify-content-center">
+                 <div className="col-5-6">
+                   <h3 className="c-num-highlight__stats-text c-num-highlight__dark-purple">Clear trends developed when respondents were asked what actions are most important in removing barriers to seeking help and preventing suicide.</h3>
+                 </div>
+               </div>
+
+               <div className="c-horizontal-bar-chart__row row">
+                 <div className="col-1-6 h-bar__img-col-wrap">
+                   <img src={medicalOnline} alt="Heart brain icon" className="c-horizontal-bar-chart__image" />
+                 </div>
+                 <div className="col-5-6 h-bar__col-wrap">
+                   <HorizontalBarChart/>
+                 </div>
+
+               </div>
+               <div className="c-horizontal-bar-chart__download-cta">
+                   <Link to={'/'} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
+               </div>
+             </div>
+           </div>
         </section>
+
+
         <section>
           <div className="c-two-column-card container">
             <div className="row">
