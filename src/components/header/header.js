@@ -66,7 +66,7 @@ const Header = () => {
             <div className="header__bottom-menu">
               <ScrollspyNav
                   scrollTargetIds={["section1", "section2", "section3", "section4"]}
-                  offset={-50}
+                  offset={-40}
                   activeNavClass="is-active-nav-item"
                   scrollDuration="600"
                   headerBackground="true"
