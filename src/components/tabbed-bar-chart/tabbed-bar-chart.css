@@ -123,6 +123,7 @@
         appearance: none;
         -webkit-appearance: none;
         border: none;
+        color: black;
         padding: 8px 90px;
         font-size: 21px;
         box-shadow: 0px 3px 6px #00000029;
