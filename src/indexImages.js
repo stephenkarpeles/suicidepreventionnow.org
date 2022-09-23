@@ -44,3 +44,4 @@ export { default as harrisChart01 } from './images/harris-chart-01.png';
 export { default as harrisChart02 } from './images/harris-chart-02.png';
 export { default as harrisChart03 } from './images/harris-chart-03.png';
 export { default as medicalOnline } from './images/c-medical-online.svg';
+export { default as medicalClipboard } from './images/c-medical-clipboard.svg';

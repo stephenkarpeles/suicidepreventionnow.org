@@ -34,6 +34,7 @@
     "react-dom": "^18.1.0",
     "react-helmet": "^6.1.0",
     "react-share-social": "^0.1.48",
+    "react-simple-tabs-component": "^2.1.1",
     "recharts": "^2.1.14"
   }
 }
