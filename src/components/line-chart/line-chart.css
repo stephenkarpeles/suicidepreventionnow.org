@@ -4,6 +4,23 @@
 
 .line-chart-wrapper {
   height: 380px;
+  padding: 0 50px 0 30px;
+
+  @media (--medium-breakpoint-down) {
+    padding: 0;
+  }
+}
+
+.line-chart-text-block {
+  font-size: 18px;
+  padding-top: 30px;
+  line-height: 1.7;
+}
+
+.line-chart-text-col.col-2-3 {
+  @media (--medium-breakpoint-down) {
+    width: 100% !important;
+  }
 }
 
 .line-chart-row {
@@ -96,5 +113,11 @@
     justify-content: center;
     flex-direction: column;
     width: calc(100% - 95px);
+  }
+}
+
+.section-line-chart {
+  .c-content-quotes__download-cta {
+    margin-top: 15px;
   }
 }

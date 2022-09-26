@@ -358,7 +358,7 @@ const IndexPage = () => {
           </div>
         </section>
         
-        <section className="t-section-lg">
+        <section className="t-section-lg section-line-chart">
           <div className="container">
             <div className="row">
               <div className="col col-full-width text-center">
@@ -428,11 +428,14 @@ const IndexPage = () => {
               </div>
             </div>
             <div className="row row--justify-content-center">
-              <div className="col col-2-3">
-                <p>
-
+              <div className="col col-2-3 line-chart-text-col">
+                <p className="text-center line-chart-text-block">
+                  The education is working, stigma is being reduced due to hard work from people like you, and organizations like ours that are driving this. Overall, there has been a rise in comfort with these four different ways.
                 </p>
               </div>
+            </div>
+            <div className="c-content-quotes__download-cta">
+              <Link to={harrisChart03} className="o-resource-links o-resource-links--down-arrow-icon" target={'_blank'}><span>Download this chart</span></Link>
             </div>
           </div>
         </section>
