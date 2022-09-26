@@ -92,6 +92,7 @@ const data = [
 const LineChart = () => (
     <ResponsiveLine
         data={data}
+        animate={true}
         margin={{ top: 50, right: 20, bottom: 50, left: 60 }}
         xScale={{ type: 'point'}}
         yScale={{
