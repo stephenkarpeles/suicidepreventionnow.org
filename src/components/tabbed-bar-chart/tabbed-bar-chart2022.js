@@ -10,11 +10,11 @@ const TabbedBarChart2022 = () => {
           Most people perceive mental health as equal to or more important than physical health
         </div>
         <div className="tabbed-bar">
-          <div className="tabbed-bar__num-label">92%</div>
+          <div className="tabbed-bar__num-label">76%</div>
           <Fade direction="left">
             <svg width="100%" height="41">
-              <rect width="92%" height="41" x="0" fill="#1d8019"></rect>
-              <rect width="8%" height="41" x="92%" fill="#D1D1D1"></rect>
+              <rect width="76%" height="41" x="0" fill="#1d8019"></rect>
+              <rect width="24%" height="41" x="76%" fill="#D1D1D1"></rect>
             </svg>
           </Fade>
         </div>
