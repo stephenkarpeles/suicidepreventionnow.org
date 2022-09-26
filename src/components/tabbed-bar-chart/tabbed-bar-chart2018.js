@@ -7,14 +7,14 @@ const TabbedBarChart2018 = () => {
 
       <div className="tabbed-bar__grid">
         <div className="tabbed-bar__text-label">
-          Most people perceive mental health as equal to or more important than physical health
+          80% of those surveyed believe mental health and physical health are equally important to their own health 
         </div>
         <div className="tabbed-bar">
-          <div className="tabbed-bar__num-label">30%</div>
+          <div className="tabbed-bar__num-label">80%</div>
           <Fade direction="left">
             <svg width="100%" height="41">
-              <rect width="30%" height="41" x="0" fill="#1d8019"></rect>
-              <rect width="70%" height="41" x="30%" fill="#D1D1D1"></rect>
+              <rect width="80%" height="41" x="0" fill="#1d8019"></rect>
+              <rect width="20%" height="41" x="80%" fill="#D1D1D1"></rect>
             </svg>
           </Fade>
         </div>
@@ -22,14 +22,14 @@ const TabbedBarChart2018 = () => {
 
       <div className="tabbed-bar__grid">
         <div className="tabbed-bar__text-label">
-          However, over half of U.S. adults feel physical health is treated as more important
+          However, nearly 30 percent of people feel physical health is treated as more important
         </div>
         <div className="tabbed-bar">
-          <div className="tabbed-bar__num-label">15%</div>
+          <div className="tabbed-bar__num-label">51%</div>
           <Fade direction="left">
             <svg width="100%" height="41">
-              <rect width="15%" height="41" x="0" fill="#31552f"></rect>
-              <rect width="85%" height="41" x="15%" fill="#D1D1D1"></rect>
+              <rect width="51%" height="41" x="0" fill="#31552f"></rect>
+              <rect width="49%" height="41" x="51%" fill="#D1D1D1"></rect>
             </svg>
           </Fade>
         </div>
