@@ -2,6 +2,15 @@ import React from "react";
 
 import { ResponsiveLine } from '@nivo/line'
 
+const lineGraphSettings = {
+  theme: {
+    fontSize: '14px',
+    textColor: 'black',
+  },
+};
+
+const format = v => `${v}%`
+
 const data = [
   {
     "id": "help",
@@ -9,7 +18,7 @@ const data = [
     "data": [
       {
         "x": "2018",
-        "y": 75
+        "y": 75 
       },
       {
         "x": "2020",
@@ -98,7 +107,7 @@ const LineChart = () => (
         axisBottom={{
           orient: 'bottom',
           tickSize: 5,
-          tickPadding: 5,
+          tickPadding: 15,
           tickRotation: 0,
           legend: '',
           legendOffset: 36,
@@ -107,19 +116,23 @@ const LineChart = () => (
         axisLeft={{
           orient: 'left',
           tickSize: 5,
-          tickPadding: 5,
+          tickPadding: 15,
           tickRotation: 0,
           legend: '',
           legendOffset: -40,
-          legendPosition: 'middle'
+          legendPosition: 'middle',
+          format          
         }}
+        labelFormat={format}
+        tooltipFormat={format}
         pointSize={10}
         pointColor={{ theme: 'background' }}
         pointBorderWidth={2}
         pointBorderColor={{ from: 'serieColor' }}
         pointLabelYOffset={-12}
         useMesh={true}
-        colors={{ datum: 'color' }}        
+        colors={{ datum: 'color' }}  
+        theme={lineGraphSettings.theme}      
     />
 )
 
