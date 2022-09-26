@@ -54,6 +54,10 @@ hsV43,
 hsV44,
 hsV45,
 hsV47,
+chartLegendDoctor,
+chartLegendMental,
+chartLegendFriend,
+chartLegendQuote,
 harrisChart01,
 harrisChart02,
 harrisChart03 } from '../indexImages';
@@ -361,12 +365,73 @@ const IndexPage = () => {
                  <h2 className="c-single-col-cta__header text-center text-color-dark-blue">Comfortability About Coping with Thoughts of Suicide</h2>
               </div>
             </div>
-            <div className="row">
-              <div className="col col-1-3">Test</div>
-              <div className="col col-2-3">
+            <div className="row line-chart-row">
+              <div className="col col-1-3 line-chart-row--legend">
+                <h3 className="text-color-dark-blue text-serif">I'm comfortable...</h3>
+                <div className="line-chart-legend">
+
+                  <div className="line-chart-legend__item line-chart-legend__item--1">
+                    <div className="line-chart-legend__dot-wrap">  
+                      <div className="line-chart-legend__dot"></div>                  
+                    </div>
+                    <div className="line-chart-legend__icon">
+                      <img src={chartLegendMental} alt="Mental Health Icon" />
+                    </div>
+                    <div className="line-chart-legend__text">
+                      Being there to help a loved one
+                    </div>
+                  </div>
+
+                  <div className="line-chart-legend__item line-chart-legend__item--2">
+                    <div className="line-chart-legend__dot-wrap">   
+                      <div className="line-chart-legend__dot"></div>            
+                    </div>
+                    <div className="line-chart-legend__icon">
+                      <img src={chartLegendDoctor} alt="Doctor Icon" />
+                    </div>
+                    <div className="line-chart-legend__text">
+                      Talking to a clinician when struggling
+                    </div>
+                  </div>
+
+                  <div className="line-chart-legend__item line-chart-legend__item--3">
+                    <div className="line-chart-legend__dot-wrap">  
+                      <div className="line-chart-legend__dot"></div>                    
+                    </div>
+                    <div className="line-chart-legend__icon">
+                      <img src={chartLegendFriend} alt="Friends Icon" />
+                    </div>
+                    <div className="line-chart-legend__text">
+                      Talking to a friend or loved one when struggling
+                    </div>
+                  </div>
+
+                  <div className="line-chart-legend__item line-chart-legend__item--4">
+                    <div className="line-chart-legend__dot-wrap">  
+                      <div className="line-chart-legend__dot"></div>                    
+                    </div>
+                    <div className="line-chart-legend__icon">
+                      <img src={chartLegendQuote} alt="Quote Icon" />
+                    </div>
+                    <div className="line-chart-legend__text">
+                      Discussing suicide with friends and loved ones overall
+                    </div>
+                  </div>
+                  
+
+                </div>
+              </div>
+              <div className="col col-2-3 line-chart-row--chart">
                 <div className="line-chart-wrapper">
                   <LineChart/>
                 </div>
+              </div>
+            </div>
+            <div className="row row--justify-content-center">
+              <div className="col col-2-3">
+                <p>
+
+                </p>
               </div>
             </div>
           </div>

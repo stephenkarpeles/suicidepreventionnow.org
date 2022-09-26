@@ -177,6 +177,10 @@ p {
   text-align: center;
 }
 
+.text-serif {
+  font-family: var(--font-serif);
+}
+
 .text-color-dark-blue {
   color: var(--color-dark-blue);
 }

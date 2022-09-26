@@ -92,12 +92,12 @@ const data = [
 const LineChart = () => (
     <ResponsiveLine
         data={data}
-        margin={{ top: 50, right: 110, bottom: 50, left: 60 }}
-        xScale={{ type: 'point' }}
+        margin={{ top: 50, right: 20, bottom: 50, left: 60 }}
+        xScale={{ type: 'point'}}
         yScale={{
           type: 'linear',
-          min: 'auto',
-          max: 'auto',
+          min: 55,
+          max: 80,
           stacked: false,
           reverse: false
         }}
@@ -111,7 +111,7 @@ const LineChart = () => (
           tickRotation: 0,
           legend: '',
           legendOffset: 36,
-          legendPosition: 'middle'
+          legendPosition: 'middle',
         }}
         axisLeft={{
           orient: 'left',
@@ -121,12 +121,12 @@ const LineChart = () => (
           legend: '',
           legendOffset: -40,
           legendPosition: 'middle',
+          tickValues: [55, 60, 65, 70, 75, 80],
           format          
         }}
         labelFormat={format}
         tooltipFormat={format}
         pointSize={10}
-        pointColor={{ theme: 'background' }}
         pointBorderWidth={2}
         pointBorderColor={{ from: 'serieColor' }}
         pointLabelYOffset={-12}
