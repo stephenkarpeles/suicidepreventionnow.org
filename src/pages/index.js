@@ -190,7 +190,7 @@ const IndexPage = () => {
                   <p className="c-num-highlight__stats-num c-num-highlight__green">75<span>%</span></p>
                 </div>
                 <div className="col-1-3">
-                  <p className="c-num-highlight__stats-text c-num-highlight__dark-green">Three-quarters of U.S. adults (75%, more than in previous years) say that most people who die by suicide usually show some signs beforehand</p>
+                  <p className="c-num-highlight__stats-text c-num-highlight__dark-green">Three-quarters of U.S. adults (75%, up from previous years) say that most people who die by suicide usually show some signs beforehand</p>
                 </div>
                 <div className="col-1-3">
                   <img src={exclamationPoint} alt="Exclamation icon" className="c-num-highlight__image" />
