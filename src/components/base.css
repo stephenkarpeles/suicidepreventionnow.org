@@ -171,3 +171,12 @@ p {
 .dropcap:after {
   margin-bottom: -0.15em;
 }
+
+/* Utilities */
+.text-center {
+  text-align: center;
+}
+
+.text-color-dark-blue {
+  color: var(--color-dark-blue);
+}

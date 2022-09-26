@@ -14,6 +14,7 @@ import TabbedBarChart2022 from "../components/tabbed-bar-chart/tabbed-bar-chart2
 import TabbedBarChart2020 from "../components/tabbed-bar-chart/tabbed-bar-chart2020";
 import TabbedBarChart2018 from "../components/tabbed-bar-chart/tabbed-bar-chart2018";
 import ShareSocialMedia from "../components/share-social-media/ShareSocialMedia";
+import LineChart from "../components/line-chart/line-chart";
 
 // Styles
 import '../components/section-intro-block/section-intro-block.css';
@@ -28,6 +29,7 @@ import '../components/num-highlight/num-highlight.css';
 import '../components/vertical-bar-chart/vertical-bar-chart.css';
 import '../components/horizontal-bar-chart/horizontal-bar-chart.css';
 import '../components/tabbed-bar-chart/tabbed-bar-chart.css';
+import '../components/line-chart/line-chart.css';
 
 // Images
 import {
@@ -351,6 +353,26 @@ const IndexPage = () => {
               </div>
           </div>
         </section>
+        
+        <section className="t-section-lg">
+          <div className="container">
+            <div className="row">
+              <div className="col col-full-width text-center">
+                 <h2 className="c-single-col-cta__header text-center text-color-dark-blue">Comfortability About Coping with Thoughts of Suicide</h2>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col col-1-3">Test</div>
+              <div className="col col-2-3">
+                <div className="line-chart-wrapper">
+                  <LineChart/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
         <section id="take-action" className="t-section-lg t-blue-image-bg">
           <div className="c-single-col-cta container">
             <div className="c-single-col-cta__row row">

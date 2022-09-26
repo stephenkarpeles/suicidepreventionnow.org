@@ -1,0 +1,7 @@
+@import "../variables.css";
+@import "../breakpoints.css";
+@import "../base.css";
+
+.line-chart-wrapper {
+  height: 350px;
+}

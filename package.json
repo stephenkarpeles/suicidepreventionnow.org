@@ -17,9 +17,12 @@
   "dependencies": {
     "@emotion/react": "^11.10.4",
     "@fontsource/merriweather-sans": "^4.5.9",
+    "@nivo/core": "^0.80.0",
+    "@nivo/line": "^0.80.0",
     "gatsby": "^4.21.1",
     "gatsby-plugin-postcss": "^5.21.0",
     "gatsby-plugin-web-font-loader": "^1.0.4",
+    "nivo": "^0.31.0",
     "postcss": "^8.4.16",
     "postcss-advanced-variables": "^3.0.1",
     "postcss-calc": "^8.2.4",
