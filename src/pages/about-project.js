@@ -30,10 +30,10 @@ const AboutProject = () => {
 
         <div style={{marginTop: '70px'}} className="c-one-col-block t-offset-bg t-offset-color-gradient container">
           <h2 className="c-one-col-block__header-title">
-            <span>Read the Report</span>
+            <span>Take Action</span>
           </h2>
           <div className="c-one-col-block__content">
-            <p>Now that you know who is involved in the study, please read the highlights from the study focused on suicide prevention awareness and mental health.</p>
+            <p>Now that you know about the project, learn how you can take action to strengthen suicide prevention and mental health.</p>
             <div className="c-one-col-block__resources">
               <div className="c-one-col-block__resources-links">
                 <Link to={'/#section2'} className="o-resource-links o-resource-links--book-icon"><span>Read Report</span></Link>
