@@ -14,6 +14,7 @@ import TabbedBarChart2022 from "../components/tabbed-bar-chart/tabbed-bar-chart2
 import TabbedBarChart2020 from "../components/tabbed-bar-chart/tabbed-bar-chart2020";
 import TabbedBarChart2018 from "../components/tabbed-bar-chart/tabbed-bar-chart2018";
 import ShareSocialMedia from "../components/share-social-media/ShareSocialMedia";
+import LineChart from "../components/line-chart/line-chart";
 
 // Styles
 import '../components/section-intro-block/section-intro-block.css';
@@ -28,6 +29,7 @@ import '../components/num-highlight/num-highlight.css';
 import '../components/vertical-bar-chart/vertical-bar-chart.css';
 import '../components/horizontal-bar-chart/horizontal-bar-chart.css';
 import '../components/tabbed-bar-chart/tabbed-bar-chart.css';
+import '../components/line-chart/line-chart.css';
 
 // Images
 import {
@@ -52,6 +54,10 @@ hsV43,
 hsV44,
 hsV45,
 hsV47,
+chartLegendDoctor,
+chartLegendMental,
+chartLegendFriend,
+chartLegendQuote,
 harrisChart01,
 harrisChart02,
 harrisChart03 } from '../indexImages';
@@ -351,6 +357,90 @@ const IndexPage = () => {
               </div>
           </div>
         </section>
+        
+        <section className="t-section-lg section-line-chart">
+          <div className="container">
+            <div className="row">
+              <div className="col col-full-width text-center">
+                 <h2 className="c-single-col-cta__header text-center text-color-dark-blue">Comfortability About Coping with Thoughts of Suicide</h2>
+              </div>
+            </div>
+            <div className="row line-chart-row">
+              <div className="col col-1-3 line-chart-row--legend">
+                <h3 className="text-color-dark-blue text-serif">I'm comfortable...</h3>
+                <div className="line-chart-legend">
+
+                  <div className="line-chart-legend__item line-chart-legend__item--1">
+                    <div className="line-chart-legend__dot-wrap">  
+                      <div className="line-chart-legend__dot"></div>                  
+                    </div>
+                    <div className="line-chart-legend__icon">
+                      <img src={chartLegendMental} alt="Mental Health Icon" />
+                    </div>
+                    <div className="line-chart-legend__text">
+                      Being there to help a loved one
+                    </div>
+                  </div>
+
+                  <div className="line-chart-legend__item line-chart-legend__item--2">
+                    <div className="line-chart-legend__dot-wrap">   
+                      <div className="line-chart-legend__dot"></div>            
+                    </div>
+                    <div className="line-chart-legend__icon">
+                      <img src={chartLegendDoctor} alt="Doctor Icon" />
+                    </div>
+                    <div className="line-chart-legend__text">
+                      Talking to a clinician when struggling
+                    </div>
+                  </div>
+
+                  <div className="line-chart-legend__item line-chart-legend__item--3">
+                    <div className="line-chart-legend__dot-wrap">  
+                      <div className="line-chart-legend__dot"></div>                    
+                    </div>
+                    <div className="line-chart-legend__icon">
+                      <img src={chartLegendFriend} alt="Friends Icon" />
+                    </div>
+                    <div className="line-chart-legend__text">
+                      Talking to a friend or loved one when struggling
+                    </div>
+                  </div>
+
+                  <div className="line-chart-legend__item line-chart-legend__item--4">
+                    <div className="line-chart-legend__dot-wrap">  
+                      <div className="line-chart-legend__dot"></div>                    
+                    </div>
+                    <div className="line-chart-legend__icon">
+                      <img src={chartLegendQuote} alt="Quote Icon" />
+                    </div>
+                    <div className="line-chart-legend__text">
+                      Discussing suicide with friends and loved ones overall
+                    </div>
+                  </div>
+                  
+
+                </div>
+              </div>
+              <div className="col col-2-3 line-chart-row--chart">
+                <div className="line-chart-wrapper">
+                  <LineChart/>
+                </div>
+              </div>
+            </div>
+            <div className="row row--justify-content-center">
+              <div className="col col-2-3 line-chart-text-col">
+                <p className="text-center line-chart-text-block">
+                  The education is working, stigma is being reduced due to hard work from people like you, and organizations like ours that are driving this. Overall, there has been a rise in comfort with these four different ways.
+                </p>
+              </div>
+            </div>
+            <div className="c-content-quotes__download-cta">
+              <Link to={harrisChart03} className="o-resource-links o-resource-links--down-arrow-icon" target={'_blank'}><span>Download this chart</span></Link>
+            </div>
+          </div>
+        </section>
+
+
         <section id="take-action" className="t-section-lg t-blue-image-bg">
           <div className="c-single-col-cta container">
             <div className="c-single-col-cta__row row">

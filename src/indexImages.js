@@ -48,3 +48,7 @@ export { default as harrisChart02 } from './images/harris-chart-02.png';
 export { default as harrisChart03 } from './images/harris-chart-03.png';
 export { default as medicalOnline } from './images/c-medical-online.svg';
 export { default as medicalClipboard } from './images/c-medical-clipboard.svg';
+export { default as chartLegendQuote } from './images/chart-legend-quote.svg';
+export { default as chartLegendDoctor } from './images/chart-legend-doctor.svg';
+export { default as chartLegendFriend } from './images/chart-legend-friend.svg';
+export { default as chartLegendMental } from './images/chart-legend-mental.svg';
