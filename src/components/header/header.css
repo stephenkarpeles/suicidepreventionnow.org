@@ -450,6 +450,14 @@
       font-weight: 800;
     }
   }
+
+  .header {
+    height: 145px;
+  }
+
+  .header--user-has-scrolled {
+    height: 135px;
+  }
 }
 
 .about-project-page {
