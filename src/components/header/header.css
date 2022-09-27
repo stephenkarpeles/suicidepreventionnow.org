@@ -65,6 +65,11 @@
   }
 
   &__help-area {
+    a {
+      color: white;
+      font-weight: 400;
+    }
+
     @media (--large-breakpoint-down) {
       font-size: 14px;
     }
@@ -76,6 +81,12 @@
 
   &__help-area-mobile {
     display: none;
+
+    a {
+      color: white;
+      font-weight: 400;
+      text-decoration: underline;
+    }
 
     @media (--nav-breakpoint-down) {
       display: block;

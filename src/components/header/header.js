@@ -35,7 +35,7 @@ const Header = () => {
     <header className={`header${scroll ? " header--user-has-scrolled" : ""}`}>
       <div className="header__help-area-mobile">
         <div className="container">
-          <strong>Need help?</strong> Call or text 988 or chat 988lifeline.org
+          <strong>Need help?</strong> Call or text <a href="tel:988">988</a> or chat <a href="https://988lifeline.org" target="_blank">988lifeline.org</a>
         </div>
       </div>
       <div className="header__base-gradient">
@@ -54,7 +54,7 @@ const Header = () => {
           <div className="header__col-right">
             <div className="header__top-menu">
               <div className="header__help-area">
-                <strong>Need help?</strong> Call or text 988 or chat 988lifeline.org
+                <strong>Need help?</strong> Call or text <a href="tel:988">988</a> or chat <a href="https://988lifeline.org" target="_blank">988lifeline.org</a>
               </div>
               <div className="header__utility-nav">
                 <ul>
