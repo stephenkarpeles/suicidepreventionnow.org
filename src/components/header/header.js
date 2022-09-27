@@ -33,6 +33,11 @@ const Header = () => {
 
   return (
     <header className={`header${scroll ? " header--user-has-scrolled" : ""}`}>
+      <div className="header__help-area-mobile">
+        <div className="container">
+          <strong>Need help?</strong> Call or text 988 or chat 988lifeline.org
+        </div>
+      </div>
       <div className="header__base-gradient">
       </div>
       <div className="container">
@@ -72,16 +77,16 @@ const Header = () => {
               >
                 <ul>
                   <li>
-                    <Link href="#section1">1. Introduction</Link>
+                    <Link href="#section1">1. <span>Introduction</span></Link>
                   </li>
                   <li>
-                    <Link href="#section2">2. Learn about the Data</Link>
+                    <Link href="#section2">2. <span>Learn about the Data</span></Link>
                   </li>
                   <li>
-                    <Link href="#section3">3. Know how to Help</Link>
+                    <Link href="#section3">3. <span>Know how to Help</span></Link>
                   </li>
                   <li>
-                    <Link href="#section4">4. Advocate for Change</Link>
+                    <Link href="#section4">4. <span>Advocate for Change</span></Link>
                   </li>
                 </ul>
               </ScrollspyNav>
