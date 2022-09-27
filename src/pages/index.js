@@ -60,7 +60,10 @@ chartLegendFriend,
 chartLegendQuote,
 harrisChart01,
 harrisChart02,
-harrisChart03 } from '../indexImages';
+harrisChart03,
+harrisChart04,
+harrisChart05,
+harrisChart06 } from '../indexImages';
 
 const TabOne = () => {
   return (
@@ -229,7 +232,7 @@ const IndexPage = () => {
                   </div>
                 </div>
                 <div className="c-vertical-bar-chart__download-cta">
-                    <Link to={harrisChart01} className="o-resource-links o-resource-links--down-arrow-icon" target={'_blank'}><span>Download this chart</span></Link>
+                    <Link to={harrisChart02} className="o-resource-links o-resource-links--down-arrow-icon" target={'_blank'}><span>Download this chart</span></Link>
                 </div>
               </div>
           </div>
@@ -352,7 +355,7 @@ const IndexPage = () => {
                   </div>
                 </div>
                 <div className="c-content-stats__download-cta">
-                    <Link to={harrisChart02} className="o-resource-links o-resource-links--down-arrow-icon" target="_blank"><span>Download this chart</span></Link>
+                    <Link to={harrisChart03} className="o-resource-links o-resource-links--down-arrow-icon" target="_blank"><span>Download this chart</span></Link>
                 </div>
               </div>
           </div>
@@ -435,7 +438,7 @@ const IndexPage = () => {
               </div>
             </div>
             <div className="c-content-quotes__download-cta">
-              <Link to={harrisChart03} className="o-resource-links o-resource-links--down-arrow-icon" target={'_blank'}><span>Download this chart</span></Link>
+              <Link to={harrisChart06} className="o-resource-links o-resource-links--down-arrow-icon" target={'_blank'}><span>Download this chart</span></Link>
             </div>
           </div>
         </section>
@@ -628,7 +631,7 @@ const IndexPage = () => {
                   </div>
                   <div className="col-1-4">
                     <div className="c-content-quotes__download-cta">
-                      <Link to={harrisChart03} className="o-resource-links o-resource-links--down-arrow-icon" target={'_blank'}><span>Download this chart</span></Link>
+                      <Link to={harrisChart04} className="o-resource-links o-resource-links--down-arrow-icon" target={'_blank'}><span>Download this chart</span></Link>
                     </div>
                   </div>
                 </div>
@@ -674,7 +677,7 @@ const IndexPage = () => {
 
               </div>
               <div className="c-horizontal-bar-chart__download-cta">
-                  <Link to={'/'} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
+                  <Link to={harrisChart05} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
               </div>
             </div>
           </div>
