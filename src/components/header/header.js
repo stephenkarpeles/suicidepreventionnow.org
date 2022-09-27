@@ -33,6 +33,11 @@ const Header = () => {
 
   return (
     <header className={`header${scroll ? " header--user-has-scrolled" : ""}`}>
+      <div className="header__help-area-mobile">
+        <div className="container">
+          <strong>Need help?</strong> Call or text 988 or chat 988lifeline.org
+        </div>
+      </div>
       <div className="header__base-gradient">
       </div>
       <div className="container">
