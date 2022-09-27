@@ -201,7 +201,7 @@ const IndexPage = () => {
                   <p className="c-num-highlight__stats-num c-num-highlight__green">96<span>%</span></p>
                 </div>
                 <div className="col-1-3">
-                  <p className="c-num-highlight__stats-text c-num-highlight__dark-green">More and more U.S. adults overtime (96% in 2022) would take action to help prevent suicide if someone close to them was thinking about suicide</p>
+                  <p className="c-num-highlight__stats-text c-num-highlight__dark-green">More and more U.S. adults (96% in 2022) would take action to help prevent suicide if someone close to them was thinking about suicide</p>
                 </div>
                 <div className="col-1-3">
                   <img src={chatBubble} alt="Chat bubbles icon" className="c-num-highlight__image" />
