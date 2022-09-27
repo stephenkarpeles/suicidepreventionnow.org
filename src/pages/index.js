@@ -123,7 +123,7 @@ const IndexPage = () => {
               <div className="section-intro-block__grid row">
                 <div className="section-intro-block__col-left col-7-12">
                   <div id="know-the-facts" className="section-intro-block__tag section-intro-block__tag--green">
-                    2. Learn about the Data
+                    2. Learn About the Data
                   </div>
                   <div className="section-intro-block__heading">
                     <h2>Understand the <span>perceptions, beliefs, and attitudes</span> of the U.S. public about <span>suicide and mental health</span></h2>
@@ -213,7 +213,7 @@ const IndexPage = () => {
         <section className="t-section-sm t-gray-image-background">
           <div className="c-vertical-bar-chart container">
             <h2 className="c-vertical-bar-chart__headerH2 c-vertical-bar-chart__headerH2--green">
-              More People Report Personal Experience with Mental Health Conditions and/or Suicide
+              More People Report Personal Experience With Mental Health Conditions and/or Suicide
             </h2>
               <div className="c-vertical-bar-chart__content">
                 <div className="c-vertical-bar-chart__row row">
@@ -239,7 +239,7 @@ const IndexPage = () => {
             <div className="c-single-col-cta__row row">
               <div className="col-2-3">
                 <div className="c-single-col-cta__content">
-                  <h2 className="c-single-col-cta__header">Learn about the Data</h2>
+                  <h2 className="c-single-col-cta__header">Learn About the Data</h2>
                   <p>The change in the public's perception of and knowledge about suicide and mental health is encouraging. More people have an understanding of the importance of mental health and believe that suicide can be prevented.</p>
                   <p>Over time, a greater number of people recognize that there are warning signs for suicide and are aware that they may have a mental health condition themselves—and want to take action to help prevent suicide and strengthen mental health.</p>
                 </div>
@@ -446,7 +446,7 @@ const IndexPage = () => {
             <div className="c-single-col-cta__row row">
               <div className="col-2-3">
                 <div className="c-single-col-cta__content">
-                  <h2 className="c-single-col-cta__header">Know how to Help</h2>
+                  <h2 className="c-single-col-cta__header">Know How to Help</h2>
                   <p>Year-over-year, people are becoming more comfortable talking about their mental health with clinicians and loved ones and being there for others who are struggling. This progress is encouraging and together, we're reducing barriers to talking about mental health and suicide.</p>
                   <p>If you are struggling with your mental health or suicidal thoughts or know someone who is, you are not alone. Empowering people to have conversations about mental health and suicide prevention can save lives.</p>
                   <p><Link to={"/take-action"} target={'_blank'} className="c-single-col-cta__link">Learn more</Link> about how you can be there for yourself and others.</p>

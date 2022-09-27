@@ -72,7 +72,7 @@ const TakeAction = () => {
       <section id="learn-about-the-data" className="t-section-lg t-section-bg-pattern t-bg-pattern-color-01">
         <div className="c-downloadable-resources container">
           <div className="c-downloadable-resources__col-left">
-            <h2>Learn about the Data</h2>
+            <h2>Learn About the Data</h2>
             <p>Resources about the data and the public's perceptions about suicide and suicide prevention.</p>
           </div>
           <div className="c-downloadable-resources__col-right">
@@ -146,7 +146,7 @@ const TakeAction = () => {
       <section id="know-how-to-help" className="t-section-lg t-section-bg-pattern t-bg-pattern-color-02">
         <div className="c-downloadable-resources container">
           <div className="c-downloadable-resources__col-left">
-            <h2>Know how to Help</h2>
+            <h2>Know How to Help</h2>
             <p>Begin to make the connection and be there for yourself and others.</p>
           </div>
           <div className="c-downloadable-resources__col-right">

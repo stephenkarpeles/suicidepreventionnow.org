@@ -80,10 +80,10 @@ const Header = () => {
                     <Link href="#section1">1. <span>Introduction</span></Link>
                   </li>
                   <li>
-                    <Link href="#section2">2. <span>Learn about the Data</span></Link>
+                    <Link href="#section2">2. <span>Learn About the Data</span></Link>
                   </li>
                   <li>
-                    <Link href="#section3">3. <span>Know how to Help</span></Link>
+                    <Link href="#section3">3. <span>Know How to Help</span></Link>
                   </li>
                   <li>
                     <Link href="#section4">4. <span>Advocate for Change</span></Link>
