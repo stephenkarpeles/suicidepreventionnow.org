@@ -365,6 +365,13 @@ const IndexPage = () => {
                  <h2 className="c-single-col-cta__header text-center text-color-dark-blue">Comfortability About Coping with Thoughts of Suicide</h2>
               </div>
             </div>
+            <div className="row row--justify-content-center">
+              <div className="col col-2-3 line-chart-text-col">
+                <p className="text-center line-chart-text-block">
+                  Data is showing us that U.S. Adults are becoming more comfortable talking about suicide. Overall, there has been a rise in comfort in these four different ways.
+                </p>
+              </div>
+            </div>
             <div className="row line-chart-row">
               <div className="col col-1-3 line-chart-row--legend">
                 <h3 className="text-color-dark-blue text-serif">I'm comfortable...</h3>
@@ -425,13 +432,6 @@ const IndexPage = () => {
                 <div className="line-chart-wrapper">
                   <LineChart/>
                 </div>
-              </div>
-            </div>
-            <div className="row row--justify-content-center">
-              <div className="col col-2-3 line-chart-text-col">
-                <p className="text-center line-chart-text-block">
-                  The education is working, stigma is being reduced due to hard work from people like you, and organizations like ours that are driving this. Overall, there has been a rise in comfort with these four different ways.
-                </p>
               </div>
             </div>
             <div className="c-content-quotes__download-cta">
