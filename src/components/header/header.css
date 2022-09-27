@@ -144,7 +144,7 @@
     width: 100%;
 
     @media (--nav-breakpoint-down) {
-      margin-top: 15px;
+      margin-top: 18px;
     }
 
     ul {
@@ -163,6 +163,11 @@
           border-left: 1px solid white;
         }
       }
+
+      @media (--nav-breakpoint-down) {
+        width: auto;
+        flex-grow: 1;
+      }
     }
 
     a {
@@ -180,6 +185,25 @@
 
       @media (--large-breakpoint-down) {
         font-size: 14px;
+      }
+
+      @media (--nav-breakpoint-down) {
+        padding: 9px 8px;
+        border-top: 1px solid white;
+      }
+
+      span {
+        @media (--nav-breakpoint-down) {
+          display: none;
+        }
+      }
+
+      &.is-active-nav-item {
+        span {
+          @media (--nav-breakpoint-down) {
+            display: inline-block;
+          }
+        }
       }
     }
 
@@ -201,6 +225,10 @@
           border-radius: 0 0 20px 20px;
           background: var(--color-yellow);
           border-bottom: 1px solid white;
+
+          @media (--nav-breakpoint-down) {
+            display: none;
+          }
         }
       }
     }
@@ -223,6 +251,10 @@
           border-radius: 0 0 20px 20px;
           background: var(--color-green);
           border-bottom: 1px solid white;
+
+          @media (--nav-breakpoint-down) {
+            display: none;
+          }
         }
       }
     }
@@ -245,6 +277,10 @@
           border-radius: 0 0 20px 20px;
           background: var(--color-blue);
           border-bottom: 1px solid white;
+
+          @media (--nav-breakpoint-down) {
+            display: none;
+          }
         }
       }
     }
@@ -267,7 +303,11 @@
           border-radius: 0 0 20px 20px;
           background: var(--color-purple);
           border-bottom: 1px solid white;
-        }
+
+          @media (--nav-breakpoint-down) {
+            display: none;
+          }
+      }
       }
     }
   }
@@ -334,12 +374,24 @@
     top: 0;
     height: 116px;
 
+    @media (--nav-breakpoint-down) {
+      height: auto;
+    }
+
     + * {
       margin-top: 116px;
+
+      @media (--nav-breakpoint-down) {
+        margin-top: 175px;
+      }
     }
 
     .header__back-to-top {
       display: block;
+
+      @media (--nav-breakpoint-down) {
+        display: none;
+      }
     }
 
     .header__logo {
@@ -348,11 +400,19 @@
 
       a { 
         font-size: 26px;
+
+        @media (--nav-breakpoint-down) {
+          font-size: 24px;
+        }
       }
     }
 
     .header__utility-nav {
       padding-bottom: 15px;
+    }
+
+    .header__bottom-menu {
+      margin-top: 0;
     }
   }
 }
