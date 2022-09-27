@@ -53,7 +53,7 @@ const style = {
 
 const TakeAction = () => {
   return (
-    <Layout pageTitle="AFSP Site - Take Action">
+    <Layout pageTitle="Suicide Prevention Now - Take Action">
       <Helmet
           bodyAttributes={{
               class: 'take-action-page'

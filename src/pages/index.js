@@ -104,7 +104,7 @@ const tabs = [
 const IndexPage = () => {
 
   return (
-    <Layout pageTitle="AFSP Site">
+    <Layout pageTitle="Suicide Prevention Now">
       <Helmet
           bodyAttributes={{
               class: 'home-page'

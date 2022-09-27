@@ -13,7 +13,7 @@ import TwoColumnTextBlock from "../components/two-column-text-block/two-column-t
 const AboutProject = () => {
 
   return (
-    <Layout pageTitle="AFSP Site - About The Project">
+    <Layout pageTitle="Suicide Prevention Now - About The Project">
       <Helmet
           bodyAttributes={{
               class: 'about-project-page'
