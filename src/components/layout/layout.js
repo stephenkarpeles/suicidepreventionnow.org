@@ -29,7 +29,6 @@ const Layout = props => {
           href={favicon16}
         />
         <script async src="https://siteimproveanalytics.com/js/siteanalyze_6019066.js"></script>
-        <script type="text/javascript" src="https://thinkoomph.jira.com/s/d41d8cd98f00b204e9800998ecf8427e-T/azc3hx/b/8/c95134bc67d3a521bb3f4331beb9b804/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=3c572983"></script>
       </Helmet>
       <Header />
       {props.children}
