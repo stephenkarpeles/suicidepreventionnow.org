@@ -13,11 +13,11 @@
     position: absolute;
     top: 12px;
     left: 12px;
-    padding: 12px;
+    padding: 12px 16px;
     font-weight: var(--fw-700);
     font-size: 16px;
     line-height: 1;
-    letter-spacing: 0.065ch;
+    /* letter-spacing: 0.065ch; */
     text-transform: uppercase;
     background-color: var(--color-yellow);
 
