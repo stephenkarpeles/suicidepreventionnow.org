@@ -450,13 +450,15 @@
       font-weight: 800;
     }
   }
+  
+  @media (--nav-breakpoint-down) {
+    .header {
+      height: 145px;
+    }
 
-  .header {
-    height: 145px;
-  }
-
-  .header--user-has-scrolled {
-    height: 135px;
+    .header--user-has-scrolled {
+      height: 135px;
+    }
   }
 }
 

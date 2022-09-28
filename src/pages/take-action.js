@@ -38,6 +38,7 @@ hsV425 } from '../indexImages';
 import executiveSummary2020 from '../static/executive-summary-2020.pdf';
 import executiveSummary2018 from '../static/executive-summary-2018.pdf';
 import executiveSummary2015 from '../static/executive-summary-2015.pdf';
+import pressRelease2022 from '../static/press-release-2022.pdf';
 import pressRelease2020 from '../static/press-release-2020.pdf';
 import pressRelease2018 from '../static/press-release-2018.pdf';
 import pressRelease2015 from '../static/press-release-2015.pdf';
@@ -116,6 +117,14 @@ const TakeAction = () => {
             <h3 className="c-downloadable-resources__header">Press Releases</h3>
             <div className="c-downloadable-resources__downloadable-row row">
               <div className="col-1-3">
+                <Link to={pressRelease2022} target={"_blank"} className="c-downloadable-resources__file-link">
+                  <span>
+                    2022 Press Release
+                    <img src={pdfIcon} alt="pdf icon" className="c-downloadable-resources__pdf-icon" />
+                  </span>
+                </Link>
+              </div>
+              <div className="col-1-3">
                 <Link to={pressRelease2020} target={"_blank"} className="c-downloadable-resources__file-link">
                   <span>
                     2020 Press Release
@@ -131,6 +140,8 @@ const TakeAction = () => {
                   </span>
                 </Link>
               </div>
+            </div>
+            <div className="c-downloadable-resources__downloadable-row row">
               <div className="col-1-3">
                 <Link to={pressRelease2015} target={"_blank"} className="c-downloadable-resources__file-link">
                   <span>

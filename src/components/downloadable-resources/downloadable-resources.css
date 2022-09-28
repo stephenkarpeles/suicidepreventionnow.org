@@ -80,6 +80,13 @@
     &:nth-of-type() {
       padding-bottom: 0;
     }
+
+    &:last-child {
+      @media (--small-breakpoint-down) {
+        margin-top: calc(-1 * var(--layout-spacer1));
+        padding: 0 0 var(--layout-spacer1);
+      }
+    }
   }
 
   &__file-image {
