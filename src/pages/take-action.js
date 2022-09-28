@@ -151,6 +151,17 @@ const TakeAction = () => {
                 </a>
               </div>
             </div>
+            <h3 className="c-downloadable-resources__header">Promotional Toolkit</h3>
+            <div className="c-downloadable-resources__downloadable-row row">
+              <div className="col-1-3">
+                <a href={pressRelease2015} target={"_blank"} className="c-downloadable-resources__file-link">
+                  <span>
+                    2022 Promotional Toolkit
+                    <img src={pdfIcon} alt="pdf icon" className="c-downloadable-resources__pdf-icon" />
+                  </span>
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </section>
