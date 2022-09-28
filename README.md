@@ -13,7 +13,11 @@ This is a static site built with [Gatsby](https://www.gatsbyjs.com), with no CMS
 
 ### Hosting
 
-- The site is currently hosted on Netlify
+The site is currently hosted on Netlify
+
+### Domain
+
+The live site is located at `https://suicidepreventionnow.org/`
 
 ### Branching
 
