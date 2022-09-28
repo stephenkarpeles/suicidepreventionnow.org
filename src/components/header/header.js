@@ -4,26 +4,7 @@ import AnchorLink from 'react-anchor-link-smooth-scroll'
 import ScrollspyNav from "react-scrollspy-nav";
 import "./header.css"
 
-export const useScrollHandler = () => {
-  const [scroll, setScroll] = useState(1);
-
-  useEffect(() => {
-    const onScroll = () => {
-      const scrollCheck = window.scrollY > 100;
-      setScroll(scrollCheck);
-    };
-
-    document.addEventListener("scroll", onScroll);
-    return () => {
-      document.removeEventListener("scroll", onScroll);
-    };
-  }, [scroll, setScroll]);
-
-  return scroll;
-};
-
 const Header = () => {
-  const scroll = useScrollHandler();
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -31,8 +12,21 @@ const Header = () => {
     });
   };
 
+  const [userScroll, setUserScroll] = useState(false);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", () =>
+        setUserScroll(window.pageYOffset > 40)
+      );
+      return () => window.removeEventListener('scroll', setUserScroll);
+    }
+  }, []);
+
   return (
-    <header className={`header${scroll ? " header--user-has-scrolled" : ""}`}>
+    <header className={`header ${
+      userScroll ? "header--user-has-scrolled" : ""
+    }`}>
       <div className="header__help-area-mobile">
         <div className="container">
           <strong>Need help?</strong> Call or text <a href="tel:988">988</a> or chat <a href="https://988lifeline.org" target="_blank">988lifeline.org</a>
