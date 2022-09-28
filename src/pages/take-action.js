@@ -42,6 +42,7 @@ import pressRelease2022 from '../static/press-release-2022.pdf';
 import pressRelease2020 from '../static/press-release-2020.pdf';
 import pressRelease2018 from '../static/press-release-2018.pdf';
 import pressRelease2015 from '../static/press-release-2015.pdf';
+import promoToolkit2022 from '../static/2022-promotional-toolkit.pdf';
 
 const style = {
   background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
@@ -146,6 +147,17 @@ const TakeAction = () => {
                 <a href={pressRelease2015} target={"_blank"} className="c-downloadable-resources__file-link">
                   <span>
                     2015 Press Release
+                    <img src={pdfIcon} alt="pdf icon" className="c-downloadable-resources__pdf-icon" />
+                  </span>
+                </a>
+              </div>
+            </div>
+            <h3 className="c-downloadable-resources__header">Promotional Toolkit</h3>
+            <div className="c-downloadable-resources__downloadable-row row">
+              <div className="col-1-3">
+                <a href={promoToolkit2022} target={"_blank"} className="c-downloadable-resources__file-link">
+                  <span>
+                    2022 Promotional Toolkit
                     <img src={pdfIcon} alt="pdf icon" className="c-downloadable-resources__pdf-icon" />
                   </span>
                 </a>
