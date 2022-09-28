@@ -263,6 +263,7 @@ const IndexPage = () => {
                   <div>
                     <h2 className="c-three-col-cta__header c-three-col-cta__header--green">Let Your Network Know</h2>
                     <p>More people recognize that they have the power to seek mental health support, practice self-care techniques and routines, and impact the conversation so that mental health is seen as equally important to physical health. Download and share.</p>
+                    <p><ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} /></p>
                   </div>
                 </div>
                 </div>
@@ -273,7 +274,6 @@ const IndexPage = () => {
                     </figure>
                     <div className="c-social-card__links">
                       <a href={hsV4} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></a>
-                      <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
                     </div>
                   </div>
                 </div>
@@ -284,7 +284,6 @@ const IndexPage = () => {
                     </figure>
                     <div className="c-social-card__links">
                       <a href={hsV42} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></a>
-                      <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
                     </div>
                   </div>
                 </div>                
@@ -728,6 +727,7 @@ const IndexPage = () => {
                     <div>
                       <h2 className="c-three-col-cta__header c-three-col-cta__header--purple">Let Your Network Know</h2>
                       <p>We need your help. By advocating for more mental health and suicide prevention research, resources and access to care, including increased support for the new 988 Suicide & Crisis Lifeline, you can make a difference. Download and share.</p>
+                      <p><ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} /></p>
                     </div>
                   </div>
                 </div>
@@ -738,7 +738,6 @@ const IndexPage = () => {
                       </figure>
                       <div className="c-social-card__links">
                         <a href={hsV45} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></a>
-                        <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
                       </div>
                     </div>
                   </div>
@@ -749,7 +748,6 @@ const IndexPage = () => {
                       </figure>
                       <div className="c-social-card__links">
                         <a href={hsV47} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></a>
-                        <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
                       </div>
                     </div>
                   </div>
