@@ -52,7 +52,7 @@ const HorizontalBarChart = () => {
 
       <div className="h-bar__grid">
         <div className="h-bar__text-label">
-          Better access to mental health care
+          Better access to health care in general
         </div>
         <div className="h-bar">
           <div className="h-bar__num-label">53%</div>
