@@ -1,9 +1,6 @@
 # AFSP Harris Poll Microsite
 This is a static site built with [Gatsby](https://www.gatsbyjs.com), with no CMS. 
 
-### Local dependencies
-
-
 ### To spin up the site locally:
 
 1. Git clone this repository
