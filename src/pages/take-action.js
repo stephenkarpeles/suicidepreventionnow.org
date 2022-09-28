@@ -276,6 +276,13 @@ const TakeAction = () => {
           <h2 className="c-social-media-3col__header-title">
             <span>Share these Messages</span>
           </h2>
+          <div className="row row--justify-content-center">
+            <div className="col col-1-2">
+               <div className="text-center" style={{marginBottom: '100px', marginTop: '-20px'}}>
+                <ShareSocialMedia linkText={'Share content'} url={'https://suicidepreventionnow.org'} />
+              </div>
+            </div>
+          </div>
           <div className="c-social-media-3col__content">
             <div className="row">
               <div className="col-1-3">
@@ -285,7 +292,7 @@ const TakeAction = () => {
                   </figure>
                   <div className="c-social-card__links">
                     <a href={hsV4} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></a>
-                    <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
+
                   </div>
                 </div>
               </div>
@@ -296,7 +303,7 @@ const TakeAction = () => {
                   </figure>
                   <div className="c-social-card__links">
                     <a href={hsV42} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></a>
-                    <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
+
                   </div>
                 </div>
               </div>
@@ -307,7 +314,7 @@ const TakeAction = () => {
                   </figure>
                   <div className="c-social-card__links">
                     <a href={hsV43} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></a>
-                    <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
+
                   </div>
                 </div>
               </div>
@@ -318,7 +325,7 @@ const TakeAction = () => {
                   </figure>
                   <div className="c-social-card__links">
                     <a href={hsV44} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></a>
-                    <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
+
                   </div>
                 </div>
               </div>
@@ -329,7 +336,7 @@ const TakeAction = () => {
                   </figure>
                   <div className="c-social-card__links">
                     <a href={hsV45} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></a>
-                    <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
+
                   </div>
                 </div>
               </div>
@@ -340,7 +347,7 @@ const TakeAction = () => {
                   </figure>
                   <div className="c-social-card__links">
                     <a href={hsV47} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></a>
-                    <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
+
                   </div>
                 </div>
               </div>
@@ -351,7 +358,7 @@ const TakeAction = () => {
                   </figure>
                   <div className="c-social-card__links">
                     <a href={hsV414} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></a>
-                    <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
+
                   </div>
                 </div>
               </div>
@@ -362,7 +369,7 @@ const TakeAction = () => {
                   </figure>
                   <div className="c-social-card__links">
                     <a href={hsV415} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></a>
-                    <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
+
                   </div>
                 </div>
               </div>
@@ -373,7 +380,7 @@ const TakeAction = () => {
                   </figure>
                   <div className="c-social-card__links">
                     <a href={hsV416} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></a>
-                    <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
+
                   </div>
                 </div>
               </div>
@@ -384,7 +391,7 @@ const TakeAction = () => {
                   </figure>
                   <div className="c-social-card__links">
                     <a href={hsV418} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></a>
-                    <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
+
                   </div>
                 </div>
               </div>
@@ -395,7 +402,7 @@ const TakeAction = () => {
                   </figure>
                   <div className="c-social-card__links">
                     <a href={hsV423} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></a>
-                    <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
+
                   </div>
                 </div>
               </div>
@@ -406,7 +413,7 @@ const TakeAction = () => {
                   </figure>
                   <div className="c-social-card__links">
                     <a href={hsV424} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></a>
-                    <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
+
                   </div>
                 </div>
               </div>
@@ -417,7 +424,7 @@ const TakeAction = () => {
                   </figure>
                   <div className="c-social-card__links">
                     <a href={hsV425} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></a>
-                    <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
+
                   </div>
                 </div>
               </div>
