@@ -167,7 +167,7 @@ const IndexPage = () => {
                   </div>
                 </div>
                 <div className="c-tabbed-bar-chart__download-cta">
-                    <Link to={harrisChart01} className="o-resource-links o-resource-links--down-arrow-icon" target={'_blank'}><span>Download this chart</span></Link>
+                    <a href={harrisChart01} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></a>
                 </div>
               </div>
           </div>
@@ -232,7 +232,7 @@ const IndexPage = () => {
                   </div>
                 </div>
                 <div className="c-vertical-bar-chart__download-cta">
-                    <Link to={harrisChart02} className="o-resource-links o-resource-links--down-arrow-icon" target={'_blank'}><span>Download this chart</span></Link>
+                    <a href={harrisChart02} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></a>
                 </div>
               </div>
           </div>
@@ -247,7 +247,7 @@ const IndexPage = () => {
                   <p>Over time, a greater number of people recognize that there are warning signs for suicide and are aware that they may have a mental health condition themselves—and want to take action to help prevent suicide and strengthen mental health.</p>
                 </div>
                 <div className="c-single-col-cta__social-links">
-                  <Link to={'/take-action#learn-about-the-data'} className="o-resource-links o-resource-links--book-icon"><span>Find Resources</span></Link>
+                  <a href={'/take-action#learn-about-the-data'} className="o-resource-links o-resource-links--book-icon"><span>Find Resources</span></a>
                   <ShareSocialMedia linkText={'Share this Topic'} url={'https://suicidepreventionnow.org'} />
                 </div>
               </div>
@@ -272,7 +272,7 @@ const IndexPage = () => {
                       <img src={hsV4} alt="" className="c-social-card__image" />
                     </figure>
                     <div className="c-social-card__links">
-                      <Link to={hsV4} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
+                      <a href={hsV4} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></a>
                       <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
                     </div>
                   </div>
@@ -283,7 +283,7 @@ const IndexPage = () => {
                       <img src={hsV42} alt="" className="c-social-card__image" />
                     </figure>
                     <div className="c-social-card__links">
-                      <Link to={hsV42} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
+                      <a href={hsV42} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></a>
                       <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
                     </div>
                   </div>
@@ -355,7 +355,7 @@ const IndexPage = () => {
                   </div>
                 </div>
                 <div className="c-content-stats__download-cta">
-                    <Link to={harrisChart03} className="o-resource-links o-resource-links--down-arrow-icon" target="_blank"><span>Download this chart</span></Link>
+                    <a href={harrisChart03} className="o-resource-links o-resource-links--down-arrow-icon" target="_blank"><span>Download this chart</span></a>
                 </div>
               </div>
           </div>
@@ -438,7 +438,7 @@ const IndexPage = () => {
               </div>
             </div>
             <div className="c-content-quotes__download-cta">
-              <Link to={harrisChart06} className="o-resource-links o-resource-links--down-arrow-icon" target={'_blank'}><span>Download this chart</span></Link>
+              <a href={harrisChart06} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></a>
             </div>
           </div>
         </section>
@@ -452,10 +452,10 @@ const IndexPage = () => {
                   <h2 className="c-single-col-cta__header">Know How to Help</h2>
                   <p>Year-over-year, people are becoming more comfortable talking about their mental health with clinicians and loved ones and being there for others who are struggling. This progress is encouraging and together, we're reducing barriers to talking about mental health and suicide.</p>
                   <p>If you are struggling with your mental health or suicidal thoughts or know someone who is, you are not alone. Empowering people to have conversations about mental health and suicide prevention can save lives.</p>
-                  <p><Link to={"/take-action"} target={'_blank'} className="c-single-col-cta__link">Learn more</Link> about how you can be there for yourself and others.</p>
+                  <p><a href={"/take-action"} className="c-single-col-cta__link">Learn more</a> about how you can be there for yourself and others.</p>
                 </div>
                 <div className="c-single-col-cta__social-links">
-                  <Link to={'/take-action#know-how-to-help'} className="o-resource-links o-resource-links--book-icon"><span>Find Resources</span></Link>
+                  <a href={'/take-action#know-how-to-help'} className="o-resource-links o-resource-links--book-icon"><span>Find Resources</span></a>
                   <ShareSocialMedia linkText={'Share this Topic'} url={'https://suicidepreventionnow.org/#take-action'} />
                 </div>
               </div>
@@ -480,7 +480,7 @@ const IndexPage = () => {
                         <img src={hsV43} alt="" className="c-social-card__image" />
                       </figure>
                       <div className="c-social-card__links">
-                        <Link to={hsV43} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
+                        <a href={hsV43} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></a>
                         <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
                       </div>
                     </div>
@@ -491,7 +491,7 @@ const IndexPage = () => {
                         <img src={hsV44} alt="" className="c-social-card__image" />
                       </figure>
                       <div className="c-social-card__links">
-                        <Link to={hsV44} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
+                        <a href={hsV44} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></a>
                         <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
                       </div>
                     </div>
@@ -631,7 +631,7 @@ const IndexPage = () => {
                   </div>
                   <div className="col-1-4">
                     <div className="c-content-quotes__download-cta">
-                      <Link to={harrisChart04} className="o-resource-links o-resource-links--down-arrow-icon" target={'_blank'}><span>Download this chart</span></Link>
+                      <a href={harrisChart04} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></a>
                     </div>
                   </div>
                 </div>
@@ -677,7 +677,7 @@ const IndexPage = () => {
 
               </div>
               <div className="c-horizontal-bar-chart__download-cta">
-                  <Link to={harrisChart05} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
+                  <a href={harrisChart05} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></a>
               </div>
             </div>
           </div>
@@ -709,10 +709,10 @@ const IndexPage = () => {
                 <div className="c-single-col-cta__content">
                   <h2 className="c-single-col-cta__header">Advocate for Change</h2>
                   <p> More than ever, people are recognizing the importance of and need for taking care of their mental health. However, they're finding that the support system we have in place is not adequate to fill that need. We must continue to advocate for increasing access to care and improving the training available to all health care professionals so that those who make the brave choice to seek care are able to receive it.</p>
-                  <p><Link to={"https://afsp.org/become-a-suicide-prevention-public-policy-advocate"} target={'_blank'} className="c-single-col-cta__link">Become an advocate</Link> to improve access to mental health and suicide-related treatments and supports.</p>
+                  <p><a href={"https://afsp.org/become-a-suicide-prevention-public-policy-advocate"} className="c-single-col-cta__link">Become an advocate</a> to improve access to mental health and suicide-related treatments and supports.</p>
                 </div>
                 <div className="c-single-col-cta__social-links">
-                  <Link to={'/take-action#advocate-for-change'} className="o-resource-links o-resource-links--book-icon"><span>Find Resources</span></Link>
+                  <a href={'/take-action#advocate-for-change'} className="o-resource-links o-resource-links--book-icon"><span>Find Resources</span></a>
                   <ShareSocialMedia linkText={'Share this Topic'} url={'https://suicidepreventionnow.org/#advocate-for-change'} />
                 </div>
               </div>
@@ -737,7 +737,7 @@ const IndexPage = () => {
                         <img src={hsV45} alt="" className="c-social-card__image" />
                       </figure>
                       <div className="c-social-card__links">
-                        <Link to={hsV45} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
+                        <a href={hsV45} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></a>
                         <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
                       </div>
                     </div>
@@ -748,7 +748,7 @@ const IndexPage = () => {
                         <img src={hsV47} alt="" className="c-social-card__image" />
                       </figure>
                       <div className="c-social-card__links">
-                        <Link to={hsV47} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></Link>
+                        <a href={hsV47} className="o-resource-links o-resource-links--down-arrow-icon"><span>Download this chart</span></a>
                         <ShareSocialMedia linkText={'Share'} url={'https://suicidepreventionnow.org'} />
                       </div>
                     </div>
@@ -767,7 +767,7 @@ const IndexPage = () => {
                 <p>Now that you know the facts, learn more about the data and take action to strengthen suicide prevention and mental health.</p>
                 <div className="c-one-col-block__resources">
                   <div className="c-one-col-block__resources-links">
-                    <Link to={'/take-action'} className="o-resource-links o-resource-links--book-icon"><span>Find Resources</span></Link>
+                    <a href={'/take-action'} className="o-resource-links o-resource-links--book-icon"><span>Find Resources</span></a>
                   </div>
                   <div className="c-one-col-block__resources-links">
                   <ShareSocialMedia linkText={'Share this Page'} url={'https://suicidepreventionnow.org'} />
