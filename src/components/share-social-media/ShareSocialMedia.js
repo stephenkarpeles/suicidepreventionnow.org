@@ -27,7 +27,7 @@ const ShareSocialMedia = (props) => {
         <div className={`c-modal__reveal ${show ? 'c-modal__reveal--on' : 'c-modal__reveal--off'}`} onMouseLeave={() => setShow(false)}>
           <ShareSocial
               style={styleModal}
-              title={'New Poll Data (mental health & suicide prevention). Learn more:'}
+              title={'New Poll Data (mental health & suicide prevention).\n@afspnational @Action_Alliance @sprctweets\n\nLearn more:'}
               url={props.url}
               socialTypes={['facebook','twitter']}
             />
